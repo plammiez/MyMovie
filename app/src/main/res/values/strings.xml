@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyMovie</string>
+    <string name="title_bar">Search</string>
 </resources>
