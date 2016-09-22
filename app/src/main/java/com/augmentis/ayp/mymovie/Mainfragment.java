@@ -18,7 +18,7 @@ import android.widget.ImageView;
 public class Mainfragment extends Fragment {
 
     private RecyclerView movie_recycler_view;
-    private ImageView movieImg;
+    public ImageView movieImg;
 
     @Nullable
     @Override
@@ -28,7 +28,7 @@ public class Mainfragment extends Fragment {
 
         movie_recycler_view = (RecyclerView) view.findViewById(R.id.list_movie_recycler_view);
         movie_recycler_view.setLayoutManager(new LinearLayoutManager(getActivity()));
-        movieImg = (ImageView) view.findViewById(R.id.movie_img_view);
+
 
         return view;
     }
@@ -49,6 +49,8 @@ public class Mainfragment extends Fragment {
 
         public MovieHolder(View itemView) {
             super(itemView);
+
+            movieImg = (ImageView) itemView.findViewById(R.id.movie_img_view);
         }
     }
 
@@ -56,7 +58,11 @@ public class Mainfragment extends Fragment {
 
         @Override
         public MovieHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return null;
+
+            LayoutInflater layoutInflater = LayoutInflater.from(getActivity());
+            View v = layoutInflater.inflate(R.layout.list_item_movie, parent,false);
+
+            return new MovieHolder(v);
         }
 
         @Override
