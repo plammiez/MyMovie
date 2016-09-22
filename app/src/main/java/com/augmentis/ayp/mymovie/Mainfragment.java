@@ -2,6 +2,7 @@ package com.augmentis.ayp.mymovie;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +21,8 @@ public class Mainfragment extends Fragment {
     private RecyclerView movie_recycler_view;
     public ImageView movieImg;
 
+    public FloatingActionButton fabBtn;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
@@ -28,6 +31,14 @@ public class Mainfragment extends Fragment {
 
         movie_recycler_view = (RecyclerView) view.findViewById(R.id.list_movie_recycler_view);
         movie_recycler_view.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        fabBtn = (FloatingActionButton) view.findViewById(R.id.fabBtn);
+        fabBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
 
         return view;
