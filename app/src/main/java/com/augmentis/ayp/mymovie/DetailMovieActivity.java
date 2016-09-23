@@ -4,12 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.VideoView;
-
-import java.util.UUID;
 
 /**
  * Created by Waraporn on 9/22/2016.
@@ -32,7 +28,7 @@ public class DetailMovieActivity extends AppCompatActivity{
 
         mVideo = (VideoView) findViewById(R.id.movie_teaser);
         String videoURL = "https://youtu.be/1NhwGqvoKaU";
-        Uri uri = Uri.parse("https://youtu.be/1NhwGqvoKaU");
+        Uri uri = Uri.parse(videoURL);
         mVideo.setVideoURI(uri);
         mVideo.start();
     }
