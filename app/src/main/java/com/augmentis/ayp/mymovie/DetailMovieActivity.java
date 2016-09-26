@@ -29,6 +29,7 @@ public class DetailMovieActivity extends AppCompatActivity{
         mVideo = (VideoView) findViewById(R.id.movie_teaser);
         String videoURL = "https://youtu.be/1NhwGqvoKaU";
         Uri uri = Uri.parse(videoURL);
+//        Uri uri = Uri.parse("http://convert2mp3.net/en/?url=http://www.youtube.com/watch?v=OPp2CoLdXcc");
         mVideo.setVideoURI(uri);
         mVideo.start();
     }
