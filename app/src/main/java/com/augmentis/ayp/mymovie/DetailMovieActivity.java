@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.VideoView;
 
 /**
@@ -13,7 +16,7 @@ import android.widget.VideoView;
 public class DetailMovieActivity extends AppCompatActivity{
 
 //    private static final String MOVIE_ID = "MOVIE_ID";
-    private VideoView mVideo;
+    private WebView mVideo;
 
     public static Intent newIntent(Context activity) {
         Intent intent = new Intent(activity, DetailMovieActivity.class);
@@ -26,11 +29,10 @@ public class DetailMovieActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_movie);
 
-        mVideo = (VideoView) findViewById(R.id.movie_teaser);
-        String videoURL = "https://youtu.be/1NhwGqvoKaU";
-        Uri uri = Uri.parse(videoURL);
-//        Uri uri = Uri.parse("http://convert2mp3.net/en/?url=http://www.youtube.com/watch?v=OPp2CoLdXcc");
-        mVideo.setVideoURI(uri);
-        mVideo.start();
+        mVideo = (WebView) findViewById(R.id.movie_teaser);
+        mVideo.getSettings().setJavaScriptEnabled(true);
+        mVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
+        mVideo.loadUrl("https://www.youtube.com/embed/OPp2CoLdXcc?autoplay=1&vq=small");
+        mVideo.setWebChromeClient(new WebChromeClient());
     }
 }
