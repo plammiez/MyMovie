@@ -16,6 +16,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.UUID;
+
 /**
  * Created by Waraporn on 9/20/2016.
  */
@@ -48,7 +50,8 @@ public class Mainfragment extends Fragment {
         fabBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = MapActivity.newIntent(getActivity());
+                startActivity(intent);
             }
         });
 

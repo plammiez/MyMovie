@@ -10,6 +10,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.VideoView;
 
+import java.util.UUID;
+
 /**
  * Created by Waraporn on 9/22/2016.
  */
