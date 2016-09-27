@@ -25,6 +25,7 @@ public class Mainfragment extends Fragment {
 
 //    private RecyclerView movie_recycler_view;
     public ImageView movieImg;
+    public int id =1;
 
     public FloatingActionButton fabBtn;
 
@@ -42,10 +43,11 @@ public class Mainfragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Log.d("AA", "CLICK");
-                Intent intent = DetailMovieActivity.newIntent(getActivity());
+                Intent intent = DetailMovieActivity.newIntent(getActivity(), id);
                 startActivity(intent);
             }
         });
+
         fabBtn = (FloatingActionButton) view.findViewById(R.id.fabBtn);
         fabBtn.setOnClickListener(new View.OnClickListener() {
             @Override
