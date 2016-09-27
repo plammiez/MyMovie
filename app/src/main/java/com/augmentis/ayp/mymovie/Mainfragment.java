@@ -1,11 +1,11 @@
 package com.augmentis.ayp.mymovie;
 
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,9 +14,9 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import java.util.UUID;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 
 /**
  * Created by Waraporn on 9/20/2016.
@@ -25,7 +25,6 @@ public class Mainfragment extends Fragment {
 
 //    private RecyclerView movie_recycler_view;
     public ImageView movieImg;
-
     public FloatingActionButton fabBtn;
 
     @Nullable
