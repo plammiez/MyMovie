@@ -76,7 +76,7 @@ public class DetailMovieActivity extends AppCompatActivity{
 
 
         mVideo = (WebView) findViewById(R.id.movie_teaser);
-        mVideo.getSettings().setJavaScriptEnabled(true);
+        mVideo.getSettings().setJavaScriptEnabled(true);//อณุญาตให้ใช้ javascript ได้
         mVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
         mVideo.loadUrl("https://www.youtube.com/embed/OPp2CoLdXcc?autoplay=1&vq=small");
         mVideo.setWebChromeClient(new WebChromeClient());

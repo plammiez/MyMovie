@@ -75,34 +75,4 @@ public class Mainfragment extends Fragment {
         setHasOptionsMenu(true);
     }
 
-    private class MovieHolder extends RecyclerView.ViewHolder {
-
-        public MovieHolder(View itemView) {
-            super(itemView);
-
-
-        }
-    }
-
-    private class MovieAdapter extends RecyclerView.Adapter<MovieHolder> {
-
-        @Override
-        public MovieHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
-            LayoutInflater layoutInflater = LayoutInflater.from(getActivity());
-            View v = layoutInflater.inflate(R.layout.list_item_movie, parent,false);
-
-            return new MovieHolder(v);
-        }
-
-        @Override
-        public void onBindViewHolder(MovieHolder holder, int position) {
-
-        }
-
-        @Override
-        public int getItemCount() {
-            return 0;
-        }
-    }
 }
