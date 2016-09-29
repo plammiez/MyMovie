@@ -12,4 +12,5 @@ public class Movie {
     private UUID id;
     private String name;
     private String detail;
+
 }
