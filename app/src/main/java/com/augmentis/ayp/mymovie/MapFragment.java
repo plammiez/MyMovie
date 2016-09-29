@@ -26,7 +26,6 @@ public class MapFragment extends SupportMapFragment {
     private Location mLocation;
 
     public static MapFragment newInstance() {
-
         Bundle args = new Bundle();
         MapFragment fragment = new MapFragment();
         fragment.setArguments(args);
@@ -34,7 +33,6 @@ public class MapFragment extends SupportMapFragment {
     }
 
     public static MapFragment newInstance(Location location) {
-
         Bundle args = new Bundle();
         args.putParcelable(KEY_LOCATION, location);
         MapFragment fragment = new MapFragment();

@@ -69,7 +69,6 @@ public class MainFragment extends Fragment {
         fabBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = MapActivity.newIntent(getActivity(),
                         mLocation);
                 startActivity(intent);
