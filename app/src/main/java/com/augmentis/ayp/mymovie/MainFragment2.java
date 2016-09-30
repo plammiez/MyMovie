@@ -49,9 +49,6 @@ public class MainFragment2 extends Fragment {
     private GoogleMap mGoogleMap;
     private static final int REQUEST_PERMISSION_LOCATION = 231;
 
-    private double latitude;
-    private double longitude;
-
     public FloatingActionButton fabBtn;
 
     @Nullable
@@ -127,9 +124,6 @@ public class MainFragment2 extends Fragment {
 
             Toast.makeText(getActivity(), location.getLatitude() + "," +
                     location.getLongitude(), Toast.LENGTH_LONG).show();
-
-            latitude = location.getLatitude();
-            longitude = location.getLongitude();
         }
     };
 
