@@ -6,6 +6,6 @@ public class MainActivity extends SingleFragmentActivity {
 
     @Override
     protected Fragment onCreateFragment() {
-        return new MainFragment();
+        return new MainFragment2();
     }
 }
