@@ -1,0 +1,4546 @@
+{
+  "elements": [
+    {
+      "short_name_en": "Paragon Cineplex",
+      "short_name_th": "พารากอนซีนีเพล็กซ์",
+      "cinema_id": "1",
+      "vista_id": "0000009001",
+      "brand_id": "3",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627SIAMCNP1",
+        "merchant_id": "401002294956001",
+        "terminal_id": "74408081",
+        "md5": "QxMjcGFzc3MOIQ=vQT0XlP9UVFMUTVRk"
+      },
+      "location": "13.7454,100.535",
+      "tel": "0-2129-4635",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-4dx.png",
+          "order": 2,
+          "id": "576ccf688d526115004eb177",
+          "name": "4DX",
+          "name_alt": "4DX"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-atmos.png",
+          "order": 3,
+          "id": "576ccf688d526115004eb17a",
+          "name": "Dolby Atmos",
+          "name_alt": "Dolby Atmos"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 3,
+          "code_name": "PRG",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-paragon.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-paragon.png",
+          "order": 1,
+          "id": "576ccf688d526115004eb169",
+          "name": "Paragon Cineplex",
+          "name_alt": "พารากอน ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb185",
+      "name": "Paragon Cineplex",
+      "name_alt": "พารากอน ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "Huahin",
+      "short_name_th": "หัวหิน",
+      "cinema_id": "2",
+      "vista_id": "0000001018",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309002001",
+        "terminal_id": "74408138",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "12.5899,99.9505",
+      "tel": "032-526-204",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb186",
+      "name": "Major Cineplex Huahin",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ หัวหิน"
+    },
+    {
+      "short_name_en": "Chonburi",
+      "short_name_th": "ชลบุรี",
+      "cinema_id": "4",
+      "vista_id": "0000001025",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309060001",
+        "terminal_id": "74408144",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.1357,101.118",
+      "tel": "038-192-264",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb188",
+      "name": "Major Cineplex Big C Chonburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี ชลบุรี"
+    },
+    {
+      "short_name_en": "Pattaya",
+      "short_name_th": "พัทยา",
+      "cinema_id": "3",
+      "vista_id": "0000001024",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309052001",
+        "terminal_id": "74408143",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.3549,101.008",
+      "tel": "038-052-227",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb187",
+      "name": "Major Cineplex Pattaya",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ พัทยา"
+    },
+    {
+      "short_name_en": "Central Pinklao",
+      "short_name_th": "เซ็นทรัล ปิ่นเกล้า",
+      "cinema_id": "6",
+      "vista_id": "0000003008",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309353001",
+        "terminal_id": "74408181",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "13.7777,100.476",
+      "tel": "0-2433-8341",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb189",
+      "name": "Major Cineplex Central Pinklao",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล ปิ่นเกล้า"
+    },
+    {
+      "short_name_en": "Future Park Rangsit",
+      "short_name_th": "ฟิวเจอร์พาร์ค รังสิต",
+      "cinema_id": "7",
+      "vista_id": "0000003004",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309345001",
+        "terminal_id": "74408180",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "13.9883,100.618",
+      "tel": "0-2567-5796",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb18a",
+      "name": "Major Cineplex Future Park Rangsit",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ ฟิวเจอร์พาร์ค รังสิต"
+    },
+    {
+      "short_name_en": "Ayutthaya",
+      "short_name_th": "อยุธยา",
+      "cinema_id": "8",
+      "vista_id": "0000001028",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309094001",
+        "terminal_id": "74408147",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.3695,100.639",
+      "tel": "035-747-038",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb18b",
+      "name": "Major Cineplex Big C Ayutthaya",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี อยุธยา"
+    },
+    {
+      "short_name_en": "Pinklao",
+      "short_name_th": "เมเจอร์ ปิ่นเกล้า",
+      "cinema_id": "9",
+      "vista_id": "0000001003",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308852001",
+        "terminal_id": "74408124",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.7784,100.478",
+      "tel": "0-2435-3750",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb18c",
+      "name": "Major Cineplex Pinklao",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ ปิ่นเกล้า"
+    },
+    {
+      "short_name_en": "Sukhumvit",
+      "short_name_th": "สุขุมวิท",
+      "cinema_id": "10",
+      "vista_id": "0000001002",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002324060001",
+        "terminal_id": "74408265",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.7213,100.583",
+      "tel": "0-2381-4855",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb18d",
+      "name": "Major Cineplex Sukhumvit",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ สุขุมวิท"
+    },
+    {
+      "short_name_en": "Rama III",
+      "short_name_th": "พระราม 3",
+      "cinema_id": "13",
+      "vista_id": "0000001005",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308886001",
+        "terminal_id": "74408126",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.6961,100.533",
+      "tel": "0-2211-2903",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb191",
+      "name": "Major Cineplex Central Rama III",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล พระราม 3"
+    },
+    {
+      "short_name_en": "Ratchayothin",
+      "short_name_th": "รัชโยธิน",
+      "cinema_id": "11",
+      "vista_id": "0000001001",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002324052001",
+        "terminal_id": "74408264",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8282,100.568",
+      "tel": "0-2511-3311",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-4dx.png",
+          "order": 2,
+          "id": "576ccf688d526115004eb177",
+          "name": "4DX",
+          "name_alt": "4DX"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-atmos.png",
+          "order": 3,
+          "id": "576ccf688d526115004eb17a",
+          "name": "Dolby Atmos",
+          "name_alt": "Dolby Atmos"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb18e",
+      "name": "Major Cineplex Ratchayothin",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ รัชโยธิน"
+    },
+    {
+      "short_name_en": "Rangsit",
+      "short_name_th": "เมเจอร์ รังสิต",
+      "cinema_id": "12",
+      "vista_id": "0000001004",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308860001",
+        "terminal_id": "74408125",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.9872,100.617",
+      "tel": "0-2567-7048",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb190",
+      "name": "Major Cineplex Rangsit",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ รังสิต"
+    },
+    {
+      "short_name_en": "IMAX Ratchayothin",
+      "short_name_th": "ไอแมกซ์ รัชโยธิน",
+      "cinema_id": "11",
+      "vista_id": "0000001001",
+      "brand_id": "5",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002324052001",
+        "terminal_id": "74408264",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "is_mirror_cinema": true,
+      "location": "13.8282,100.568",
+      "tel": "0-2511-3311",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-imax.png",
+          "order": 1,
+          "id": "576ccf688d526115004eb176",
+          "name": "IMAX",
+          "name_alt": "IMAX"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 5,
+          "code_name": "IMAX",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-imax.png",
+          "order": 12,
+          "id": "576ccf688d526115004eb16b",
+          "name": "Krungsri IMAX",
+          "name_alt": "กรุงศรี ไอแมกซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb18f",
+      "name": "Krungsri IMAX Major Cineplex Ratchayothin",
+      "name_alt": "กรุงศรี ไอแมกซ์ เมเจอร์ ซีนีเพล็กซ์ รัชโยธิน"
+    },
+    {
+      "short_name_en": "Bangna",
+      "short_name_th": "บางนา",
+      "cinema_id": "14",
+      "vista_id": "0000001006",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308894001",
+        "terminal_id": "74408127",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.6684,100.63",
+      "tel": "0-2398-9903",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb192",
+      "name": "Major Cineplex Central Bangna",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล บางนา"
+    },
+    {
+      "short_name_en": "NakornSawan",
+      "short_name_th": "นครสวรรค์",
+      "cinema_id": "18",
+      "vista_id": "0000001011",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308933001",
+        "terminal_id": "74408131",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "15.7129,100.058",
+      "tel": "056-233-088",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb195",
+      "name": "Major Cineplex V-Square NakornSawan",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ วี-สแควร์ นครสวรรค์"
+    },
+    {
+      "short_name_en": "Rama II",
+      "short_name_th": "พระราม 2",
+      "cinema_id": "17",
+      "vista_id": "0000001010",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308925001",
+        "terminal_id": "74408130",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.6142,100.406",
+      "tel": "0-2415-7711",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb194",
+      "name": "Major Cineplex Central Rama II",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล พระราม 2"
+    },
+    {
+      "short_name_en": "Fashion",
+      "short_name_th": "แฟชั่น",
+      "cinema_id": "21",
+      "vista_id": "0000001015",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308975001",
+        "terminal_id": "74408135",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8264,100.679",
+      "tel": "0-2508-7384",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb198",
+      "name": "Major Cineplex Fashion Island",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ แฟชั่น ไอส์แลนด์ "
+    },
+    {
+      "short_name_en": "Chacaoengsao",
+      "short_name_th": "ฉะเชิงเทรา",
+      "cinema_id": "20",
+      "vista_id": "0000001013",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308959001",
+        "terminal_id": "74408133",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.9501,101.074",
+      "tel": "038-513-666",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb197",
+      "name": "Major Cineplex Chacaoengsao",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ ฉะเชิงเทรา"
+    },
+    {
+      "short_name_en": "Bangkapi",
+      "short_name_th": "บางกะปิ",
+      "cinema_id": "15",
+      "vista_id": "0000001007",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308909001",
+        "terminal_id": "74408128",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.7682,100.644",
+      "tel": "0-2378-2435",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb193",
+      "name": "Major Cineplex Lotus Bangkapi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส บางกะปิ"
+    },
+    {
+      "short_name_en": "UdonThani",
+      "short_name_th": "อุดรธานี",
+      "cinema_id": "19",
+      "vista_id": "0000001014",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308967001",
+        "terminal_id": "74408134",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "17.4062,102.795",
+      "tel": "042-230-438",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb196",
+      "name": "Major Cineplex Central UdonThani",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล อุดรธานี"
+    },
+    {
+      "short_name_en": "Samrong",
+      "short_name_th": "สำโรง",
+      "cinema_id": "25",
+      "vista_id": "0000001023",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309044001",
+        "terminal_id": "74408142",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.6462,100.599",
+      "tel": "0-2380-2877",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb19c",
+      "name": "Major Cineplex Samrong",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ สำโรง"
+    },
+    {
+      "short_name_en": "Ratchadapisek",
+      "short_name_th": "รัชดาภิเษก",
+      "cinema_id": "23",
+      "vista_id": "0000001022",
+      "brand_id": "4",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002294948001",
+        "terminal_id": "74408119",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.791,100.574",
+      "tel": "0-2354-2133",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-atmos.png",
+          "order": 3,
+          "id": "576ccf688d526115004eb17a",
+          "name": "Dolby Atmos",
+          "name_alt": "Dolby Atmos"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 4,
+          "code_name": "ESP",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-esplanade.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-esplanade.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb16a",
+          "name": "Esplanade Cineplex",
+          "name_alt": "เอสพลานาด ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb19a",
+      "name": "Esplanade Cineplex Ratchadapisek",
+      "name_alt": "เอสพลานาด ซีนีเพล็กซ์ รัชดาภิเษก"
+    },
+    {
+      "short_name_en": "Petchakasem",
+      "short_name_th": "เพชรเกษม",
+      "cinema_id": "22",
+      "vista_id": "0000001017",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308991001",
+        "terminal_id": "74408137",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.7072,100.383",
+      "tel": "0-2421-6606",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb199",
+      "name": "Major Cineplex Petchakasem",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เพชรเกษม"
+    },
+    {
+      "short_name_en": "Samui",
+      "short_name_th": "สมุย",
+      "cinema_id": "29",
+      "vista_id": "0000001019",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309010001",
+        "terminal_id": "74408139",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "9.56015,100.04",
+      "tel": "077-427-299",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb19e",
+      "name": "Major Cineplex Lotus Samui",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส สมุย"
+    },
+    {
+      "short_name_en": "AomYai",
+      "short_name_th": "อ้อมใหญ่",
+      "cinema_id": "26",
+      "vista_id": "0000003010",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309361001",
+        "terminal_id": "74408182",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "13.7074,100.281",
+      "tel": "0-2420-6250",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb19d",
+      "name": "EGV Big C AomYai",
+      "name_alt": "อีจีวี บิ๊กซี อ้อมใหญ่"
+    },
+    {
+      "short_name_en": "Ladprao",
+      "short_name_th": "ลาดพร้าว",
+      "cinema_id": "24",
+      "vista_id": "0000003002",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309329001",
+        "terminal_id": "74408178",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "13.7856,100.612",
+      "tel": "0-2538-3149",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb19b",
+      "name": "EGV Ladprao",
+      "name_alt": "อีจีวี ลาดพร้าว"
+    },
+    {
+      "short_name_en": "Chaengwatthana",
+      "short_name_th": "แจ้งวัฒนะ",
+      "cinema_id": "30",
+      "vista_id": "0000001020",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309028001",
+        "terminal_id": "74408140",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8907,100.567",
+      "tel": "0-2573-7671",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb19f",
+      "name": "Major Cineplex Chaengwatthana",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ แจ้งวัฒนะ"
+    },
+    {
+      "short_name_en": "Sriracha",
+      "short_name_th": "ศรีราชา",
+      "cinema_id": "35",
+      "vista_id": "0000004001",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627EGVEXADM",
+        "merchant_id": "401002294477001",
+        "terminal_id": "74408078",
+        "md5": "QxMjcGFzc3MOIQ=vQT0TRN16RjeUTURk"
+      },
+      "location": "13.1686,100.932",
+      "tel": "038-771-065",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a3",
+      "name": "EGV Sriracha",
+      "name_alt": "อีจีวี ศรีราชา"
+    },
+    {
+      "short_name_en": "Korat",
+      "short_name_th": "โคราช",
+      "cinema_id": "34",
+      "vista_id": "0000003011",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309379001",
+        "terminal_id": "74408183",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "14.982,102.092",
+      "tel": "044-288-288",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a2",
+      "name": "EGV Korat",
+      "name_alt": "อีจีวี โคราช"
+    },
+    {
+      "short_name_en": "Lotus Phitsanulok",
+      "short_name_th": "โลตัส พิษณุโลก",
+      "cinema_id": "31",
+      "vista_id": "0000001021",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309036001",
+        "terminal_id": "74408141",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "16.8128,100.308",
+      "tel": "055-253758",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a0",
+      "name": "Major Cineplex Lotus Phitsanulok",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส พิษณุโลก"
+    },
+    {
+      "short_name_en": "Seacon",
+      "short_name_th": "ซีคอน",
+      "cinema_id": "33",
+      "vista_id": "0000003003",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309337001",
+        "terminal_id": "74408179",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "13.6943,100.648",
+      "tel": "0-2322-1805",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a1",
+      "name": "Grand EGV Seacon Srinakarin",
+      "name_alt": "แกรนด์ อีจีวี ซีคอน ศรีนครินทร์ "
+    },
+    {
+      "short_name_en": "Imax Paragon",
+      "short_name_th": "ไอแมกซ์ พารากอน",
+      "cinema_id": "38",
+      "vista_id": "0000007001",
+      "brand_id": "5",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "627IMAXADM",
+        "merchant_id": "401002294930001",
+        "terminal_id": "74408079",
+        "md5": "QxMjcGFzc3MOIQ=v09QTdPVX1qMEpJTX"
+      },
+      "location": "13.7466,100.529",
+      "tel": "0-2129-4635",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-imax.png",
+          "order": 1,
+          "id": "576ccf688d526115004eb176",
+          "name": "IMAX",
+          "name_alt": "IMAX"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 5,
+          "code_name": "IMAX",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-imax.png",
+          "order": 12,
+          "id": "576ccf688d526115004eb16b",
+          "name": "Krungsri IMAX",
+          "name_alt": "กรุงศรี ไอแมกซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a4",
+      "name": "Krungsri IMAX Paragon Cineplex",
+      "name_alt": "กรุงศรี ไอแมกซ์ พารากอน ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "Petchaboon",
+      "short_name_th": "เพชรบูรณ์",
+      "cinema_id": "45",
+      "vista_id": "0000001029",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309109001",
+        "terminal_id": "74408148",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "16.3933,101.131",
+      "tel": "056-720-626",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1aa",
+      "name": "Major Cineplex Lotus Petchaboon",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส เพชรบูรณ์"
+    },
+    {
+      "short_name_en": "Nonthaburi",
+      "short_name_th": "นนทบุรี",
+      "cinema_id": "44",
+      "vista_id": "0000001012",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308941001",
+        "terminal_id": "74408132",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8321,100.501",
+      "tel": "0-2526-5074",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a9",
+      "name": "Major Cineplex Nonthaburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ นนทบุรี"
+    },
+    {
+      "short_name_en": "Krabi",
+      "short_name_th": "กระบี่",
+      "cinema_id": "41",
+      "vista_id": "0000001026",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309078001",
+        "terminal_id": "74408145",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "8.35011,99.3137",
+      "tel": "075-650-819",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a7",
+      "name": "Major Cineplex Lotus Krabi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส กระบี่"
+    },
+    {
+      "short_name_en": "Lotus Navanakorn",
+      "short_name_th": "โลตัส นวนคร",
+      "cinema_id": "43",
+      "vista_id": "0000001032",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309141001",
+        "terminal_id": "74408151",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.0148,100.616",
+      "tel": "0-2520-3450",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a8",
+      "name": "Major Cineplex Lotus Navanakorn",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส นวนคร"
+    },
+    {
+      "short_name_en": "Lotus Baanpong",
+      "short_name_th": "โลตัส บ้านโป่ง",
+      "cinema_id": "39",
+      "vista_id": "0000001033",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309159001",
+        "terminal_id": "74408152",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.7938,99.9211",
+      "tel": "032-201-737",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a5",
+      "name": "Major Cineplex Lotus Baanpong",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส บ้านโป่ง"
+    },
+    {
+      "short_name_en": "Chiangmai",
+      "short_name_th": "เชียงใหม่",
+      "cinema_id": "40",
+      "vista_id": "0000006001",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309484001",
+        "terminal_id": "74408175",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "18.8699,98.8989",
+      "tel": "053-283-939",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1a6",
+      "name": "Major Cineplex Central Chiangmai Airport ",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล เชียงใหม่ แอร์พอร์ต"
+    },
+    {
+      "short_name_en": "Ramkhumheang",
+      "short_name_th": "รามคำแหง",
+      "cinema_id": "47",
+      "vista_id": "0000001009",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308917001",
+        "terminal_id": "74408129",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.7555,100.613",
+      "tel": "0-2319-3036",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1ab",
+      "name": "Major Cineplex Ramkhumheang",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ รามคำแหง"
+    },
+    {
+      "short_name_en": "Salaya",
+      "short_name_th": "ศาลายา",
+      "cinema_id": "49",
+      "vista_id": "0000001027",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309086001",
+        "terminal_id": "74408146",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8494,100.215",
+      "tel": "0-2482-2089",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1ad",
+      "name": "Major Cineplex Lotus Salaya",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส ศาลายา"
+    },
+    {
+      "short_name_en": "Amatanakorn",
+      "short_name_th": "อมตะนคร",
+      "cinema_id": "52",
+      "vista_id": "0000001035",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309175001",
+        "terminal_id": "74408154",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.419,100.999",
+      "tel": "038-457-404",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b0",
+      "name": "Major Cineplex Lotus Amatanakorn",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส อมตะนคร"
+    },
+    {
+      "short_name_en": "Lotus Srinakarin",
+      "short_name_th": "โลตัส ศรีนครินทร์",
+      "cinema_id": "48",
+      "vista_id": "0000001034",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309167001",
+        "terminal_id": "74408153",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "17.6545,102.92",
+      "tel": "0-2175-7771",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1ac",
+      "name": "Major Cineplex Lotus Srinakarin",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส ศรีนครินทร์"
+    },
+    {
+      "short_name_en": "Big C Thunyaburi",
+      "short_name_th": "บิ๊กซี ธัญบุรี",
+      "cinema_id": "50",
+      "vista_id": "0000001031",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309125001",
+        "terminal_id": "74408150",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.6881,100.648",
+      "tel": "0-2577-0033",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1ae",
+      "name": "Major Cineplex Big C Thunyaburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี ธัญบุรี"
+    },
+    {
+      "short_name_en": "UbonRajathani",
+      "short_name_th": "อุบลราชธานี",
+      "cinema_id": "51",
+      "vista_id": "0000001016",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308983001",
+        "terminal_id": "74408136",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "15.2467,104.845",
+      "tel": "045-474-373",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1af",
+      "name": "Major Cineplex Yingcharoen Park UbonRajathani",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ ยิ่งเจริญปาร์ค อุบลราชธานี"
+    },
+    {
+      "short_name_en": "Ngamwongwan - Khae Rai",
+      "short_name_th": "งามวงศ์วาน-แคราย",
+      "cinema_id": "53",
+      "vista_id": "0000001036",
+      "brand_id": "4",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308802001",
+        "terminal_id": "74408120",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8679,100.49",
+      "tel": "0-2591-0393",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 4,
+          "code_name": "ESP",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-esplanade.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-esplanade.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb16a",
+          "name": "Esplanade Cineplex",
+          "name_alt": "เอสพลานาด ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b1",
+      "name": "Esplanade Cineplex Ngamwongwan-Khae Rai",
+      "name_alt": "เอสพลานาด ซีนีเพล็กซ์ งามวงศ์วาน-แคราย"
+    },
+    {
+      "short_name_en": "Mahachai",
+      "short_name_th": "มหาชัย",
+      "cinema_id": "54",
+      "vista_id": "0000001037",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309183001",
+        "terminal_id": "74408155",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.5768,100.278",
+      "tel": "034-442-848",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b2",
+      "name": "Major Cineplex Big C Mahachai",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี มหาชัย"
+    },
+    {
+      "short_name_en": "Chiangrai",
+      "short_name_th": "เชียงราย",
+      "cinema_id": "61",
+      "vista_id": "0000001041",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309222001",
+        "terminal_id": "74408159",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "19.8954,99.8513",
+      "tel": "053-179-720",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b7",
+      "name": "Major Cineplex Central Chiangrai",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล เชียงราย"
+    },
+    {
+      "short_name_en": "Khonkaen Nonmuang",
+      "short_name_th": "ขอนแก่น โนนม่วง",
+      "cinema_id": "63",
+      "vista_id": "0000003012",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309387001",
+        "terminal_id": "74408184",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "16.4714,102.759",
+      "tel": "043-911-730",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b9",
+      "name": "EGV Lotus Khonkaen Nonmuang",
+      "name_alt": "อีจีวี โลตัส ขอนแก่น โนนม่วง"
+    },
+    {
+      "short_name_en": "Saraburi",
+      "short_name_th": "สระบุรี",
+      "cinema_id": "55",
+      "vista_id": "0000001038",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309191001",
+        "terminal_id": "74408156",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.5236,100.923",
+      "tel": "036-711-861",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b3",
+      "name": "Major Cineplex SukAnan Park Saraburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ สุขอนันต์ปาร์ค สระบุรี"
+    },
+    {
+      "short_name_en": "Paradise Cineplex",
+      "short_name_th": "พาราไดซ์ ซีนีเพล็กซ์",
+      "cinema_id": "56",
+      "vista_id": "0000001008",
+      "brand_id": "7",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309492001",
+        "terminal_id": "74408176",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.6857,100.647",
+      "tel": "0-2325-9080",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 7,
+          "code_name": "PRD",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-paradise.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-paradise.png",
+          "order": 8,
+          "id": "576ccf688d526115004eb16c",
+          "name": "Paradise Cineplex",
+          "name_alt": "พาราไดซ์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b4",
+      "name": "Paradise Cineplex",
+      "name_alt": "พาราไดซ์ ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "Kamphaengphet",
+      "short_name_th": "กำแพงเพชร",
+      "cinema_id": "58",
+      "vista_id": "0000001040",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309214001",
+        "terminal_id": "74408158",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "16.4736,99.5395",
+      "tel": "055-853-877",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b6",
+      "name": "Major Cineplex Big C Kamphaengphet",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี กำแพงเพชร"
+    },
+    {
+      "short_name_en": "Samsen",
+      "short_name_th": "สามเสน",
+      "cinema_id": "57",
+      "vista_id": "0000001039",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309206001",
+        "terminal_id": "74408157",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.7802,100.509",
+      "tel": "02-241-9230",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b5",
+      "name": "Major Cineplex Samsen",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ สามเสน"
+    },
+    {
+      "short_name_en": "Central Phitsanulok",
+      "short_name_th": "เซ็นทรัล พิษณุโลก",
+      "cinema_id": "62",
+      "vista_id": "0000001043",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309230001",
+        "terminal_id": "74408160",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "16.8503,100.24",
+      "tel": "055-338-470",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1b8",
+      "name": "Major Cineplex Central Phitsanulok",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล พิษณุโลก"
+    },
+    {
+      "short_name_en": "Chanthaburi",
+      "short_name_th": "จันทบุรี",
+      "cinema_id": "64",
+      "vista_id": "0000001044",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309248001",
+        "terminal_id": "74408161",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "12.601,102.104",
+      "tel": "039-436-476",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1ba",
+      "name": "Major Cineplex Big C Chanthaburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี จันทบุรี"
+    },
+    {
+      "short_name_en": "Bangkae",
+      "short_name_th": "บางแค",
+      "cinema_id": "73",
+      "vista_id": "0000003001",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002294469001",
+        "terminal_id": "74408177",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "13.72,100.432",
+      "tel": "24582990",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1bb",
+      "name": "Grand EGV Seacon Bangkae",
+      "name_alt": "แกรนด์ อีจีวี ซีคอน บางแค"
+    },
+    {
+      "short_name_en": "Nakhonsawan 2",
+      "short_name_th": "นครสวรรค์ 2",
+      "cinema_id": "84",
+      "vista_id": "0000001048",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309272001",
+        "terminal_id": "74408164",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "15.7106,100.148",
+      "tel": "056-370-211",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c0",
+      "name": "Major Cineplex Lotus Nakhonsawan",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส นครสวรรค์"
+    },
+    {
+      "short_name_en": "Mae Sot",
+      "short_name_th": "แม่สอด",
+      "cinema_id": "82",
+      "vista_id": "0000003013",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309395001",
+        "terminal_id": "74408185",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "16.7752,98.7041",
+      "tel": "055-506-880",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1be",
+      "name": "EGV Lotus Mae Sot",
+      "name_alt": "อีจีวี โลตัส แม่สอด"
+    },
+    {
+      "short_name_en": "Mega Cineplex",
+      "short_name_th": "เมกา ซีนีเพล็กซ์",
+      "cinema_id": "79",
+      "vista_id": "0000001045",
+      "brand_id": "8",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002308810001",
+        "terminal_id": "74408121",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.6461,100.68",
+      "tel": "02-105-1567",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 8,
+          "code_name": "MBN",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-mega.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-mega.png",
+          "order": 3,
+          "id": "576ccf688d526115004eb16d",
+          "name": "Mega Cineplex",
+          "name_alt": "เมกา ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1bc",
+      "name": "Mega Cineplex",
+      "name_alt": "เมกา ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "Big C Nakhonsithammarat",
+      "short_name_th": "บิ๊กซี นครศรีธรรมราช",
+      "cinema_id": "81",
+      "vista_id": "0000001046",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309256001",
+        "terminal_id": "74408162",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "8.44009,99.9632",
+      "tel": "0-7534-3482",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1bd",
+      "name": "Major Cineplex Big C Nakhonsithammarat",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี นครศรีธรรมราช"
+    },
+    {
+      "short_name_en": "Roi Et",
+      "short_name_th": "ร้อยเอ็ด",
+      "cinema_id": "83",
+      "vista_id": "0000001047",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309264001",
+        "terminal_id": "74408163",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "15.9033,103.729",
+      "tel": "043-624-745 ",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1bf",
+      "name": "Major Cineplex Big C Roi Et",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี ร้อยเอ็ด"
+    },
+    {
+      "short_name_en": "Ubonratchathani",
+      "short_name_th": "อุบลราชธานี",
+      "cinema_id": "85",
+      "vista_id": "0000001049",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309280001",
+        "terminal_id": "74408165",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "15.2394,104.823",
+      "tel": "045-422-435",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c1",
+      "name": "Major Cineplex Central Ubonratchathani",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล อุบลราชธานี"
+    },
+    {
+      "short_name_en": "Major Big C Suphanburi",
+      "short_name_th": "เมเจอร์ฯ บิ๊กซี สุพรรณบุรี",
+      "cinema_id": "89",
+      "vista_id": "0000001053",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309426001",
+        "terminal_id": "74408169",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.4763,100.106",
+      "tel": "035-494-927",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c5",
+      "name": "Major Cineplex Big C Suphanburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี สุพรรณบุรี"
+    },
+    {
+      "short_name_en": "The Sky Ayutthaya",
+      "short_name_th": "เดอะสกาย อยุธยา",
+      "cinema_id": "88",
+      "vista_id": "0000001052",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309311001",
+        "terminal_id": "74408168",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.3466,100.609",
+      "tel": "035-345-578",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c4",
+      "name": "Major Cineplex The Sky Ayutthaya",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เดอะ สกาย อยุธยา"
+    },
+    {
+      "short_name_en": "Lotus Nongbua Lamphu",
+      "short_name_th": "โลตัส หนองบัวลำภู",
+      "cinema_id": "86",
+      "vista_id": "0000001050",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309298001",
+        "terminal_id": "74408166",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "17.4483,102.79",
+      "tel": "042-312-934",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c2",
+      "name": "Major Cineplex Lotus Nongbua Lamphu",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส หนองบัวลำภู"
+    },
+    {
+      "short_name_en": "Major Robinson Sakonnakhon",
+      "short_name_th": "เมเจอร์ฯ โรบินสัน สกลนคร",
+      "cinema_id": "87",
+      "vista_id": "0000001051",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309303001",
+        "terminal_id": "74408167",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "17.1908,104.099",
+      "tel": "042-971-792",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c3",
+      "name": "Major Cineplex Robinson Sakonnakhon",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โรบินสัน สกลนคร"
+    },
+    {
+      "short_name_en": "Lotus Klaeng",
+      "short_name_th": "โลตัส แกลง",
+      "cinema_id": "90",
+      "vista_id": "0000001054",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309434001",
+        "terminal_id": "74408170",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "12.7826,101.649",
+      "tel": "038-678-257",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c6",
+      "name": "Major Cineplex Lotus Klaeng",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส แกลง"
+    },
+    {
+      "short_name_en": "CentralFestival Chiangmai",
+      "short_name_th": "เซ็นทรัลเฟสติวัล เชียงใหม่",
+      "cinema_id": "91",
+      "vista_id": "0000001055",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309442001",
+        "terminal_id": "74408171",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "18.8024,99.0179",
+      "tel": "053-288-852",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-4dx.png",
+          "order": 2,
+          "id": "576ccf688d526115004eb177",
+          "name": "4DX",
+          "name_alt": "4DX"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c7",
+      "name": "Major Cineplex CentralFestival Chiangmai",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัลเฟสติวัล เชียงใหม่"
+    },
+    {
+      "short_name_en": "IMAX CentralFestival Chiangmai",
+      "short_name_th": "ไอแมกซ์ เซ็นทรัลเฟสติวัล เชียงใหม่",
+      "cinema_id": "91",
+      "vista_id": "0000001055",
+      "brand_id": "5",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309442001",
+        "terminal_id": "74408171",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "is_mirror_cinema": true,
+      "location": "18.8024,99.0179",
+      "tel": "053-288-852",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-imax.png",
+          "order": 1,
+          "id": "576ccf688d526115004eb176",
+          "name": "IMAX",
+          "name_alt": "IMAX"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 5,
+          "code_name": "IMAX",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-imax.png",
+          "order": 12,
+          "id": "576ccf688d526115004eb16b",
+          "name": "Krungsri IMAX",
+          "name_alt": "กรุงศรี ไอแมกซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c8",
+      "name": "Krungsri IMAX Major Cineplex CentralFestival Chiangmai",
+      "name_alt": "กรุงศรี ไอแมกซ์ เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัลเฟสติวัล เชียงใหม่"
+    },
+    {
+      "short_name_en": "Robinson Saraburi",
+      "short_name_th": "โรบินสัน สระบุรี",
+      "cinema_id": "93",
+      "vista_id": "0000001056",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309450001",
+        "terminal_id": "74408172",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.5409,100.95",
+      "tel": "036-351528",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1c9",
+      "name": "Major Cineplex Robinson Saraburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โรบินสัน สระบุรี"
+    },
+    {
+      "short_name_en": "Lotus Suphanburi",
+      "short_name_th": "โลตัส สุพรรณบุรี",
+      "cinema_id": "97",
+      "vista_id": "0000001058",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309476001",
+        "terminal_id": "74408174",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.4693,100.13",
+      "tel": "035-523349",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1cd",
+      "name": "Major Cineplex Lotus Suphanburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส สุพรรณบุรี"
+    },
+    {
+      "short_name_en": "Big C Nakhon Phanom",
+      "short_name_th": "บิ๊กซี นครพนม",
+      "cinema_id": "98",
+      "vista_id": "0000001059",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843438001",
+        "terminal_id": "74417121",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "17.3927,104.769",
+      "tel": "042-532784",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1ce",
+      "name": "Major Cineplex Big C Nakhon Phanom",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี นครพนม"
+    },
+    {
+      "short_name_en": "Robinson Roi Et",
+      "short_name_th": "โรบินสัน ร้อยเอ็ด",
+      "cinema_id": "102",
+      "vista_id": "0000001062",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843462001",
+        "terminal_id": "74417124",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "16.0627,103.619",
+      "tel": "043-540921",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d1",
+      "name": "Major Cineplex Robinson Roi Et",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โรบินสัน ร้อยเอ็ด"
+    },
+    {
+      "short_name_en": "BigC PrachinBuri ",
+      "short_name_th": "บิ๊กซี ปราจีนบุรี",
+      "cinema_id": "100",
+      "vista_id": "0000001060",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843446001",
+        "terminal_id": "74417122",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.9671,101.514",
+      "tel": "037-278705",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1cf",
+      "name": "Major Cineplex Big C Srimahaphot PrachinBuri",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี ศรีมหาโพธิ ปราจีนบุรี"
+    },
+    {
+      "short_name_en": "IMAX CentralFestival Hatyai",
+      "short_name_th": "ไอแมกซ์ เซ็นทรัลเฟสติวัล หาดใหญ่",
+      "cinema_id": "94",
+      "vista_id": "0000001057",
+      "brand_id": "5",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309468001",
+        "terminal_id": "74408173",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "is_mirror_cinema": true,
+      "location": "6.99228,100.483",
+      "tel": "074-339716",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-imax.png",
+          "order": 1,
+          "id": "576ccf688d526115004eb176",
+          "name": "IMAX",
+          "name_alt": "IMAX"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 5,
+          "code_name": "IMAX",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-imax.png",
+          "order": 12,
+          "id": "576ccf688d526115004eb16b",
+          "name": "Krungsri IMAX",
+          "name_alt": "กรุงศรี ไอแมกซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1cb",
+      "name": "Krungsri IMAX Hatyai Cineplex CentralFestival Hatyai",
+      "name_alt": "กรุงศรี ไอแมกซ์ หาดใหญ่ ซีนีเพล็กซ์ เซ็นทรัลเฟสติวัล หาดใหญ่"
+    },
+    {
+      "short_name_en": "CentralFestival Hatyai",
+      "short_name_th": "เซ็นทรัลเฟสติวัล หาดใหญ่",
+      "cinema_id": "94",
+      "vista_id": "0000001057",
+      "brand_id": "9",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002309468001",
+        "terminal_id": "74408173",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "6.99228,100.483",
+      "tel": "074-339716",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-4dx.png",
+          "order": 2,
+          "id": "576ccf688d526115004eb177",
+          "name": "4DX",
+          "name_alt": "4DX"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-reald.png",
+          "order": 4,
+          "id": "576ccf688d526115004eb178",
+          "name": "RealD",
+          "name_alt": "RealD"
+        },
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 9,
+          "code_name": "HYC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-hatyai.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-hatyai.png",
+          "order": 9,
+          "id": "576ccf688d526115004eb16e",
+          "name": "Hatyai Cineplex",
+          "name_alt": "หาดใหญ่ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1ca",
+      "name": "Hatyai Cineplex CentralFestival Hatyai",
+      "name_alt": "หาดใหญ่ ซีนีเพล็กซ์ เซ็นทรัลเฟสติวัล หาดใหญ่"
+    },
+    {
+      "short_name_en": "Lotus Bangyai",
+      "short_name_th": "โลตัส บางใหญ่",
+      "cinema_id": "101",
+      "vista_id": "0000001061",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843454001",
+        "terminal_id": "74417123",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8252,100.412",
+      "tel": "02-4592256",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d0",
+      "name": "Major Cineplex Lotus Bangyai",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส บางใหญ่"
+    },
+    {
+      "short_name_en": "EGV Lotus Songkhla",
+      "short_name_th": "อีจีวี โลตัส สงขลา",
+      "cinema_id": "96",
+      "vista_id": "0000003014",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002309400001",
+        "terminal_id": "74408186",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "7.15344,100.601",
+      "tel": "074-307988",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1cc",
+      "name": "EGV Lotus Songkhla",
+      "name_alt": "อีจีวี โลตัส สงขลา"
+    },
+    {
+      "short_name_en": "Robinson Samut Prakan",
+      "short_name_th": "โรบินสัน สมุทรปราการ",
+      "cinema_id": "103",
+      "vista_id": "0000001063",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843470001",
+        "terminal_id": "74417125",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.5701,100.642",
+      "tel": "02-1742777",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d2",
+      "name": "Major Cineplex Robinson Samut Prakan",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โรบินสัน สมุทรปราการ"
+    },
+    {
+      "short_name_en": "Quartier CineArt",
+      "short_name_th": "ควอเทียร์ ซีเนอาร์ต",
+      "cinema_id": "106",
+      "vista_id": "0000001066",
+      "brand_id": "10",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843501001",
+        "terminal_id": "74417128",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.7312,100.57",
+      "tel": "02-2610199",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-atmos.png",
+          "order": 3,
+          "id": "576ccf688d526115004eb17a",
+          "name": "Dolby Atmos",
+          "name_alt": "Dolby Atmos"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 10,
+          "code_name": "QCA",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-quartier.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-quartier.png",
+          "order": 2,
+          "id": "576ccf688d526115004eb16f",
+          "name": "Quartier CineArt",
+          "name_alt": "ควอเทียร์ ซีเนอาร์ต"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d5",
+      "name": "Quartier CineArt",
+      "name_alt": "ควอเทียร์ ซีเนอาร์ต"
+    },
+    {
+      "short_name_en": "IMAX Quartier CineArt",
+      "short_name_th": "ไอแมกซ์ ควอเทียร์ ซีเนอาร์ต",
+      "cinema_id": "106",
+      "vista_id": "0000001066",
+      "brand_id": "11",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843501001",
+        "terminal_id": "74417128",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "is_mirror_cinema": true,
+      "location": "13.7312,100.57",
+      "tel": "02-2610199",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-imax.png",
+          "order": 1,
+          "id": "576ccf688d526115004eb176",
+          "name": "IMAX",
+          "name_alt": "IMAX"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 11,
+          "code_name": "IMAX",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax-toyota.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-quartier.png",
+          "order": 13,
+          "id": "576ccf688d526115004eb170",
+          "name": "Toyota IMAX",
+          "name_alt": "โตโยต้า ไอแมกซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d6",
+      "name": "Toyota IMAX Quartier CineArt",
+      "name_alt": "โตโยต้า ไอแมกซ์ ควอเทียร์ ซีเนอาร์ต"
+    },
+    {
+      "short_name_en": "Central Rayong",
+      "short_name_th": "เมเจอร์ฯ ระยอง",
+      "cinema_id": "109",
+      "vista_id": "0000001067",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002792019001",
+        "terminal_id": "74418140",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "12.6969,101.269",
+      "tel": "038-942695",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d8",
+      "name": "Major Cineplex Central Rayong",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล ระยอง"
+    },
+    {
+      "short_name_en": "Lotus Nakhonsithammarat",
+      "short_name_th": "โลตัส นครศรีธรรมราช",
+      "cinema_id": "108",
+      "vista_id": "0000003015",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002792035001",
+        "terminal_id": "74418142",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "8.39809,99.9753",
+      "tel": "0-7577-4885",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d7",
+      "name": "EGV Lotus Nakhonsithammarat",
+      "name_alt": "อีจีวี โลตัส นครศรีธรรมราช"
+    },
+    {
+      "short_name_en": "Major Phang Nga",
+      "short_name_th": "เมเจอร์ฯ พังงา",
+      "cinema_id": "104",
+      "vista_id": "0000001064",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843488001",
+        "terminal_id": "74417126",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "8.45027,98.5297",
+      "tel": "076-414282",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d3",
+      "name": "Major Cineplex Phang Nga",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ พังงา"
+    },
+    {
+      "short_name_en": "Major Robinson Mukdahan",
+      "short_name_th": "เมเจอร์ฯ โรบินสัน มุกดาหาร",
+      "cinema_id": "105",
+      "vista_id": "0000001065",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002843496001",
+        "terminal_id": "74417127",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "16.5694,104.72",
+      "tel": "042-672459",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d4",
+      "name": "Major Cineplex Robinson Mukdahan",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โรบินสัน มุกดาหาร"
+    },
+    {
+      "short_name_en": "Lotus Suratthani",
+      "short_name_th": "โลตัส สุราษฎร์ธานี",
+      "cinema_id": "117",
+      "vista_id": "0000003017",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401003105176001",
+        "terminal_id": "74420260",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "9.1029,99.3068",
+      "tel": "077-405235",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1dc",
+      "name": "EGV Lotus Suratthani",
+      "name_alt": "อีจีวี โลตัส สุราษฎร์ธานี"
+    },
+    {
+      "short_name_en": "Westgate Cineplex",
+      "short_name_th": "เวสต์เกต ซีนีเพล็กซ์",
+      "cinema_id": "118",
+      "vista_id": "0000001070",
+      "brand_id": "12",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003105184001",
+        "terminal_id": "74420261",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8746,100.408",
+      "tel": "02-1942979",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-4dx.png",
+          "order": 2,
+          "id": "576ccf688d526115004eb177",
+          "name": "4DX",
+          "name_alt": "4DX"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 12,
+          "code_name": "CWG",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-westgate.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-westgate.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb171",
+          "name": "Westgate Cineplex",
+          "name_alt": "เวสต์เกต ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1dd",
+      "name": "Westgate Cineplex",
+      "name_alt": "เวสต์เกต ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "Major Big C Nan",
+      "short_name_th": "เมเจอร์ฯ บิ๊กซี น่าน",
+      "cinema_id": "110",
+      "vista_id": "0000001068",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002792001001",
+        "terminal_id": "74418139",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "18.7838,100.747",
+      "tel": "054-711192",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1d9",
+      "name": "Major Cineplex Big C Nan",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี น่าน"
+    },
+    {
+      "short_name_en": "Sahathai Suratthani",
+      "short_name_th": "สหไทย สุราษฎร์ธานี",
+      "cinema_id": "115",
+      "vista_id": "0000001069",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003232232001",
+        "terminal_id": "74422927",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "9.14444,99.3265",
+      "tel": "077-205825",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1db",
+      "name": "Major Cineplex Sahathai Suratthani",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ สหไทย สุราษฎร์ธานี"
+    },
+    {
+      "short_name_en": "Big C Udonthani",
+      "short_name_th": "บิ๊กซี อุดรธานี",
+      "cinema_id": "113",
+      "vista_id": "0000003016",
+      "brand_id": "2",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401002792027001",
+        "terminal_id": "74418141",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "17.3868,102.824",
+      "tel": "042-242062",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 2,
+          "code_name": "EGV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
+          "order": 15,
+          "id": "576ccf688d526115004eb168",
+          "name": "EGV",
+          "name_alt": "อีจีวี"
+        }
+      ],
+      "id": "576ccf688d526115004eb1da",
+      "name": "EGV Big C Udonthani",
+      "name_alt": "อีจีวี บิ๊กซี อุดรธานี"
+    },
+    {
+      "short_name_en": "IMAX Westgate Cineplex",
+      "short_name_th": "ไอแมกซ์ เวสต์เกต ซีนีเพล็กซ์",
+      "cinema_id": "118",
+      "vista_id": "0000001070",
+      "brand_id": "11",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003105184001",
+        "terminal_id": "74420261",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "is_mirror_cinema": true,
+      "location": "13.8746,100.408",
+      "tel": "02-1942979",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-imax.png",
+          "order": 1,
+          "id": "576ccf688d526115004eb176",
+          "name": "IMAX",
+          "name_alt": "IMAX"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 11,
+          "code_name": "IMAX",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax-toyota.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-quartier.png",
+          "order": 13,
+          "id": "576ccf688d526115004eb170",
+          "name": "Toyota IMAX",
+          "name_alt": "โตโยต้า ไอแมกซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1de",
+      "name": "Toyota IMAX Westgate Cineplex",
+      "name_alt": "โตโยต้า ไอแมกซ์ เวสต์เกต ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": " Lotus Khonkaen Pratunam",
+      "short_name_th": "โลตัส ขอนแก่น ประตูน้ำ",
+      "cinema_id": "121",
+      "vista_id": "0000001072",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003105207001",
+        "terminal_id": "74420263",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "16.4008,102.817",
+      "tel": "043-472590",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e0",
+      "name": "Major Cineplex Lotus Khonkaen Pratunam",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส ขอนแก่น ประตูน้ำ"
+    },
+    {
+      "short_name_en": "Eastville Cineplex ",
+      "short_name_th": "อีสต์วิลล์ ซีนีเพล็กซ์",
+      "cinema_id": "123",
+      "vista_id": "0000001074",
+      "brand_id": "14",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003232240001",
+        "terminal_id": "74422928",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8038,100.614",
+      "tel": "02-5536169",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-4dx.png",
+          "order": 2,
+          "id": "576ccf688d526115004eb177",
+          "name": "4DX",
+          "name_alt": "4DX"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 14,
+          "code_name": "ESV",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-eastville.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-eastville.png",
+          "order": 6,
+          "id": "576ccf688d526115004eb173",
+          "name": "Eastville Cineplex ",
+          "name_alt": "อีสต์วิลล์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e2",
+      "name": "Eastville Cineplex ",
+      "name_alt": "อีสต์วิลล์ ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "Promenade Cineplex",
+      "short_name_th": "พรอมานาด ซีนีเพล็กซ์",
+      "cinema_id": "122",
+      "vista_id": "0000001073",
+      "brand_id": "13",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003105215001",
+        "terminal_id": "74420264",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.8267,100.677",
+      "tel": "02-1304283",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-4dx.png",
+          "order": 2,
+          "id": "576ccf688d526115004eb177",
+          "name": "4DX",
+          "name_alt": "4DX"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 13,
+          "code_name": "CPM",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-promenade.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-promenade.png",
+          "order": 7,
+          "id": "576ccf688d526115004eb172",
+          "name": "Promenade Cineplex",
+          "name_alt": "พรอมานาด ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e1",
+      "name": "Promenade Cineplex",
+      "name_alt": "พรอมานาด ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "Diana Cineplex",
+      "short_name_th": "ไดอาน่า ซีนีเพล็กซ์",
+      "cinema_id": "124",
+      "vista_id": "0000003018",
+      "brand_id": "15",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401003232224001",
+        "terminal_id": "74422926",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "6.99808,100.478",
+      "tel": "074-221041",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 15,
+          "code_name": "DHY",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-diana.png",
+          "ticket_image": null,
+          "order": 10,
+          "id": "576ccf688d526115004eb174",
+          "name": "Diana Cineplex",
+          "name_alt": "ไดอาน่า ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e3",
+      "name": "Diana Cineplex",
+      "name_alt": "ไดอาน่า ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "CentralFestival Samui",
+      "short_name_th": "เซ็นทรัลเฟสติวัล สมุย",
+      "cinema_id": "120",
+      "vista_id": "0000001071",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 1,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003105192001",
+        "terminal_id": "74420262",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "9.53186,100.061",
+      "tel": "077-410553",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1df",
+      "name": "Major Cineplex CentralFestival Samui",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัลเฟสติวัล สมุย"
+    },
+    {
+      "short_name_en": "Lotus Satun",
+      "short_name_th": "โลตัส สตูล",
+      "cinema_id": "130",
+      "vista_id": "0000001079",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003291812001",
+        "terminal_id": "74423931",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "6.752234,100.066939",
+      "tel": "074-751049",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e9",
+      "name": "Major Cineplex Lotus Satun",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส สตูล"
+    },
+    {
+      "short_name_en": "Big C Lopburi",
+      "short_name_th": "บิ๊กซี  ลพบุรี",
+      "cinema_id": "125",
+      "vista_id": "0000001075",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003232266001",
+        "terminal_id": "74422930",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.7936,100.672",
+      "tel": "036-784385",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e4",
+      "name": "Major Cineplex Big C Lopburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี ลพบุรี"
+    },
+    {
+      "short_name_en": "Major BigC Ratchaburi",
+      "short_name_th": "บิ๊กซี ราชบุรี",
+      "cinema_id": "126",
+      "vista_id": "0000001076",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003232258001",
+        "terminal_id": "74422929",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "13.5508,99.823",
+      "tel": "032-328171",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e5",
+      "name": "Major Cineplex Big C Ratchaburi",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี ราชบุรี"
+    },
+    {
+      "short_name_en": "Phayao",
+      "short_name_th": "พะเยา",
+      "cinema_id": "127",
+      "vista_id": "0000001077",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003232274001",
+        "terminal_id": "74422968",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "19.1716,99.8987",
+      "tel": "054-481633",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e6",
+      "name": "Major Cineplex Phayao",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ พะเยา"
+    },
+    {
+      "short_name_en": "Ayutthaya City Park Cineplex",
+      "short_name_th": "อยุธยาซิตี้พาร์ค ซีนีเพล็กซ์",
+      "cinema_id": "128",
+      "vista_id": "0000003019",
+      "brand_id": "16",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "627ADMEGV",
+        "merchant_id": "401003291820001",
+        "terminal_id": "74423924",
+        "md5": "QxMjcGFzc3MOIQ=v09UTdPa39ENERBTU"
+      },
+      "location": "14.3354,100.612",
+      "tel": "035-801973",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 16,
+          "code_name": "ACP",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-ayutthayacitypark.png",
+          "ticket_image": null,
+          "order": 11,
+          "id": "576ccf688d526115004eb175",
+          "name": "Ayutthaya City Park Cineplex",
+          "name_alt": "อยุธยาซิตี้พาร์ค ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e7",
+      "name": "Ayutthaya City Park Cineplex",
+      "name_alt": "อยุธยาซิตี้พาร์ค ซีนีเพล็กซ์"
+    },
+    {
+      "short_name_en": "Big C Ranong",
+      "short_name_th": "บิ๊กซี ระนอง",
+      "cinema_id": "129",
+      "vista_id": "0000001078",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401003291804001",
+        "terminal_id": "74423923",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "9.972236,98.644909",
+      "tel": "077-880185",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "576ccf688d526115004eb1e8",
+      "name": "Major Cineplex Big C Ranong",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี ระนอง"
+    },
+    {
+      "tel": "",
+      "location": "0,0",
+      "kbank": {
+        "md5": "",
+        "terminal_id": "",
+        "merchant_id": "",
+        "username": ""
+      },
+      "is_sell_3d_glasses": 0,
+      "is_showtime_only": 0,
+      "brand_id": "",
+      "vista_id": "",
+      "cinema_id": "",
+      "short_name_th": "",
+      "short_name_en": "",
+      "zones": [],
+      "systems": [],
+      "brands": [],
+      "id": "57a08b574e521b150029f0ca",
+      "name": "",
+      "name_alt": ""
+    },
+    {
+      "tel": "",
+      "location": "0,0",
+      "kbank": {
+        "md5": "",
+        "terminal_id": "",
+        "merchant_id": "",
+        "username": ""
+      },
+      "is_sell_3d_glasses": 0,
+      "is_showtime_only": 0,
+      "brand_id": "",
+      "vista_id": "",
+      "cinema_id": "",
+      "short_name_th": "",
+      "short_name_en": "",
+      "zones": [],
+      "systems": [],
+      "brands": [],
+      "id": "57a08b5c4e521b150029f0cb",
+      "name": "",
+      "name_alt": ""
+    },
+    {
+      "short_name_en": "Lotus Nakhon Pathom",
+      "short_name_th": "โลตัส นครปฐม",
+      "cinema_id": "131",
+      "vista_id": "0000001080",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk",
+        "terminal_id": "74408264",
+        "merchant_id": "401002324052001",
+        "username": "078MAJORCNP"
+      },
+      "location": "13.8077693,100.0529314",
+      "tel": "034-275429",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "57b4a0d0d19d298eb3975dcb",
+      "name": "Major Cineplex Lotus Nakhon Pathom",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส นครปฐม"
+    },
+    {
+      "short_name_en": "Big C Buriram",
+      "short_name_th": "บิ๊กซี บุรีรัมย์",
+      "cinema_id": "132",
+      "vista_id": "0000001082",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002324052001",
+        "terminal_id": "74408264",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "14.9773016,103.0716796",
+      "tel": "044-690439",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "57ceb41b89b77481b764d15f",
+      "name": "Major Cineplex Big C Buriram",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี บุรีรัมย์"
+    },
+    {
+      "short_name_en": "Lotus Nadee",
+      "short_name_th": "โลตัส นาดี์",
+      "cinema_id": "133",
+      "vista_id": "0000001081",
+      "brand_id": "1",
+      "is_showtime_only": 0,
+      "is_sell_3d_glasses": 0,
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002324052001",
+        "terminal_id": "74408264",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "location": "17.381681,102.745879",
+      "tel": "042-130598",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 1,
+          "code_name": "MJC",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
+          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
+          "order": 14,
+          "id": "576ccf688d526115004eb167",
+          "name": "Major Cineplex",
+          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "57da8dc689b77481b764d160",
+      "name": "Major Cineplex Lotus Nadee Udonthani",
+      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส นาดี อุดรธานี"
+    }
+  ],
+  "elements_total": 106,
+  "page_index": 1,
+  "page_size": 10,
+  "page_total": 1
+}

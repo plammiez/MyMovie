@@ -1,0 +1,934 @@
+{
+  "elements": [
+    {
+      "_id": "57eb49490169910100396060",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002526"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2967/2967_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1692/thumb_1692.jpg?b=117267",
+      "synopsis": "จื่อเสียและชิงเสียเป็นสองนางฟ้าฝาแฝด จื่อเสียรักกับจุนเป่า ซึ่งอีกห้าร้อยปีก็คือหงอคง แต่จื่อเสียแอบใช้กล่องแสงจันทน์เพื่อไปดูอนาคต ทำให้รู้ว่านางจะรักกับหงอคงไม่ได้ หากนางรักกับหงอคง นางต้องตาย นางจึงพยายามจะเลิกกับจุนเป่า ซึ่งในขณะเดียวกัน วานรหกหูได้ปลอมตัวเป็นหงอคง โดยจะจับพระถังซัมจั๋งกิน ทำให้ถูกเจ้าแม่กวนอิมจับไว้ ส่งมอบให้เง็กเซียงฮ่องเต้ แต่เง็กเซียงฮ่องเต้กลับปล่อยวานรหกหูออกมา แท้จริงทั้งหมดเป็นแผนของเง็กเซียงฮ่องเต้ เพื่อจะปกปิดความผิดที่ตัวเองเขียนเทียนสูผิดพลาด ต้องลุ้นแล้วว่าหงอคงจะแก้วิกฤตครั้งนี้ได้หรือไม่ และความรักของเขาจะเป็นอย่างไร ติดตามความสนุกสุดซึ้งวันที่ 22 กันยายนนี้ทุกโรงภาพยนตร์\r\n",
+      "release_date": "2016-09-22T00:00:00+07:00",
+      "duration": 93,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1692/cover_1692.jpg?b=156364",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1692/bg_1692.jpg",
+      "genres": [
+        "Fantasy"
+      ],
+      "directors": [
+        "Jeffery Lau"
+      ],
+      "attribute": [],
+      "actors": [
+        "Jing Wu",
+        "Karen Mok",
+        "Yan Tang "
+      ],
+      "id": "57eb49490169910100396060",
+      "name": "A Chinese Odyssey 3",
+      "name_alt": "ไซอิ๋ว เดี๋ยวลิงเดี๋ยวคน 3"
+    },
+    {
+      "_id": "57eb49490169910100396061",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002528",
+        "576ccf698d526115004eb4a6": "HO00002527"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2950/2950_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1681/thumb_1681.jpg?b=92616",
+      "synopsis": "เตรียมพบกับปรากฏการณ์สยองขวัญครั้งใหม่ ที่จะทำให้หลอนจนไม่มีวันลืม เรื่องราวของกลุ่มวัยรุ่นกลุ่มหนึ่งที่ไปเที่ยวตั้งแคมป์กันในป่า ช่วงเวลาพักร้อนครั้งนี้ ดูเหมือนจะเป็นเวลาที่ให้พวกเขาได้พักกายพักใจ ลืมเรื่องราวอันวุ่นวายในตัวเมืองไปเสียให้หมด แต่เมื่อเวลาผ่านไป พวกเขากลับเริ่มรู้สึกว่า มีบางสิ่งที่คืบคลานอยู่ในป่า เข้าใกล้ตัวขึ้นมาเรื่อยๆ และที่ยิ่งไปกว่านั้นคือ สิ่งที่คืบคลานอยู่ในความมืดนั้น จ้องจะเอาชีวิตของพวกเขาอย่างโหดเหี้ยม สร้างความสยองที่หลายสำนักต่างการันตีว่า นี่เป็นหนึ่งในหนังผีที่น่ากลัวที่สุดที่โลกเคยสัมผัส! \r\n \r\n",
+      "release_date": "2016-09-22T00:00:00+07:00",
+      "duration": 89,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1681/cover_1681.jpg?b=185922",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1681/bg_1681.jpg",
+      "genres": [
+        "Horror"
+      ],
+      "directors": [
+        "Adam Wingard"
+      ],
+      "attribute": [],
+      "actors": [
+        "Corbin Reid",
+        "Wes Robinson",
+        "Valorie Curry"
+      ],
+      "id": "57eb49490169910100396061",
+      "name": "Blair Witch",
+      "name_alt": "แบลร์ วิทช์ ตำนานผีดุ"
+    },
+    {
+      "_id": "57eb49490169910100396062",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002536"
+      },
+      "rating": "TBC",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "sale_today": false,
+      "advance_ticket": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/3018/3018_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1746/thumb_1746.jpg?b=57996",
+      "synopsis": "Mitsuo (Shunsuke Kazama), a boxer on the verge of turning 30, has dedicated his life to the sport. He needs only one more victory before he can start taking on the world.\r\n\r\nEverything changes when he meets two kittens: Tiny, a male, and Blackie, a female. They have been taken in off the street by his older brother (Takeshi Tsuruno), a manga creator who lets him stay at his apartment free of charge. While his elder sibling struggles to meet an impending deadline, Mitsuo finds himself with no other choice but to look after the cats...\r\n",
+      "release_date": "2016-09-29T00:00:00+07:00",
+      "duration": 103,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1746/cover_1746.jpg?b=104794",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1746/bg_1746.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        "Yamamoto Toru"
+      ],
+      "attribute": [
+        {
+          "name": "Advance Ticket",
+          "icon_image": "http://movieplus.majorcineplex.com/images/movie_attribute/but_menu_advance_ticket.png"
+        }
+      ],
+      "actors": [
+        "Kazama Shunsuke ",
+        "Sugisaku ,Tsuruno Takeshi ,Matsuoka Mayu"
+      ],
+      "id": "57eb49490169910100396062",
+      "name": "Cat Dont Come When You Call",
+      "name_alt": "แมวเหมียวเรียกทำไมไม่มา"
+    },
+    {
+      "_id": "57eb49490169910100396063",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002495",
+        "576ccf698d526115004eb4a8": "HO00002494"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "sale_today": false,
+      "advance_ticket": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2843/2843_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1612/thumb_1612.jpg?b=95004",
+      "synopsis": "“Deepwater Horizon” ภาพยนตร์แนวมหันตภัยฟอร์มยักษ์ ที่สร้างมาจากเรื่องจริงของเหตุการณ์แท่นขุดเจาะน้ำมันระเบิดครั้งที่ยิ่งใหญ่ที่สุดครั้งหนึ่งในหน้าประวัติศาสตร์ โดยภาพยนตร์บอกเล่าถึงความกล้าหาญของเหล่าบรรดาคนงานบนแท่นขุดเจาะน้ำมันดิบชื่อว่า “ดีปวอเทอร์ ฮอไรซัน”  ในอ่าวเม็กซิโกเมื่อปี 2010 ที่ต้องพยายามเอาชีวิตทั้งของตนเองและพวกพ้องให้รอดจากมหันตภัยครั้งนี้ ซึ่งนับเป็นเหตุการณ์ท้าทายขีดจำกัดของมนุษย์ที่ถูกบันทึกไว้ว่าเป็น การรั่วไหลนอกชายฝั่งครั้งที่ใหญ่ที่สุดในประวัติศาสตร์สหรัฐอเมริกา\r\n",
+      "release_date": "2016-09-29T00:00:00+07:00",
+      "duration": 107,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1612/cover_1612.jpg?b=103026",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1612/bg_1612.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        "Peter Berg"
+      ],
+      "attribute": [
+        {
+          "name": "Advance Ticket",
+          "icon_image": "http://movieplus.majorcineplex.com/images/movie_attribute/but_menu_advance_ticket.png"
+        }
+      ],
+      "actors": [
+        "Mark Wahlberg",
+        "Kate Hudson",
+        "Dylan O'Brien"
+      ],
+      "id": "57eb49490169910100396063",
+      "name": "Deepwater Horizon",
+      "name_alt": "ฝ่าวิบัติเพลิงนรก"
+    },
+    {
+      "_id": "57eb49490169910100396064",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002512",
+        "576ccf698d526115004eb4a6": "HO00002511"
+      },
+      "rating": "น18+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2963/2963_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1636/thumb_1636.jpg?b=64425",
+      "synopsis": "A trio of reckless thieves breaks into the house of a wealthy blind man, thinking they&#39;ll get away with the perfect heist. They&#39;re wrong.\r\n",
+      "release_date": "2016-09-15T00:00:00+07:00",
+      "duration": 88,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1636/cover_1636.jpg?b=97971",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1636/bg_1636.jpg",
+      "genres": [
+        "Horror"
+      ],
+      "directors": [
+        "Fede Alvarez"
+      ],
+      "attribute": [],
+      "actors": [
+        "Daniel Zovatto",
+        "Jane Levy",
+        "Stephen Lang"
+      ],
+      "id": "57eb49490169910100396064",
+      "name": "Dont Breathe",
+      "name_alt": "ลมหายใจสั่งตาย"
+    },
+    {
+      "_id": "57eb49490169910100396066",
+      "vista_ids": {
+        "576ccf698d526115004eb4a5": "HO00002533",
+        "576ccf698d526115004eb4a3": "HO00002534"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "sale_today": false,
+      "advance_ticket": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2859/2859_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1574/thumb_1574.jpg?b=105832",
+      "synopsis": "",
+      "release_date": "2016-09-29T00:00:00+07:00",
+      "duration": 127,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1574/cover_1574.jpg?b=226355",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1574/bg_1574.jpg",
+      "genres": [
+        "Fantasy"
+      ],
+      "directors": [
+        "Tim Burton"
+      ],
+      "attribute": [
+        {
+          "name": "Advance Ticket",
+          "icon_image": "http://movieplus.majorcineplex.com/images/movie_attribute/but_menu_advance_ticket.png"
+        }
+      ],
+      "actors": [
+        "Ella Purnell",
+        "Eva Green",
+        "Asa Butterfield "
+      ],
+      "id": "57eb49490169910100396066",
+      "name": "Miss Peregrine",
+      "name_alt": "บ้านเพริกริน เด็กสุดมหัศจรรย์"
+    },
+    {
+      "_id": "57eb49490169910100396065",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002488"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2952/2952_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1662/thumb_1662.jpg?b=73872",
+      "synopsis": "‘เด่นชัย’ (เต๋อ ฉันทวิชช์ ธนะเสวี) เจ้าหน้าที่ไอทีสุดเนิร์ดประจำออฟฟิศวัย 30 ผู้จะมีตัวตนในสายตาพนักงานคนอื่น แค่เวลาอุปกรณ์คอมพิวเตอร์เสีย ในชั่วโมงทำงานที่แสนเร่งรีบไม่มีใครสนใจ แม้แต่จะจำชื่อของเด่นชัย จนเขาแอบน้อยใจอยู่บ่อยๆ จนกระทั่งวันที่เขาได้ไปซ่อมปรินเตอร์ให้ ‘นุ้ย’ (มิว นิษฐา จิรยั่งยืน) มาร์เก็ตติ้งสาวคนสวยผู้จดจำชื่อจริงของเขาได้ เด่นชัยตกหลุมรักความน่ารักและจริงใจของนุ้ยที่ทำให้เขารู้สึกเหมือนมีตัวตนขึ้นมา แต่ก็ทำได้เพียงเฝ้าเก็บรายละเอียดและดูแลเธออยู่ห่างๆ เพราะรู้ดีว่าหมาอย่างเขาคงได้แค่แหงนมองเครื่องบิน\r\nแต่แล้ว เมื่อบริษัทของเด่นชัยพาพนักงานไปเที่ยวเอาท์ติ้งยังสกีรีสอร์ทที่ฮอกไกโด เด่นชัยได้ขอพรกับระฆังแห่งความรักของรีสอร์ทให้เขาได้เป็นแฟนกับนุ้ยแค่วันเดียวก็ยังดี โชคชะตาเล่นตลกเมื่อนุ้ยประสบอุบัติเหตุจากสกีจนหมดสติ พอนุ้ยฟื้นก็กลับมีอาการ ‘โรคความจำเสื่อมชั่วคราว’ ที่เรียกกันว่าโรค TGA ซึ่งเป็นโรคความจำเสื่อมที่จะมีอาการอยู่เพียงแค่ 1 วันเท่านั้น...\r\n​เด่นชัยคิดว่านี่เป็นโอกาสเดียวที่คนอย่างเขาจะได้ใกล้ชิดกับนุ้ย เขาตัดสินใจสวมรอยหลอกนุ้ยว่าทั้งสองเป็นแฟนกัน และอยู่เที่ยวต่อกันเพียงสองคน เด่นชัยตั้งใจว่าจะพานุ้ยไปเที่ยวในทุกๆ ที่ที่เธออยากไปในฮอกไกโด ใช้เวลาสุดพิเศษของเขากับเธอในฐานะแฟน แม้ว่ามันจะเป็นการเป็นแฟนกันเพียงแค่วันเดียวก็ตาม...\r\n",
+      "release_date": "2016-09-01T00:00:00+07:00",
+      "duration": 136,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1662/cover_1662.jpg?b=110378",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1662/bg_1662.jpg",
+      "genres": [
+        ""
+      ],
+      "directors": [
+        "บรรจง ปิสัญธนะกูล"
+      ],
+      "attribute": [],
+      "actors": [
+        "เต๋อ ฉันทวิชช์ ธนะเสวี",
+        "มิว นิษฐา จิรยั่งยืน"
+      ],
+      "id": "57eb49490169910100396065",
+      "name": "Fanday",
+      "name_alt": "แฟนกันแค่วันเดียว"
+    },
+    {
+      "_id": "57eb49490169910100396067",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002529"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2966/2966_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1587/thumb_1587.jpg?b=68762",
+      "synopsis": "In 1967, four undercover CIA agents were sent to NASA posing as a documentary film crew. What they discovered led to one of the biggest conspiracies in American history.\r\n",
+      "release_date": "2016-09-22T00:00:00+07:00",
+      "duration": 94,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1587/cover_1587.jpg?b=129432",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1587/bg_1587.jpg",
+      "genres": [
+        "Thriller"
+      ],
+      "directors": [
+        "Matt Johnson "
+      ],
+      "attribute": [],
+      "actors": [
+        "Matt Johnson ",
+        "Owen Williams",
+        "Josh Boles"
+      ],
+      "id": "57eb49490169910100396067",
+      "name": "Operation Avalanche",
+      "name_alt": "ปฏิบัติการลวงโลก"
+    },
+    {
+      "_id": "57eb49490169910100396068",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002517"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2964/2964_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1690/thumb_1690.jpg?b=86045",
+      "synopsis": "เดิมทีแม่ใหญ่แดงอยากให้ปราณีไปอยู่กับไมเคิลเขยฝรั่ง เพื่อปากท้องและชีวิตที่ดีขึ้น แต่ด้วยปราณีตั้งท้องกับไมเคิลได้ 8 เดือน ใกล้คลอดเต็มที ไมเคิลจะพาปราณีไปคลอดและรับมรดกที่ต่างประเทศ แม่แดงเลยคิดการณ์ใหญ่ปรึกษาเพื่อนและวางแผนจัดงานบุญอุทิศส่วนกุศลให้ตัวเองและปู่ย่าตายาย เพื่อถ่วงเวลาให้ปราณีได้คลอดลูกที่บ้านเกิด โดยการไปว่าจ้างคณะหมอลำของเพื่อนรัก แต่เมื่อไปถึงคณะหมอลำก็ปิดตัวลง เหลือเพียงพ่อคูณและเคนลูกชายคนเดียวของนวลที่คลั่งไคล้ในศิลปินเกาหลี ด้วยความที่แม่แดงเป็นเพื่อนรักของเมีย พ่อคูณจึงรับปากตั้งวงหมอลำขึ้นมาอีกครั้งเพื่อรับงานแม่แดง วรรณและเพื่อนผู้สาวไทบ้านเลี้ยงควายที่ใฝ่ฝันอยากเป็นหมอลำจึงชวนกันมาสมัครเข้าร่วมวง ส่วนเคนกับแก๊งค์เกาหลีไทบ้านก็พากันฝึกเต้นคัฟเวอร์แดนซ์ ไปประกวดชิงแชมป์ระดับประเทศ แต่ด้วยเหตุการณ์บางอย่างที่ทำให้เคนต้องเปลี่ยนใจกลับมาสร้างวงหมอลำ ความรักระหว่าง เคนหนุ่มเกาหลีกับวรรณสาวหมอลำจึงก่อเกิดขึ้น และเคนจะพาวงหมอลำไปแสดงงานบุญแม่แดงได้หรือไม่ และปราณีลูกแม่แดงกับไมเคิลจะได้กลับเมืองนอกหรือไม่ ติดตามชมพวกเขาได้ในโรงภาพยนตร์\r\n",
+      "release_date": "2016-09-15T00:00:00+07:00",
+      "duration": 116,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1690/cover_1690.jpg?b=159844",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1690/bg_1690.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "directors": [
+        "อุเทน ศรีริวิ"
+      ],
+      "attribute": [],
+      "actors": [
+        "เต๋า ภูศิลป์ วารินรักษ์,แอน อรดี,เนยหวาน นภัสนันท์,มาร์ติน วิลเลอร์"
+      ],
+      "id": "57eb49490169910100396068",
+      "name": "Poo-Baow-Tai-Ban 2",
+      "name_alt": "ผู้บ่าวไทบ้าน 2"
+    },
+    {
+      "_id": "57eb49490169910100396069",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002506"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2993/2993_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1638/thumb_1638.jpg?b=90420",
+      "synopsis": "Godzilla Resurgence  is an upcoming Japanese science fiction kaiju film featuring Godzilla, produced and distributed by Toho. It is the 31st film in the Godzilla franchise and the 29th Godzilla film produced by Toho. It is Toho&#39;s first Godzilla film in 12 years since Godzilla: Final Wars (2004) and is intended to be Toho&#39;s own reboot of the franchise. The film is co-directed by Hideaki Anno and Shinji Higuchi with the screenplay written by Anno and the special effects directed by Higuchi.\r\n",
+      "release_date": "2016-09-08T00:00:00+07:00",
+      "duration": 120,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1638/cover_1638.jpg?b=113231",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1638/bg_1638.jpg",
+      "genres": [
+        "Sci-Fi"
+      ],
+      "directors": [
+        "Hideaki Anno,Shinji Higuchi"
+      ],
+      "attribute": [],
+      "actors": [
+        "Hiroki Hasegawa,Yutaka Takenouchi,Satomi Ishihara"
+      ],
+      "id": "57eb49490169910100396069",
+      "name": "Shin Godzilla",
+      "name_alt": "ก็อดซิลล่า"
+    },
+    {
+      "_id": "57eb4949016991010039606b",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002516"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2889/2889_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1645/thumb_1645.jpg?b=62636",
+      "synopsis": "Ryota (Hiroshi Abe) is an unpopular writer although he won a literary award 15 years ago. Now, Ryota works as a private detective. He is divorced from his ex-wife Kyoko (Yoko Maki) and he has an 11-years-old son Shingo (Taiyo Yoshizawa). His mother Yoshiko (Kirin Kiki) lives alone at her apartment. One day, Ryota, his ex-wife Kyoko, and son Shingo gather at Yoshiko&#39;s apartment. A typhoon passes and the family must stay there all night long.\r\n",
+      "release_date": "2016-09-15T00:00:00+07:00",
+      "duration": 118,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1645/cover_1645.jpg?b=69777",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1645/bg_1645.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        "Hirokazu Koreeda"
+      ],
+      "attribute": [],
+      "actors": [
+        "Hiroshi Abe,Yōko Maki,Taiyô Yoshizawa,Kirin Kiki,Satomi Kobayashi"
+      ],
+      "id": "57eb4949016991010039606b",
+      "name": "After the Storm",
+      "name_alt": "รักได้มั้ย พ่อคนนี้"
+    },
+    {
+      "_id": "57eb4949016991010039606a",
+      "vista_ids": {
+        "576ccf698d526115004eb4ac": "HO00002525"
+      },
+      "rating": "TBC",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2985/2985_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1704/thumb_1704.jpg?b=86736",
+      "synopsis": "An exploration of Earth and beyond as seen from the International Space Station. Narrated by Jennifer Lawrence.\r\n",
+      "release_date": "2016-09-22T00:00:00+07:00",
+      "duration": 49,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1704/cover_1704.jpg?b=86014",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1704/bg_1704.jpg",
+      "genres": [
+        "Documentary"
+      ],
+      "directors": [
+        ""
+      ],
+      "attribute": [],
+      "actors": [
+        "Jennifer Lawrence"
+      ],
+      "id": "57eb4949016991010039606a",
+      "name": "A Beautiful Planet",
+      "name_alt": "อะ บิวตี้ฟูล เพลนเน็ต"
+    },
+    {
+      "_id": "57eb4949016991010039606c",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002510"
+      },
+      "rating": "TBC",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1723/thumb_1723.jpg?b=72758",
+      "synopsis": "BaarBaarDekho is a love story about a couple that is about to embark on the journey of marriage. Jai, the lead protagonist, finds himself torn between the two major loves in his life- his profession and his fiancée, Diya.\r\n\r\nThe film is a rollercoaster ride where Jai gets the opportunity to glimpse into key moments of any man&#39;s life. Every decision we make has a direct consequence... Will Jai make the right ones?\r\n",
+      "release_date": "2016-09-01T00:00:00+07:00",
+      "duration": 147,
+      "cover_image": "",
+      "bg_image": "",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "directors": [
+        "NityaMehra"
+      ],
+      "attribute": [],
+      "actors": [
+        "Sidharth Malhotra",
+        "Katrina Kaif",
+        "Sayani Gupta"
+      ],
+      "id": "57eb4949016991010039606c",
+      "name": "Baar Baar Dekho",
+      "name_alt": "Baar Baar Dekho"
+    },
+    {
+      "_id": "57eb4949016991010039606d",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002519"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/3024/3024_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1750/thumb_1750.jpg?b=93655",
+      "synopsis": "One Film which will tell you 6 stories about Love in the different places and times around Bangkok through the eyes of 6 Directors.\r\n",
+      "release_date": "2016-09-15T00:00:00+07:00",
+      "duration": 97,
+      "cover_image": "",
+      "bg_image": "",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "directors": [
+        "สายป่าน อภิญญา สกุลเจริญสุข, ใหม่ อโณชา สุวิชากรพงศ์, โสรยา นาคะสุวรรณ, วรกร ฤทัยวาณิชกุล, อาทิตย์ อัสสรัตน์ และ วิชชานนท์ สมอุ่มจารย์"
+      ],
+      "attribute": [],
+      "actors": [
+        "เป้ อารักษ์"
+      ],
+      "id": "57eb4949016991010039606d",
+      "name": "Bangkok Stories",
+      "name_alt": "บางกอกสตอรี่"
+    },
+    {
+      "_id": "57eb4949016991010039606e",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002521"
+      },
+      "rating": "น13+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2842/2842_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1565/thumb_1565.jpg?b=71751",
+      "synopsis": "Aged 43, Bridget Jones is struggling with the trials of life, not the least of which is her breakup with her love Mark Darcy. Pushing forward and working to find fulfillment in other aspects of her life seem to do wonders until her love life comes back from the dead when she meets a dashing and handsome American named Jack (Patrick Dempsey). She has a consecutive one-night stand with both men. Things couldn&#39;t be better, until Bridget discovers that she is pregnant. Now, the befuddled mum-to-be, her loyal entourage of friends and eccentric co-workers, and her amused yet no-nonsense gynecologist, must work out if the proud father is Mark or Jack.\r\n",
+      "release_date": "2016-09-22T00:00:00+07:00",
+      "duration": 123,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1565/cover_1565.jpg?b=87737",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1565/bg_1565.jpg",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "directors": [
+        "Sharon Maguire"
+      ],
+      "attribute": [],
+      "actors": [
+        "Renée Zellweger",
+        "Patrick Dempsey",
+        "Colin Firth"
+      ],
+      "id": "57eb4949016991010039606e",
+      "name": "Bridget Jones Baby",
+      "name_alt": "บริดเจ็ท โจนส์ เบบี้"
+    },
+    {
+      "_id": "57eb4949016991010039606f",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002514"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2988/2988_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1329/thumb_1329.jpg?b=95694",
+      "synopsis": "Alex, an immigrant from Ukraine comes to Canada and becomes involved with an online criminal organization called Darkweb. He learns to rip off credit cards, ATMs, break into banks and eventually the stock market. He engages a network of service staff to help collect information, and partners with a guy named Sye, and a girl named Kira, to help sell the online-bought merchandise. What starts off as a way to help his parents financially, soon becomes a personal vendetta against the entire banking system, when his mother is fired from her job at the bank. Inspired by true events.\r\n- Written by Anonymous\r\n",
+      "release_date": "2016-09-15T00:00:00+07:00",
+      "duration": 105,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1329/cover_1329.jpg?b=101203",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1329/bg_1329.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "directors": [
+        "Akan Satayev"
+      ],
+      "attribute": [],
+      "actors": [
+        " Callan McAuliffe",
+        "Lorraine Nicholson",
+        "Daniel Eric Gold"
+      ],
+      "id": "57eb4949016991010039606f",
+      "name": "Hacker",
+      "name_alt": "อัจฉริยะแฮกข้ามโลก"
+    },
+    {
+      "_id": "57eb49490169910100396070",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002518"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2998/2998_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1708/thumb_1708.jpg?b=89909",
+      "synopsis": "จันเตรียเป็นเรื่องราวของหญิงสาวที่ถูกสะกดวิญญาณไว้กับไม้กระดานและปล่อยลอยไปตามน้ำ ต่อมา20ปีให้หลังมีชายหนุ่มเก็บแผ่นกระดานนั้นได้และได้ทำลายตะปูสะกดวิญญาณออกมา ทำให้เกิดเหตุสยองผสมความฮา การถอนคำสาปให้ผีได้ไปผุดไปเกิดจึงเริ่มต้นขึ้นด้วย\r\n",
+      "release_date": "2016-09-15T00:00:00+07:00",
+      "duration": 114,
+      "cover_image": "",
+      "bg_image": "",
+      "genres": [
+        "Comedy",
+        "Horror"
+      ],
+      "directors": [
+        "Pol Vibo-Neat"
+      ],
+      "attribute": [],
+      "actors": [
+        "มัค เซ็นโซนิต้า,จอนจัน และคะนา,แยงม สุกุล"
+      ],
+      "id": "57eb49490169910100396070",
+      "name": "Jantrea",
+      "name_alt": "จันเตรีย"
+    },
+    {
+      "_id": "57eb49490169910100396071",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002490"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2846/2846_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1569/thumb_1569.jpg?b=88639",
+      "synopsis": "Kubo lives a quiet, normal life in a small shoreside village until a spirit from the past turns his life upside down by re-igniting an age-old vendetta. This causes all sorts of havoc as gods and monsters chase Kubo who, in order to survive, must locate a magical suit of armor once worn by his late father, a legendary Samurai warrior.\r\n",
+      "release_date": "2016-09-08T00:00:00+07:00",
+      "duration": 101,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1569/cover_1569.jpg?b=131098",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1569/bg_1569.jpg",
+      "genres": [
+        "Animation"
+      ],
+      "directors": [
+        "Travis Knight"
+      ],
+      "attribute": [],
+      "actors": [
+        " Charlize Theron",
+        "Rooney Mara",
+        "Matthew McConaughey"
+      ],
+      "id": "57eb49490169910100396071",
+      "name": "Kubo and 2 Strings",
+      "name_alt": "คูโบ้และพิณมหัศจรรย์"
+    },
+    {
+      "_id": "57eb49490169910100396072",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002509"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/3022/3022_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1688/thumb_1688.jpg?b=132866",
+      "synopsis": "A long time ago, a determined King Zhou, supported by his concubine Daji, sets his mind on conquering the Middle Kingdom. After years of slaughter, the unyielding Adept tribes have been eliminated in succession. Jiang and General Ji from Qishan are King Zhou’s longstanding opponents. Under a divinatory sign, Jiang discovers that the Sword of Light can reverse the adversity.\r\n",
+      "release_date": "2016-09-08T00:00:00+07:00",
+      "duration": 109,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1688/cover_1688.jpg?b=226845",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1688/bg_1688.jpg",
+      "genres": [
+        "Fantasy"
+      ],
+      "directors": [
+        "Koan Hui"
+      ],
+      "attribute": [],
+      "actors": [
+        "Bingbing Fan",
+        "Xiaoming Huang",
+        "Louis Koo "
+      ],
+      "id": "57eb49490169910100396072",
+      "name": "League of Gods",
+      "name_alt": "สงครามเทพเจ้า"
+    },
+    {
+      "_id": "57eb49490169910100396073",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002481"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2948/2948_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1635/thumb_1635.jpg?b=84892",
+      "synopsis": "Arthur Bishop thought he had put his murderous past behind him when his most formidable foe kidnaps the love of his life. Now he is forced to travel the globe to complete three impossible assassinations, and do what he does best, make them look like accidents.\r\n",
+      "release_date": "2016-08-25T00:00:00+07:00",
+      "duration": 98,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1635/cover_1635.jpg?b=151360",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1635/bg_1635.jpg",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "directors": [
+        "Dennis Gansel"
+      ],
+      "attribute": [],
+      "actors": [
+        " Jason Statham",
+        "Jessica Alba",
+        "Tommy Lee Jones"
+      ],
+      "id": "57eb49490169910100396073",
+      "name": "Mechanic 2",
+      "name_alt": "โคตรเพชฌฆาต แค้นข้ามโลก"
+    },
+    {
+      "_id": "57eb49490169910100396074",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002520"
+      },
+      "rating": "TBC",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/3020/3020_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1748/thumb_1748.jpg?b=71469",
+      "synopsis": "Minal Arora, Falak Ali and Andrea Tariang, three young girls, in their mid 20’s, from different parts of India, professionals in their respective fields, stay together as tenants in a posh South Delhi locality…\r\n\r\nStaying in the same locality as these girls, is the mysterious and ominous figure, ‘Deepak Sehgal’. A yester- year ‘big league’ lawyer, Deepak Sehgal today is a mere shadow of his infamous self, spending most of his time behind closed doors…\r\n\r\nOne night, which was supposed to be a girls’ night out, becomes for them a dark truth that would continue to hound their future…\r\n\r\nSoon after MINAL is charged for ‘Attempt to murder’, where she could face imprisonment for more than 10 years, if convicted.\r\n\r\nWill the law be able to see beyond the obvious, will the society be able to see them beyond their moralistic eyes?? Will these 3 girls be able to come out of this ordeal unscathed or will they be ‘scarred’ forever? \r\n\r\n‘PINK’ – a social thriller that reflects on the dubious morals of todays’ times.  \r\n",
+      "release_date": "2016-09-16T00:00:00+07:00",
+      "duration": 0,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1748/cover_1748.jpg?b=95386",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1748/bg_1748.jpg",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "directors": [
+        "Aniruddha Roy Chowdhary"
+      ],
+      "attribute": [],
+      "actors": [
+        "Amitabh Bachchan",
+        "TapseePannu",
+        "Piyush Mishra"
+      ],
+      "id": "57eb49490169910100396074",
+      "name": "Pink",
+      "name_alt": "Pink"
+    },
+    {
+      "_id": "57eb49490169910100396076",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002513"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2997/2997_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1707/thumb_1707.jpg?b=98090",
+      "synopsis": "Taking place in and around Seoul station, a man sleeping rough is the catalyst for a zombie apocalypse. Through this a young runaway woman must try to survive in a world that sees her as disposable. The story revolves around two main characters: Suk-gyu (voiced by Seung-ryong Ryu), a father who searches for his runaway daughter (Hye-Sun, voiced by Shim Eun-kyung), only to discover she has become a prostitute. Just as he was about to be reunited with her, a zombie epidemic breaks out in Seoul.\r\n\r\nThe film begins in front of Seoul Station&#39;s terminal building as a bloodied man collapses. A fashionable young man, in the middle of telling his friend how he believes in universal healthcare, steps forward to look but gives a cold shoulder after seeing that it is just a \"stinky homeless guy\". The dying man&#39;s younger brother runs around to ask help from the people, yet the people refuse. Further, he is frowned at by social workers, denigrated by police officers and roughed up by hoodlums.\r\n\r\nThe old man soon becomes a savage, blood-lusting zombie, setting off chaos that sweeps through the station, first among those squatting in the corridors and then among everybody in the terminal&#39;s vicinity. It&#39;s against the first scenery that the protagonists makes their entry. Hye-sun has just run away from her previous life of quasi-slavery at a brothel, and is now living with her good-for-nothing boyfriend, Ki-woong (voiced by Lee Joon), whose idea of earning a living is pimping out Hye-sun online. After a row about this, the pair separate and are swept up in the chaos bursting out of Seoul Station. Hye-sun witnesses and narrowly escapes a bloodbath up close at the local police station, while Ki-woong&#39;s search for Hye-sun is bolstered by the appearance of Suk-gyu. As the trio race around town to flee the undead and find each other, they run into extreme measures put in place to contain what the authorities consider an insurrection. The undead and the survivors find themselves up against barricades manned by fully armed soldiers with their tanks, water cannons and live ammunition\r\n",
+      "release_date": "2016-09-15T00:00:00+07:00",
+      "duration": 93,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1707/cover_1707.jpg?b=92561",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1707/bg_1707.jpg",
+      "genres": [
+        "Animation"
+      ],
+      "directors": [
+        "Yeon Sang-ho"
+      ],
+      "attribute": [],
+      "actors": [
+        ""
+      ],
+      "id": "57eb49490169910100396076",
+      "name": "Seoul Station",
+      "name_alt": "ก่อนนรกซอมบี้คลั่ง"
+    },
+    {
+      "_id": "57eb49490169910100396075",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002530"
+      },
+      "rating": "น13+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/3010/3010_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1722/thumb_1722.jpg?b=109411",
+      "synopsis": "\"รัก หมัด สั่ง\" ภาพยนตร์แนว \"เลิฟ-คอเมดี้\" เรื่องราวของความรักที่ต้องใช้หมัดมวยมาเป็นตัวตัดสิน จะเกิดอะไรขึ้นเมื่อครูหนุ่มรูปหล่อพ่อรวยจากเมืองกรุง (จอร์จ ฐปนัท สัตยานุรักษ์) เดินทางมารับสอนหนังสืออยู่ที่ตำบลท่าทอง จ. สุพรรณบุรีและบังเอิญมาเจอรักแรกพบ ตกหลุมรักสาวงามประจำตำบล (ฟ้า อิงฟ้า เกตุคำ) เข้าอย่างจัง เลยต้องถอดชุดครูมาใส่นวมสวมมงคลขึ้นชก เพื่อพิสูจน์รักแท้ เรื่องราวความรักในครั้งนี้จะเป็นอย่างไร จะราบรื่นหรือมีอุปสรรคหรือไม่ต้องติดตาม!\r\n\r\nคำว่า \"รัก\" คำเดียว.. มีพลังมากมายเกินกว่าที่ใครจะหยั่งถึง\r\nคนๆ หนึ่งจะยอมทำทุกอย่างเพียงเพื่อแสดงออกซึ่งความรักที่เขามีให้เธอ\r\nแม้กระทั่งการต่อสู้ ที่ตนเองไม่ถนัดและไม่เคยมีอยู่ในสมอง\r\nแต่หากต้องแลกมาเพื่อ \"ความรัก\" และ ศักดิ์ศรีมีหรือจะยอม?\r\n\r\nกำกับภาพยนตร์โดย ราชวัตร ฐิติวรดากูล\r\n\r\nเมื่อรักมันต้องชก แพ้กี่ยกพี่ก็ยังรัก\r\n“รัก หมัด สั่ง” 22 กันยายนนี้ในโรงภาพยนตร์\r\n#รักหมัดสั่ง #วชิโรฟิล์ม #HookedOnLove\r\n",
+      "release_date": "2016-09-22T00:00:00+07:00",
+      "duration": 91,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1722/cover_1722.jpg?b=207180",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1722/bg_1722.jpg",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "directors": [
+        "ราชวัตร ฐิติวรดากูล"
+      ],
+      "attribute": [],
+      "actors": [
+        "จอร์จ ฐปนัท สัตยานุรักษ์,ฟ้า อิงฟ้า เกตุคำ"
+      ],
+      "id": "57eb49490169910100396075",
+      "name": "Ruk-Mud-Sung",
+      "name_alt": "รักหมัดสั่ง"
+    },
+    {
+      "_id": "57eb49490169910100396077",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002524",
+        "576ccf698d526115004eb4a5": "HO00002523",
+        "576ccf698d526115004eb4ac": "HO00002522"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2845/2845_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1566/thumb_1566.jpg?b=99625",
+      "synopsis": "Storks have moved on from delivering babies to packages. But when an order for a baby appears, the best delivery stork must scramble to fix the error by delivering the baby.\r\n",
+      "release_date": "2016-09-22T00:00:00+07:00",
+      "duration": 89,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1566/cover_1566.jpg?b=96859",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1566/bg_1566.jpg",
+      "genres": [
+        "Animation"
+      ],
+      "directors": [
+        "Nicholas Stoller, Doug Sweetland"
+      ],
+      "attribute": [],
+      "actors": [
+        "Andy Samberg",
+        "Keegan-Michael Key",
+        "Kelsey Grammer"
+      ],
+      "id": "57eb49490169910100396077",
+      "name": "Storks",
+      "name_alt": "บริการนกกระสาเบบี๋เดลิเวอรี่"
+    },
+    {
+      "_id": "57eb49490169910100396079",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002515"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2965/2965_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1691/thumb_1691.jpg?b=69699",
+      "synopsis": "Based on a true story, U.S. Customs agent ROBERT \"BOB\" MAZUR (Bryan Cranston) goes deep undercover to infiltrate Pablo Escobar&#39;s blood-soaked drug trafficking scene plaguing the nation in 1985 by posing as slick, money-laundering businessman Bob Musella. Teamed with impulsive and streetwise fellow agent EMIR EBREU (John Leguizamo) and rookie agent posing as his fiancé KATHY ERTZ (Diane Kruger), Mazur befriends Escobar&#39;s top lieutenant ROBERTO ALCAINO (Benjamin Bratt). Navigating a vicious criminal network in which the slightest slip-up could cost him his life, Mazur risks it all building a case that leads to indictments of 85 drug lords and the corrupt bankers who cleaned their dirty money, along with the collapse of the Bank of Credit and Commerce International, one of the largest money-laundering banks in the world.\r\n",
+      "release_date": "2016-09-15T00:00:00+07:00",
+      "duration": 127,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1691/cover_1691.jpg?b=104143",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1691/bg_1691.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        "Brad Furman"
+      ],
+      "attribute": [],
+      "actors": [
+        "Bryan Cranston",
+        "John Leguizamo",
+        "Diane Kruger"
+      ],
+      "id": "57eb49490169910100396079",
+      "name": "The Infiltrator",
+      "name_alt": "แผนปล้นเหนือเมฆ"
+    },
+    {
+      "_id": "57eb49490169910100396078",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002504"
+      },
+      "rating": "ทป.",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2996/2996_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1632/thumb_1632.jpg?b=78146",
+      "synopsis": "The story of Chesley Sullenberger, who became a hero after gliding his plane along the water in the Hudson River, saving all of his 155 passengers.\r\n",
+      "release_date": "2016-09-08T00:00:00+07:00",
+      "duration": 96,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1632/cover_1632.jpg?b=82199",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1632/bg_1632.jpg",
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        "Clint Eastwood"
+      ],
+      "attribute": [],
+      "actors": [
+        "Tom Hanks"
+      ],
+      "id": "57eb49490169910100396078",
+      "name": "Sully",
+      "name_alt": "ซัลลี่ ปาฎิหาริย์ที่แม่น้ำฮัดสัน"
+    },
+    {
+      "_id": "57eb4949016991010039607a",
+      "vista_ids": {
+        "576ccf698d526115004eb4a3": "HO00002455"
+      },
+      "rating": "น15+",
+      "is_comingsoon": false,
+      "on_sale": true,
+      "advance_ticket": false,
+      "sale_today": true,
+      "priority": 0,
+      "trailer": "http://27.254.80.209:1935/media/_definst_/mp4:major/trailer/2914/2914_720.mp4/playlist.m3u8",
+      "thumb_image": "http://www.majorcineplex.com/uploads/movie/1655/thumb_1655.jpg?b=106167",
+      "synopsis": "Train to Busan (Hangul: 부산행; RR: Busanhaeng) is a 2016 South Korean film directed by Yeon Sang-ho and starring Gong Yoo, Jung Yu-mi and Ma Dong-seok. The film will have its premiere in the Midnight Screenings section at the 2016 Cannes Film Festival on 13 May.A disastrous virus hits South Korea. Passengers on a KTX train from Seoul to Busan struggle to survive.\r\n",
+      "release_date": "2016-08-11T00:00:00+07:00",
+      "duration": 118,
+      "cover_image": "http://www.majorcineplex.com/uploads/movie/1655/cover_1655.jpg?b=102699",
+      "bg_image": "http://www.majorcineplex.com/uploads/movie/1655/bg_1655.jpg",
+      "genres": [
+        "Horror"
+      ],
+      "directors": [
+        "Yeon Sang-ho"
+      ],
+      "attribute": [],
+      "actors": [
+        "Gong Yoo,Jung Yu-mi,Ma Dong-seok"
+      ],
+      "id": "57eb4949016991010039607a",
+      "name": "Train to Busan",
+      "name_alt": "ด่วนนรกซอมบี้คลั่ง"
+    }
+  ],
+  "elements_total": 27,
+  "page_index": 1,
+  "page_size": 10,
+  "page_total": 1
+}
