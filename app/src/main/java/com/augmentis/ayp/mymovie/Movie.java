@@ -19,8 +19,6 @@ public class Movie {
     private String directors;
     private String actors;
 
-    private ArrayList<Movie> movieArrayList = new ArrayList<>();
-
     public String getMovieId() {
         return movieId;
     }
@@ -93,15 +91,4 @@ public class Movie {
         this.actors = actors;
     }
 
-    public ArrayList<Movie> getMovieArrayList() {
-        return movieArrayList;
-    }
-
-    public void setMovieArrayList(ArrayList<Movie> movieArrayList) {
-        this.movieArrayList = movieArrayList;
-    }
-
-    public void addMovieList(Movie movie) {
-        movieArrayList.add(movie);
-    }
 }

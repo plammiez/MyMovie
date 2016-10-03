@@ -36,7 +36,6 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.model.LatLngBounds;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -51,7 +50,7 @@ public class MainFragment2 extends Fragment {
     public ImageView movieImg;
     public FloatingActionButton fabBtn;
     public List<Object> posterList = new ArrayList<>();
-    public  List<Drawable> poster = new ArrayList<>();
+    public List<Drawable> poster = new ArrayList<>();
 
     private RecyclerView movie_recycler_view;
     private GoogleApiClient mGoogleApiClient;
@@ -62,8 +61,7 @@ public class MainFragment2 extends Fragment {
     private double latitude;
     private double longitude;
 
-    // Cache
-    private LruCache<String, Bitmap> mMemoryCache;
+    private MovieLab movieLab;
 
     @Nullable
     @Override
@@ -90,6 +88,9 @@ public class MainFragment2 extends Fragment {
         posterList.add(R.drawable.missperegrine);
         posterList.add(R.drawable.storks);
 
+//        for (int i=0 ; i<movieLab.getMovieList().size() ; i++) {
+//
+//        }
         return view;
     }
 
@@ -185,12 +186,15 @@ public class MainFragment2 extends Fragment {
                 Log.d("TAG", "MOVIE : " + movie.getActors());
                 //Add your values in your `ArrayList` as below:
                 movies.add(movie);
+
                 // add data of location into arraylist of Class MyLocations
-                movie.addMovieList(movie);
+                movieLab = new MovieLab(getActivity());
+                movieLab.addMovie(movie);
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
         return movies;
     }
 

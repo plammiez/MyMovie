@@ -12,8 +12,6 @@ public class MyLocations {
     private double latitude;
     private double longitude;
 
-    private ArrayList<MyLocations> myLocationsArrayList = new ArrayList<>();
-
     public int getCinemaId() {
         return cinemaId;
     }
@@ -46,15 +44,4 @@ public class MyLocations {
         this.longitude = longitude;
     }
 
-    public ArrayList<MyLocations> getMyLocationsArrayList() {
-        return myLocationsArrayList;
-    }
-
-    public void setMyLocationsArrayList(ArrayList<MyLocations> myLocationsArrayList) {
-        this.myLocationsArrayList = myLocationsArrayList;
-    }
-
-    public void addLocation(MyLocations myLocations) {
-        myLocationsArrayList.add(myLocations);
-    }
 }

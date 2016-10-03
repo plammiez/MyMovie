@@ -118,8 +118,9 @@ public class MapFragment extends SupportMapFragment {
 
                 //Add your values in your `ArrayList` as below:
                 locList.add(location);
-                // add data of location into arraylist of Class MyLocations
-                location.addLocation(location);
+
+                MyLocationLab.getInstance(getActivity()).addLocation(location);
+
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -138,9 +139,9 @@ public class MapFragment extends SupportMapFragment {
             loadCinemaFromJSON();
         }
 
-        int margin = getResources().getDimensionPixelSize(R.dimen.map_inset_margin);
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngBounds(
-                builder.build(), margin);
+//        int margin = getResources().getDimensionPixelSize(R.dimen.map_inset_margin);
+        CameraUpdate cameraUpdate = CameraUpdateFactory
+                .newLatLngZoom(new LatLng(mLocation.getLatitude(), mLocation.getLongitude()), 13.2f);
 
         mGoogleMap.animateCamera(cameraUpdate);
     }
