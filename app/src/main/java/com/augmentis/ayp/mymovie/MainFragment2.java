@@ -50,7 +50,7 @@ public class MainFragment2 extends Fragment {
     public ImageView movieImg;
     public FloatingActionButton fabBtn;
     public List<Object> posterList = new ArrayList<>();
-    public List<Drawable> poster = new ArrayList<>();
+//    public List<Drawable> poster = new ArrayList<>();
 
     private RecyclerView movie_recycler_view;
     private GoogleApiClient mGoogleApiClient;

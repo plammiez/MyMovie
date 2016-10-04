@@ -8,7 +8,9 @@ import java.util.ArrayList;
 public class MyLocations {
 
     private int cinemaId;
-    private String nameOfLocation;
+    private String nameTHOfLocation;
+    private String nameENOfLocation;
+    private String tel;
     private double latitude;
     private double longitude;
 
@@ -20,12 +22,28 @@ public class MyLocations {
         this.cinemaId = cinemaId;
     }
 
-    public String getNameOfLocation() {
-        return nameOfLocation;
+    public String getNameTHOfLocation() {
+        return nameTHOfLocation;
     }
 
-    public void setNameOfLocation(String nameOfLocation) {
-        this.nameOfLocation = nameOfLocation;
+    public void setNameTHOfLocation(String nameTHOfLocation) {
+        this.nameTHOfLocation = nameTHOfLocation;
+    }
+
+    public String getNameENOfLocation() {
+        return nameENOfLocation;
+    }
+
+    public void setNameENOfLocation(String nameENOfLocation) {
+        this.nameENOfLocation = nameENOfLocation;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     public double getLatitude() {

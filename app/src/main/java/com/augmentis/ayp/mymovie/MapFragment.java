@@ -16,11 +16,9 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -74,6 +72,33 @@ public class MapFragment extends SupportMapFragment {
         return super.onCreateView(layoutInflater, viewGroup, bundle);
     }
 
+    public static double toRadian(double degrees){
+        return (degrees * Math.PI) / 180.0d;
+    }
+
+    public double calculateDistance(double lat, double lon) {
+
+        // KM: use mile here if you want mile result
+        double earthRadius = 6371.0d;
+
+        // Latitude and Longitude of here
+        double myLat = mLocation.getLatitude();
+        double myLon = mLocation.getLongitude();
+
+        // Calculate
+        double dLat = toRadian(lat - myLat);
+        double dLng = toRadian(lon - myLon);
+
+        double a = Math.pow(Math.sin(dLat/2), 2)  +
+                Math.cos(toRadian(myLat)) * Math.cos(toRadian(lat)) *
+                        Math.pow(Math.sin(dLng/2), 2);
+
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+        // returns result kilometers
+        return earthRadius * c;
+    }
+
     public ArrayList<MyLocations> loadCinemaFromJSON() {
         ArrayList<MyLocations> locList = new ArrayList<>();
         String json = null;
@@ -96,8 +121,8 @@ public class MapFragment extends SupportMapFragment {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
                 MyLocations location = new MyLocations();
-                location.setCinemaId(jsonObject.getInt("cinema_id"));
-                location.setNameOfLocation(jsonObject.getString("short_name_en"));
+                location.setCinemaId(jsonObject.getInt("vista_id"));
+                location.setNameENOfLocation(jsonObject.getString("short_name_en"));
 
                 String aLocate = jsonObject.getString("location");
                 Log.d("TAG", "AT LOCATION : " + aLocate);
@@ -114,7 +139,9 @@ public class MapFragment extends SupportMapFragment {
                 mLocate.setLongitude(Double.parseDouble(latLon[1]));
 
                 LatLngBounds.Builder builder = new LatLngBounds.Builder();
-                plotMarker(mLocate, builder);
+
+                double distance = calculateDistance(location.getLatitude(), location.getLongitude());
+                plotMarker(mLocate, location.getNameENOfLocation(), distance, builder);
 
                 //Add your values in your `ArrayList` as below:
                 locList.add(location);
@@ -156,9 +183,14 @@ public class MapFragment extends SupportMapFragment {
         builder.include(itemPoint);
     }
 
-    private void plotMarker(Location location, final LatLngBounds.Builder builder) {
+    private void plotMarker(Location location, String nameEN,
+                            double distance, final LatLngBounds.Builder builder) {
         LatLng itemPoint = new LatLng(location.getLatitude(), location.getLongitude());
-        MarkerOptions itemMarkerOptions = new MarkerOptions().position(itemPoint);
+        MarkerOptions itemMarkerOptions = new MarkerOptions()
+                .position(itemPoint)
+                .title(nameEN)
+                .snippet(String.format("%.2f km", distance));
+
         mGoogleMap.addMarker(itemMarkerOptions);
         builder.include(itemPoint);
     }

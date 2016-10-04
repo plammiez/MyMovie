@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/nameTH_Cinema"
+        android:textSize="15pt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:text="Siam Paragon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cinema_tel"
+        android:textSize="10pt"
+        android:layout_marginLeft="50dp"
+        android:text="Tel: 02-332-8713"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/distance_cinema"
+        android:layout_marginLeft="50dp"
+        android:textSize="10pt"
+        android:text="distance about 3.8 km"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
