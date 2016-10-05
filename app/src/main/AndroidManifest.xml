@@ -25,11 +25,6 @@
             android:value="AIzaSyDnCoK2s4tzU2cMYT2dDXCIZ_il8-2Y130" />
 
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -38,6 +33,17 @@
 
         <activity android:name=".MapActivity"
             android:parentActivityName=".MainActivity"></activity>
+
+
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

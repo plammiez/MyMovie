@@ -24,11 +24,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -58,6 +61,8 @@ public class MainFragment2 extends Fragment {
     private GoogleMap mGoogleMap;
     private static final int REQUEST_PERMISSION_LOCATION = 231;
 
+    private static final String TAG = "MainFragment2";
+
     private double latitude;
     private double longitude;
 
@@ -69,9 +74,15 @@ public class MainFragment2 extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main_list, container, false);
 
+        loadMoviesFromJSON();
+        MovieLab movieLab = MovieLab.getInstance(getActivity());
+        List<Movie> movies = movieLab.getMovieList();
+
         movie_recycler_view = (RecyclerView) view.findViewById(R.id.list_movie_recycler_view);
         movie_recycler_view.setLayoutManager(new GridLayoutManager(getActivity(),2));
-        movie_recycler_view.setAdapter(new MovieAdapter());
+        movie_recycler_view.setAdapter(new MovieAdapter(movies));
+
+
 
         fabBtn = (FloatingActionButton) view.findViewById(R.id.fabBtn);
         fabBtn.setOnClickListener(new View.OnClickListener() {
@@ -83,10 +94,10 @@ public class MainFragment2 extends Fragment {
             }
         });
 
-        posterList.add(R.drawable.bridget);
-        posterList.add(R.drawable.fanday);
-        posterList.add(R.drawable.missperegrine);
-        posterList.add(R.drawable.storks);
+//        posterList.add(R.drawable.bridget);
+//        posterList.add(R.drawable.fanday);
+//        posterList.add(R.drawable.missperegrine);
+//        posterList.add(R.drawable.storks);
 
 //        for (int i=0 ; i<movieLab.getMovieList().size() ; i++) {
 //
@@ -150,8 +161,9 @@ public class MainFragment2 extends Fragment {
                 .build();
     }
 
-    public ArrayList<Movie> loadMoviesFromJSON() {
-        ArrayList<Movie> movies = new ArrayList<>();
+    public void loadMoviesFromJSON() {
+
+        MovieLab movies = MovieLab.getInstance(getActivity());
         String json = null;
         try {
             InputStream inputStream = getActivity().getAssets().open("movie_all.json");
@@ -162,7 +174,7 @@ public class MainFragment2 extends Fragment {
             json = new String(buffer, "UTF-8");
         } catch (IOException ex) {
             ex.printStackTrace();
-            return null;
+
         }
 
         try {
@@ -185,7 +197,7 @@ public class MainFragment2 extends Fragment {
 
                 Log.d("TAG", "MOVIE : " + movie.getActors());
                 //Add your values in your `ArrayList` as below:
-                movies.add(movie);
+                movies.addMovie(movie);
 
                 // add data of location into arraylist of Class MyLocations
                 movieLab = new MovieLab(getActivity());
@@ -195,10 +207,10 @@ public class MainFragment2 extends Fragment {
             e.printStackTrace();
         }
 
-        return movies;
     }
 
     public class MovieHolder extends RecyclerView.ViewHolder{
+        Movie _movie;
         Object obj;
 
         public MovieHolder(View itemView) {
@@ -207,20 +219,34 @@ public class MainFragment2 extends Fragment {
             movieImg.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d("AA", "CLICK");
-                    Intent intent = DetailMovieActivity.newIntent(getActivity(), id);
+                    Log.d(TAG,"MovieID : " + _movie.getMovieId());
+                    Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId());
                     startActivity(intent);
                 }
             });
         }
 
-        public void bind (Object obj) {
-            this.obj = obj;
-            movieImg.setImageDrawable(getResources().getDrawable((int) obj,null));
+        public void bind (Movie movie) {
+            _movie = movie;
+//            movieImg.setImageDrawable(_movie.getUrlPoster());
+//            this.obj = obj;
+//            movieImg.setImageDrawable(getResources().getDrawable((int) obj,null));
+
+            // show image on listFragment page
+//            File photoFile = MovieLab.getInstance(getActivity()).getPhotoFile(_movie);
+//            Bitmap bitmap = PictureUtils.getScaledBitmap(photoFile.getPath(), getActivity());
+//            movieImg.setImageBitmap(bitmap);
+
+            Glide.with(getActivity()).load(_movie.getUrlPoster()).into(movieImg);
         }
     }
 
     public class MovieAdapter extends RecyclerView.Adapter<MovieHolder> {
+        private List<Movie> _movie;
+
+        public MovieAdapter(List<Movie> movies) {
+            this._movie = movies;
+        }
 
         @Override
         public MovieHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -231,13 +257,15 @@ public class MainFragment2 extends Fragment {
 
         @Override
         public void onBindViewHolder(MovieHolder holder, int position) {
-            Object obj = posterList.get(position);
-            holder.bind(obj);
+            Movie mv = _movie.get(position);
+            holder.bind(mv);
+//            Object obj = posterList.get(position);
+//            holder.bind(obj);
         }
 
         @Override
         public int getItemCount() {
-            return posterList.size();
+            return _movie.size();
         }
     }
 

@@ -49,7 +49,7 @@ public class DetailMovieActivity extends AppCompatActivity{
     private static final String MOVIE_ID = "MOVIE_ID";
     private static final String TAG = "DetailMovieActivity";
 
-    int id;
+    String id;
 
     TextView txt_director;
     TextView txt_actor;
@@ -59,12 +59,14 @@ public class DetailMovieActivity extends AppCompatActivity{
     String str_actor;
     String str_detail;
 
+    Movie movie;
+
 //    private static final String MOVIE_ID = "MOVIE_ID";
     private WebView mVideo;
 
-    public static Intent newIntent(Context activity,int id) {
+    public static Intent newIntent(Context activity,String movieId) {
         Intent intent = new Intent(activity, DetailMovieActivity.class);
-        intent.putExtra(MOVIE_ID, id);
+        intent.putExtra(MOVIE_ID, movieId);
         return intent;
     }
 
@@ -74,11 +76,19 @@ public class DetailMovieActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_movie);
 
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            id = bundle.getString(MOVIE_ID);
+
+            movie = MovieLab.getInstance(this).getMovieById(id);
+
+            Log.d(TAG, "id : " + id);
+        }
 
         mVideo = (WebView) findViewById(R.id.movie_teaser);
         mVideo.getSettings().setJavaScriptEnabled(true);//อณุญาตให้ใช้ javascript ได้
         mVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
-        mVideo.loadUrl("https://www.youtube.com/embed/OPp2CoLdXcc?autoplay=1&vq=small");
+        mVideo.loadUrl(movie.getUrlTrailer());
         mVideo.setWebChromeClient(new WebChromeClient());
 
 
@@ -87,53 +97,49 @@ public class DetailMovieActivity extends AppCompatActivity{
         txt_story = (TextView) findViewById(R.id.story);
 
 
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            id = bundle.getInt(MOVIE_ID);
-
-            Log.d(TAG, "id : " + id);
-        }
 
 
-            if (android.os.Build.VERSION.SDK_INT > 9) {
-                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-                StrictMode.setThreadPolicy(policy);
-            }
+//            if (android.os.Build.VERSION.SDK_INT > 9) {
+//                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+//                StrictMode.setThreadPolicy(policy);
+//            }
+//
+//            String url = "http://nearymovie.hol.es/movie.php?id=" + id;
+//
+//            Log.d(TAG, "url : " + url);
+//
+//
+//
+//            try {
+//                String strJson = getJSONUrl(url);
+//                JSONObject json1 = new JSONObject(strJson);
+//                String success1 = json1.getString("status");
+//
+//                if (success1.equals("OK") == true) {
+//                    JSONArray Json_array_size = json1.getJSONArray("result");
+//
+//                    Log.d(TAG, "data : " + Json_array_size);
+//
+//
+//                    for (int i = 0; i < Json_array_size.length(); i++) {
+//                        JSONObject object = Json_array_size.getJSONObject(i);
+//
+//                        str_director = object.getString("director");
+//                        str_actor = object.getString("actor");
+//                        str_detail = object.getString("detail");
+//
+//                    }
+//                }
+//            } catch (JSONException e) {
+//                // TODO Auto-generated catch block
+//                e.printStackTrace();
+//            }
 
-            String url = "http://nearymovie.hol.es/movie.php?id=" + id;
-
-            Log.d(TAG, "url : " + url);
 
 
-
-            try {
-                String strJson = getJSONUrl(url);
-                JSONObject json1 = new JSONObject(strJson);
-                String success1 = json1.getString("status");
-
-                if (success1.equals("OK") == true) {
-                    JSONArray Json_array_size = json1.getJSONArray("result");
-
-                    Log.d(TAG, "data : " + Json_array_size);
-
-
-                    for (int i = 0; i < Json_array_size.length(); i++) {
-                        JSONObject object = Json_array_size.getJSONObject(i);
-
-                        str_director = object.getString("director");
-                        str_actor = object.getString("actor");
-                        str_detail = object.getString("detail");
-
-                    }
-                }
-            } catch (JSONException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-
-        txt_director.setText(str_director);
-        txt_actor.setText(str_actor);
-        txt_story.setText(str_detail);
+        txt_director.setText(movie.getDirectors());
+        txt_actor.setText(movie.getActors());
+        txt_story.setText(movie.getSynopsis());
 
         Log.d(TAG,"str_director : " + str_director);
         Log.d(TAG,"str_actor : " + str_actor);
@@ -141,31 +147,31 @@ public class DetailMovieActivity extends AppCompatActivity{
 
     }
 
-    public String getJSONUrl(String url) {
-        StringBuilder str = new StringBuilder();
-        HttpClient client = new DefaultHttpClient();
-        HttpGet httpGet = new HttpGet(url);
-        try {
-
-            HttpResponse response = client.execute(httpGet);
-            StatusLine statusLine = response.getStatusLine();
-            int statusCode = statusLine.getStatusCode();
-            if (statusCode == 200) { // Download OK
-                HttpEntity entity = response.getEntity();
-                InputStream content = entity.getContent();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(content));
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    str.append(line);
-                }
-            } else {
-                Log.e("Log", "Failed to download result..");
-            }
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return str.toString();
-    }
+//    public String getJSONUrl(String url) {
+//        StringBuilder str = new StringBuilder();
+//        HttpClient client = new DefaultHttpClient();
+//        HttpGet httpGet = new HttpGet(url);
+//        try {
+//
+//            HttpResponse response = client.execute(httpGet);
+//            StatusLine statusLine = response.getStatusLine();
+//            int statusCode = statusLine.getStatusCode();
+//            if (statusCode == 200) { // Download OK
+//                HttpEntity entity = response.getEntity();
+//                InputStream content = entity.getContent();
+//                BufferedReader reader = new BufferedReader(new InputStreamReader(content));
+//                String line;
+//                while ((line = reader.readLine()) != null) {
+//                    str.append(line);
+//                }
+//            } else {
+//                Log.e("Log", "Failed to download result..");
+//            }
+//        } catch (ClientProtocolException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return str.toString();
+//    }
 }

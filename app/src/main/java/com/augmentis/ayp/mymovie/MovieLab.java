@@ -1,7 +1,9 @@
 package com.augmentis.ayp.mymovie;
 
 import android.content.Context;
+import android.os.Environment;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,5 +64,14 @@ public class MovieLab {
 
     public void addMovie(Movie movie) {
         movieList.add(movie);
+    }
+
+    public File getPhotoFile(Movie movie) {
+        File externalFilesDir = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+
+        if (externalFilesDir == null) {
+            return null;
+        }
+        return  new File(externalFilesDir, movie.getUrlPoster());
     }
 }
