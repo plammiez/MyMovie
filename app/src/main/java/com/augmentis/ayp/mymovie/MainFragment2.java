@@ -99,9 +99,6 @@ public class MainFragment2 extends Fragment {
 //        posterList.add(R.drawable.missperegrine);
 //        posterList.add(R.drawable.storks);
 
-//        for (int i=0 ; i<movieLab.getMovieList().size() ; i++) {
-//
-//        }
         return view;
     }
 
@@ -195,13 +192,14 @@ public class MainFragment2 extends Fragment {
                 movie.setDirectors(jsonObject.getString("directors"));
                 movie.setActors(jsonObject.getString("actors"));
 
-                Log.d("TAG", "MOVIE : " + movie.getActors());
+                Log.d("TAG", "MOVIE ID  : " + movie.getMovieId());
+                Log.d("TAG", "MOVIE NAME: " + movie.getMovieNameEN());
                 //Add your values in your `ArrayList` as below:
                 movies.addMovie(movie);
 
                 // add data of location into arraylist of Class MyLocations
-                movieLab = new MovieLab(getActivity());
-                movieLab.addMovie(movie);
+//                movieLab = new MovieLab(getActivity());
+//                movieLab.addMovie(movie);
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -211,7 +209,7 @@ public class MainFragment2 extends Fragment {
 
     public class MovieHolder extends RecyclerView.ViewHolder{
         Movie _movie;
-        Object obj;
+//        Object obj;
 
         public MovieHolder(View itemView) {
             super(itemView);
