@@ -11,6 +11,7 @@ import android.util.Log;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.SimpleAdapter;
@@ -90,12 +91,23 @@ public class DetailMovieActivity extends AppCompatActivity{
         mVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
         mVideo.loadUrl(movie.getUrlTrailer());
         mVideo.setWebChromeClient(new WebChromeClient());
-
+//        mVideo.setWebViewClient(new WebViewClient() {
+//            @Override
+//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                view.loadUrl(url);
+//                return true;
+//            }
+//        });
+//
+//        this.setContentView(mVideo);
 
         txt_director = (TextView) findViewById(R.id.director);
         txt_actor = (TextView) findViewById(R.id.actor);
         txt_story = (TextView) findViewById(R.id.story);
 
+        txt_director.setText(movie.getDirectors());
+        txt_actor.setText(movie.getActors());
+        txt_story.setText(movie.getSynopsis());
 
 
 
@@ -136,14 +148,9 @@ public class DetailMovieActivity extends AppCompatActivity{
 //            }
 
 
-
-        txt_director.setText(movie.getDirectors());
-        txt_actor.setText(movie.getActors());
-        txt_story.setText(movie.getSynopsis());
-
-        Log.d(TAG,"str_director : " + str_director);
-        Log.d(TAG,"str_actor : " + str_actor);
-        Log.d(TAG,"str_story : " + str_detail);
+//        Log.d(TAG,"str_director : " + str_director);
+//        Log.d(TAG,"str_actor : " + str_actor);
+//        Log.d(TAG,"str_story : " + str_detail);
 
     }
 
