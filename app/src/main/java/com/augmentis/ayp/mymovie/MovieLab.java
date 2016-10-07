@@ -63,7 +63,11 @@ public class MovieLab {
     }
 
     public void addMovie(Movie movie) {
-        movieList.add(movie);
+        for (int i = 0 ; i < movieList.size() ; i ++) {
+            if (!movieList.get(i).getMovieId().equals(movie.getMovieId())) {
+                movieList.add(movie);
+            }
+        }
     }
 
     public File getPhotoFile(Movie movie) {

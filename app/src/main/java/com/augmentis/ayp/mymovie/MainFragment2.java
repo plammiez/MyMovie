@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -68,6 +69,7 @@ public class MainFragment2 extends Fragment {
     private double longitude;
 
     private MyMovieFetcher mFetchTask;
+    private MyShowTimeFetcher showTimeFetcher;
 
     private MovieLab movieLab;
 
@@ -82,7 +84,7 @@ public class MainFragment2 extends Fragment {
         List<Movie> movies = movieLab.getMovieList();
 
         movie_recycler_view = (RecyclerView) view.findViewById(R.id.list_movie_recycler_view);
-        movie_recycler_view.setLayoutManager(new GridLayoutManager(getActivity(),2));
+        movie_recycler_view.setLayoutManager(new GridLayoutManager(getActivity(), 2));
 
         movie_recycler_view.setAdapter(new MovieAdapter(movies));
 
@@ -123,17 +125,17 @@ public class MainFragment2 extends Fragment {
     @SuppressWarnings("all")
     private GoogleApiClient.ConnectionCallbacks mCallbacks =
             new GoogleApiClient.ConnectionCallbacks() {
-        @Override
-        public void onConnected(@Nullable Bundle bundle) {
-            mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-                findLocation();
-        }
+                @Override
+                public void onConnected(@Nullable Bundle bundle) {
+                    mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+                    findLocation();
+                }
 
-        @Override
-        public void onConnectionSuspended(int i) {
+                @Override
+                public void onConnectionSuspended(int i) {
 
-        }
-    };
+                }
+            };
 
     private LocationListener mLocationListener = new LocationListener() {
         @Override
@@ -170,6 +172,7 @@ public class MainFragment2 extends Fragment {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
                 Movie movie = new Movie();
+
                 movie.setMovieId(jsonObject.getString("id"));
                 movie.setMovieNameTH(jsonObject.getString("name_alt"));
                 movie.setMovieNameEN(jsonObject.getString("name"));
@@ -182,17 +185,23 @@ public class MainFragment2 extends Fragment {
 
                 Log.d("TAG", "MOVIE ID  : " + movie.getMovieId());
                 Log.d("TAG", "MOVIE NAME: " + movie.getMovieNameEN());
+
                 //Add your values in your `ArrayList` as below:
                 movies.addMovie(movie);
-
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
     }
 
-    public class MovieHolder extends RecyclerView.ViewHolder{
+    public void getShowTime(String id) {
+        showTimeFetcher = new MyShowTimeFetcher();
+        showTimeFetcher.execute(id);
+    }
+
+    public class MovieHolder extends RecyclerView.ViewHolder {
         Movie _movie;
 
         public MovieHolder(View itemView) {
@@ -201,14 +210,16 @@ public class MainFragment2 extends Fragment {
             movieImg.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d(TAG,"MovieID : " + _movie.getMovieId());
+                    Log.d(TAG, "THIS Movie ID : " + _movie.getMovieId());
+                    Log.d(TAG, "THIS Movie NAME : " + _movie.getMovieNameEN());
+                    getShowTime(_movie.getMovieId());
                     Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId());
                     startActivity(intent);
                 }
             });
         }
 
-        public void bind (Movie movie) {
+        public void bind(Movie movie) {
             _movie = movie;
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(movieImg);
         }
@@ -224,7 +235,7 @@ public class MainFragment2 extends Fragment {
         @Override
         public MovieHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater inflater = LayoutInflater.from(getActivity());
-            View v = inflater.inflate(R.layout.list_item_movie,parent,false);
+            View v = inflater.inflate(R.layout.list_item_movie, parent, false);
             return new MovieHolder(v);
         }
 
@@ -292,6 +303,7 @@ public class MainFragment2 extends Fragment {
     private class MyMovieFetcher extends AsyncTask<Void, Void, Bitmap> {
 
         String url = "http://movieplus.majorcineplex.com/api/movie";
+
         @Override
         protected Bitmap doInBackground(Void... params) {
 
@@ -305,6 +317,33 @@ public class MainFragment2 extends Fragment {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+
+            return null;
+        }
+    }
+
+    private class MyShowTimeFetcher extends AsyncTask<String, Void, Bitmap> {
+
+        String url = "http://movieplus.majorcineplex.com/api/movie";
+
+        @Override
+        protected Bitmap doInBackground(String... params) {
+
+            String showTimeURL = url + "/" + params[0].toString() + "/showtime";
+            Log.d("SHOWTIME", "URL : " + showTimeURL);
+
+            ShowTimeFetcher showTimeFetcher = new ShowTimeFetcher();
+            try {
+                byte[] jsonStr = showTimeFetcher.getUrlBytes(showTimeURL);
+                String str = new String(jsonStr);
+                Log.d("SHOWTIME", "ST : " + str);
+//                loadMoviesFromJSON(str);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
 
             return null;
         }
