@@ -31,6 +31,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -71,7 +72,8 @@ public class MainFragment2 extends Fragment {
     private MyMovieFetcher mFetchTask;
     private MyShowTimeFetcher showTimeFetcher;
 
-    private MovieLab movieLab;
+    TextView movie_name_in_list_th;
+    TextView movie_name_in_list_en;
 
     @Nullable
     @Override
@@ -217,11 +219,16 @@ public class MainFragment2 extends Fragment {
                     startActivity(intent);
                 }
             });
+
+            movie_name_in_list_th = (TextView) itemView.findViewById(R.id.movie_name_in_list_th);
+            movie_name_in_list_en = (TextView) itemView.findViewById(R.id.movie_name_in_list_en);
         }
 
         public void bind(Movie movie) {
             _movie = movie;
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(movieImg);
+            movie_name_in_list_th.setText(_movie.getMovieNameTH());
+            movie_name_in_list_en.setText(_movie.getMovieNameEN());
         }
     }
 

@@ -5,6 +5,6 @@
         android:id="@+id/menu_search"
         android:title="@string/title_bar"
         android:icon="@drawable/search_icon"
-        android:showAsAction="ifRoom|withText"/>
+        android:showAsAction="always"/>
 
 </menu>
