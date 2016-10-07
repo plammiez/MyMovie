@@ -3,44 +3,14 @@ package com.augmentis.ayp.mymovie;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.ListView;
-import android.widget.ScrollView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.StatusLine;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-
-import java.util.UUID;
 
 /**
  * Created by Waraporn on 9/22/2016.
@@ -57,17 +27,12 @@ public class DetailMovieActivity extends AppCompatActivity{
     TextView txt_story;
     TextView txt_movie_name;
 
-    String str_director;
-    String str_actor;
-    String str_detail;
-
     Movie movie;
 
-//    private static final String MOVIE_ID = "MOVIE_ID";
     private WebView mVideo;
 
-    public static Intent newIntent(Context activity,String movieId) {
-        Intent intent = new Intent(activity, DetailMovieActivity.class);
+    public static Intent newIntent(Context context, String movieId) {
+        Intent intent = new Intent(context, DetailMovieActivity.class);
         intent.putExtra(MOVIE_ID, movieId);
         return intent;
     }
@@ -85,6 +50,7 @@ public class DetailMovieActivity extends AppCompatActivity{
             movie = MovieLab.getInstance(this).getMovieById(id);
 
             Log.d(TAG, "id : " + id);
+            Log.d(TAG, "name : " + movie.getMovieNameEN());
         }
 
         mVideo = (WebView) findViewById(R.id.movie_teaser);
@@ -92,15 +58,6 @@ public class DetailMovieActivity extends AppCompatActivity{
         mVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
         mVideo.loadUrl(movie.getUrlTrailer());
         mVideo.setWebChromeClient(new WebChromeClient());
-//        mVideo.setWebViewClient(new WebViewClient() {
-//            @Override
-//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//                view.loadUrl(url);
-//                return true;
-//            }
-//        });
-//
-//        this.setContentView(mVideo);
 
         txt_director = (TextView) findViewById(R.id.director);
         txt_actor = (TextView) findViewById(R.id.actor);
@@ -111,77 +68,5 @@ public class DetailMovieActivity extends AppCompatActivity{
         txt_actor.setText(movie.getActors());
         txt_story.setText(movie.getSynopsis());
         txt_movie_name.setText(movie.getMovieNameTH());
-
-
-
-//            if (android.os.Build.VERSION.SDK_INT > 9) {
-//                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-//                StrictMode.setThreadPolicy(policy);
-//            }
-//
-//            String url = "http://nearymovie.hol.es/movie.php?id=" + id;
-//
-//            Log.d(TAG, "url : " + url);
-//
-//
-//
-//            try {
-//                String strJson = getJSONUrl(url);
-//                JSONObject json1 = new JSONObject(strJson);
-//                String success1 = json1.getString("status");
-//
-//                if (success1.equals("OK") == true) {
-//                    JSONArray Json_array_size = json1.getJSONArray("result");
-//
-//                    Log.d(TAG, "data : " + Json_array_size);
-//
-//
-//                    for (int i = 0; i < Json_array_size.length(); i++) {
-//                        JSONObject object = Json_array_size.getJSONObject(i);
-//
-//                        str_director = object.getString("director");
-//                        str_actor = object.getString("actor");
-//                        str_detail = object.getString("detail");
-//
-//                    }
-//                }
-//            } catch (JSONException e) {
-//                // TODO Auto-generated catch block
-//                e.printStackTrace();
-//            }
-
-
-//        Log.d(TAG,"str_director : " + str_director);
-//        Log.d(TAG,"str_actor : " + str_actor);
-//        Log.d(TAG,"str_story : " + str_detail);
-
     }
-
-//    public String getJSONUrl(String url) {
-//        StringBuilder str = new StringBuilder();
-//        HttpClient client = new DefaultHttpClient();
-//        HttpGet httpGet = new HttpGet(url);
-//        try {
-//
-//            HttpResponse response = client.execute(httpGet);
-//            StatusLine statusLine = response.getStatusLine();
-//            int statusCode = statusLine.getStatusCode();
-//            if (statusCode == 200) { // Download OK
-//                HttpEntity entity = response.getEntity();
-//                InputStream content = entity.getContent();
-//                BufferedReader reader = new BufferedReader(new InputStreamReader(content));
-//                String line;
-//                while ((line = reader.readLine()) != null) {
-//                    str.append(line);
-//                }
-//            } else {
-//                Log.e("Log", "Failed to download result..");
-//            }
-//        } catch (ClientProtocolException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return str.toString();
-//    }
 }

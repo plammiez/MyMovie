@@ -53,7 +53,7 @@ import org.json.JSONObject;
 public class MainFragment2 extends Fragment {
 
     public int id = 1;
-    public ImageView movieImg;
+
     public FloatingActionButton fabBtn;
     public List<Object> posterList = new ArrayList<>();
 //    public List<Drawable> poster = new ArrayList<>();
@@ -72,22 +72,24 @@ public class MainFragment2 extends Fragment {
     private MyMovieFetcher mFetchTask;
     private MyShowTimeFetcher showTimeFetcher;
 
-    TextView movie_name_in_list_th;
-    TextView movie_name_in_list_en;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_main_list, container, false);
 
-//        loadMoviesFromJSON();
-        MovieLab movieLab = MovieLab.getInstance(getActivity());
-        List<Movie> movies = movieLab.getMovieList();
+        View view = inflater.inflate(R.layout.fragment_main_list, container, false);
 
         movie_recycler_view = (RecyclerView) view.findViewById(R.id.list_movie_recycler_view);
         movie_recycler_view.setLayoutManager(new GridLayoutManager(getActivity(), 2));
 
+        mFetchTask = new MyMovieFetcher();
+        mFetchTask.execute();
+        Log.d(TAG, "Count : 1" );
+
+        MovieLab movieLab = MovieLab.getInstance(getActivity());
+        Log.d(TAG, "LisT DATA : " + movieLab.getMovieList().size());
+        List<Movie> movies = movieLab.getMovieList();
         movie_recycler_view.setAdapter(new MovieAdapter(movies));
 
         fabBtn = (FloatingActionButton) view.findViewById(R.id.fabBtn);
@@ -99,9 +101,6 @@ public class MainFragment2 extends Fragment {
                 startActivity(intent);
             }
         });
-
-        mFetchTask = new MyMovieFetcher();
-        mFetchTask.execute();
 
         return view;
     }
@@ -165,7 +164,7 @@ public class MainFragment2 extends Fragment {
     public void loadMoviesFromJSON(String json) throws JSONException {
 
         MovieLab movies = MovieLab.getInstance(getActivity());
-
+        movies.clearMovie();
         try {
             JSONObject obj = new JSONObject(json);
             JSONArray jsonArray = obj.getJSONArray("elements");
@@ -190,7 +189,9 @@ public class MainFragment2 extends Fragment {
 
                 //Add your values in your `ArrayList` as below:
                 movies.addMovie(movie);
+
             }
+            Log.d(TAG, "DATA LIST ADD : " + movies.getMovieList().size());
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -203,29 +204,34 @@ public class MainFragment2 extends Fragment {
         showTimeFetcher.execute(id);
     }
 
-    public class MovieHolder extends RecyclerView.ViewHolder {
+    public class MovieHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         Movie _movie;
+        ImageView movieImg;
+        TextView movie_name_in_list_th;
+        TextView movie_name_in_list_en;
 
         public MovieHolder(View itemView) {
             super(itemView);
             movieImg = (ImageView) itemView.findViewById(R.id.list_movie_img);
-            movieImg.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d(TAG, "THIS Movie ID : " + _movie.getMovieId());
-                    Log.d(TAG, "THIS Movie NAME : " + _movie.getMovieNameEN());
-                    getShowTime(_movie.getMovieId());
-                    Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId());
-                    startActivity(intent);
-                }
-            });
+            movieImg.setOnClickListener(this);
 
             movie_name_in_list_th = (TextView) itemView.findViewById(R.id.movie_name_in_list_th);
             movie_name_in_list_en = (TextView) itemView.findViewById(R.id.movie_name_in_list_en);
         }
 
+        @Override
+        public void onClick(View v) {
+            Log.d(TAG, "THIS Movie ID : " + _movie.getMovieId());
+            Log.d(TAG, "THIS Movie NAME : " + _movie.getMovieNameEN());
+            getShowTime(_movie.getMovieId());
+            Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId());
+            startActivity(intent);
+        }
+
         public void bind(Movie movie) {
             _movie = movie;
+            Log.d(TAG, "LIST : " + _movie.getMovieNameEN());
+//            Log.d(TAG, "LIST SIZE : " + MovieLab.getInstance(getActivity()).getMovieList().size());
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(movieImg);
             movie_name_in_list_th.setText(_movie.getMovieNameTH());
             movie_name_in_list_en.setText(_movie.getMovieNameEN());
@@ -233,10 +239,10 @@ public class MainFragment2 extends Fragment {
     }
 
     public class MovieAdapter extends RecyclerView.Adapter<MovieHolder> {
-        private List<Movie> _movie;
+        private List<Movie> _movies;
 
         public MovieAdapter(List<Movie> movies) {
-            this._movie = movies;
+            this._movies = movies;
         }
 
         @Override
@@ -248,13 +254,13 @@ public class MainFragment2 extends Fragment {
 
         @Override
         public void onBindViewHolder(MovieHolder holder, int position) {
-            Movie mv = _movie.get(position);
+            Movie mv = _movies.get(position);
             holder.bind(mv);
         }
 
         @Override
         public int getItemCount() {
-            return _movie.size();
+            return _movies.size();
         }
     }
 
@@ -313,7 +319,6 @@ public class MainFragment2 extends Fragment {
 
         @Override
         protected Bitmap doInBackground(Void... params) {
-
             MovieFetcher movieFetcher = new MovieFetcher();
             try {
                 byte[] jsonStr = movieFetcher.getUrlBytes(url);
@@ -324,8 +329,12 @@ public class MainFragment2 extends Fragment {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
             return null;
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            movie_recycler_view.setAdapter(new MovieAdapter(MovieLab.getInstance(getActivity()).getMovieList()));
         }
     }
 

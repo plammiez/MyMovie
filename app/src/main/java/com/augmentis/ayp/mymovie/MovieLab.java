@@ -2,6 +2,7 @@ package com.augmentis.ayp.mymovie;
 
 import android.content.Context;
 import android.os.Environment;
+import android.util.Log;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -62,12 +63,25 @@ public class MovieLab {
         return null;
     }
 
+    public void clearMovie() {
+        movieList.clear();
+    }
+
     public void addMovie(Movie movie) {
-        for (int i = 0 ; i < movieList.size() ; i ++) {
-            if (!movieList.get(i).getMovieId().equals(movie.getMovieId())) {
-                movieList.add(movie);
-            }
-        }
+
+        movieList.add(movie);
+//        if (movieList.size() == 0) {
+//            movieList.add(movie);
+//        }
+//
+//        Log.d("TAG", "LIST LAB1 " + movieList.size());
+//        for (int i = 0 ; i < movieList.size() ; i ++) {
+//            Log.d("TAG", "LIST LAB2 " + movieList.size());
+//
+//            if (!movieList.get(i).getMovieId().equals(movie.getMovieId())) {
+//                movieList.add(movie);
+//            }
+//        }
     }
 
     public File getPhotoFile(Movie movie) {
