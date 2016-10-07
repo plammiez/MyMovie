@@ -185,9 +185,6 @@ public class MainFragment2 extends Fragment {
                 //Add your values in your `ArrayList` as below:
                 movies.addMovie(movie);
 
-                // add data of location into arraylist of Class MyLocations
-//                movieLab = new MovieLab(getActivity());
-//                movieLab.addMovie(movie);
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -197,7 +194,6 @@ public class MainFragment2 extends Fragment {
 
     public class MovieHolder extends RecyclerView.ViewHolder{
         Movie _movie;
-//        Object obj;
 
         public MovieHolder(View itemView) {
             super(itemView);
@@ -214,15 +210,6 @@ public class MainFragment2 extends Fragment {
 
         public void bind (Movie movie) {
             _movie = movie;
-//            movieImg.setImageDrawable(_movie.getUrlPoster());
-//            this.obj = obj;
-//            movieImg.setImageDrawable(getResources().getDrawable((int) obj,null));
-
-            // show image on listFragment page
-//            File photoFile = MovieLab.getInstance(getActivity()).getPhotoFile(_movie);
-//            Bitmap bitmap = PictureUtils.getScaledBitmap(photoFile.getPath(), getActivity());
-//            movieImg.setImageBitmap(bitmap);
-
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(movieImg);
         }
     }
@@ -245,8 +232,6 @@ public class MainFragment2 extends Fragment {
         public void onBindViewHolder(MovieHolder holder, int position) {
             Movie mv = _movie.get(position);
             holder.bind(mv);
-//            Object obj = posterList.get(position);
-//            holder.bind(obj);
         }
 
         @Override
