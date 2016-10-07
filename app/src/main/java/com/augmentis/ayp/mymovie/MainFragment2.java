@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -66,6 +67,8 @@ public class MainFragment2 extends Fragment {
     private double latitude;
     private double longitude;
 
+    private MyMovieFetcher mFetchTask;
+
     private MovieLab movieLab;
 
     @Nullable
@@ -74,15 +77,14 @@ public class MainFragment2 extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main_list, container, false);
 
-        loadMoviesFromJSON();
+//        loadMoviesFromJSON();
         MovieLab movieLab = MovieLab.getInstance(getActivity());
         List<Movie> movies = movieLab.getMovieList();
 
         movie_recycler_view = (RecyclerView) view.findViewById(R.id.list_movie_recycler_view);
         movie_recycler_view.setLayoutManager(new GridLayoutManager(getActivity(),2));
+
         movie_recycler_view.setAdapter(new MovieAdapter(movies));
-
-
 
         fabBtn = (FloatingActionButton) view.findViewById(R.id.fabBtn);
         fabBtn.setOnClickListener(new View.OnClickListener() {
@@ -94,10 +96,8 @@ public class MainFragment2 extends Fragment {
             }
         });
 
-//        posterList.add(R.drawable.bridget);
-//        posterList.add(R.drawable.fanday);
-//        posterList.add(R.drawable.missperegrine);
-//        posterList.add(R.drawable.storks);
+        mFetchTask = new MyMovieFetcher();
+        mFetchTask.execute();
 
         return view;
     }
@@ -158,21 +158,9 @@ public class MainFragment2 extends Fragment {
                 .build();
     }
 
-    public void loadMoviesFromJSON() {
+    public void loadMoviesFromJSON(String json) throws JSONException {
 
         MovieLab movies = MovieLab.getInstance(getActivity());
-        String json = null;
-        try {
-            InputStream inputStream = getActivity().getAssets().open("movie_all.json");
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            inputStream.read(buffer);
-            inputStream.close();
-            json = new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-
-        }
 
         try {
             JSONObject obj = new JSONObject(json);
@@ -313,6 +301,27 @@ public class MainFragment2 extends Fragment {
 
             LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,
                     request, mLocationListener);
+        }
+    }
+
+    private class MyMovieFetcher extends AsyncTask<Void, Void, Bitmap> {
+
+        String url = "http://movieplus.majorcineplex.com/api/movie";
+        @Override
+        protected Bitmap doInBackground(Void... params) {
+
+            MovieFetcher movieFetcher = new MovieFetcher();
+            try {
+                byte[] jsonStr = movieFetcher.getUrlBytes(url);
+                String str = new String(jsonStr);
+                loadMoviesFromJSON(str);
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            return null;
         }
     }
 }
