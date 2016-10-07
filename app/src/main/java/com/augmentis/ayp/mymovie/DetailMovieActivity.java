@@ -55,6 +55,7 @@ public class DetailMovieActivity extends AppCompatActivity{
     TextView txt_director;
     TextView txt_actor;
     TextView txt_story;
+    TextView txt_movie_name;
 
     String str_director;
     String str_actor;
@@ -104,10 +105,12 @@ public class DetailMovieActivity extends AppCompatActivity{
         txt_director = (TextView) findViewById(R.id.director);
         txt_actor = (TextView) findViewById(R.id.actor);
         txt_story = (TextView) findViewById(R.id.story);
+        txt_movie_name = (TextView) findViewById(R.id.movie_name);
 
         txt_director.setText(movie.getDirectors());
         txt_actor.setText(movie.getActors());
         txt_story.setText(movie.getSynopsis());
+        txt_movie_name.setText(movie.getMovieNameTH());
 
 
 

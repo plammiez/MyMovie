@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -7,18 +7,51 @@
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_margin="10dp"
         card_view:cardCornerRadius="4dp"
         card_view:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <ImageView
             android:id="@+id/list_movie_img"
             android:layout_width="180dp"
             android:layout_height="230dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_alignStart="@+id/textView"
+            />
+
+        <TextView
+            android:id="@+id/movie_name_in_list_th"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:hint="@string/movie_name"
+            android:layout_below="@+id/list_movie_img"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/movie_name_in_list_en"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:hint="@string/movie_name"
+            android:layout_below="@+id/list_movie_img"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            />
+
+        </LinearLayout>
+
+
 
     </android.support.v7.widget.CardView>
 
-</LinearLayout>
+
+</RelativeLayout>
