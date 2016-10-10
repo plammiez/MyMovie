@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
@@ -25,11 +26,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import android.widget.TextView;
 import android.widget.Toast;
@@ -101,6 +105,12 @@ public class MainFragment2 extends Fragment {
                 startActivity(intent);
             }
         });
+
+        Drawable drawable = getResources().getDrawable(R.drawable.wp2);
+        Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+        Bitmap blurredBitmap = BlurBuilder.blur( getActivity(), bitmap );
+
+        view.setBackgroundDrawable( new BitmapDrawable( getResources(), blurredBitmap ) );
 
         return view;
     }
@@ -232,10 +242,16 @@ public class MainFragment2 extends Fragment {
             Log.d(TAG, "LIST : " + _movie.getMovieNameEN());
 //            Log.d(TAG, "LIST SIZE : " + MovieLab.getInstance(getActivity()).getMovieList().size());
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(movieImg);
+//            movie_recycler_view.setBackgroundColor(getRandomColor());
             movie_name_in_list_th.setText(_movie.getMovieNameTH());
             movie_name_in_list_en.setText(_movie.getMovieNameEN());
         }
     }
+
+//    public int getRandomColor(){
+//        Random rnd = new Random();
+//        return Color.argb(10, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+//    }
 
     public class MovieAdapter extends RecyclerView.Adapter<MovieHolder> {
         private List<Movie> _movies;
