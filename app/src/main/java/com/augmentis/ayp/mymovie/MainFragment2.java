@@ -173,7 +173,6 @@ public class MainFragment2 extends Fragment {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
                 Movie movie = new Movie();
-
                 movie.setMovieId(jsonObject.getString("id"));
                 movie.setMovieNameTH(jsonObject.getString("name_alt"));
                 movie.setMovieNameEN(jsonObject.getString("name"));
