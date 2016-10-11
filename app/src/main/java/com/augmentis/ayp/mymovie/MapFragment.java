@@ -172,11 +172,6 @@ public class MapFragment extends SupportMapFragment {
         }
 
         Collections.sort(distance);
-
-//        for (int j=0 ; j < 1 ; j++) {
-//            location = queryDistance(distance.get(0));
-//        }
-//        Log.d("DISTANCE", "ATTT " + location.getNameENOfLocation());
         return distance;
     }
 
