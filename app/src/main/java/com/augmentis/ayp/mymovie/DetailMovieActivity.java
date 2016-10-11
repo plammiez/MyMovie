@@ -3,12 +3,18 @@ package com.augmentis.ayp.mymovie;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
@@ -42,6 +48,7 @@ public class DetailMovieActivity extends AppCompatActivity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_movie);
+        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linear_movie_detail);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
@@ -52,6 +59,7 @@ public class DetailMovieActivity extends AppCompatActivity{
             Log.d(TAG, "id : " + id);
             Log.d(TAG, "name : " + movie.getMovieNameEN());
         }
+
 
         mVideo = (WebView) findViewById(R.id.movie_teaser);
         mVideo.getSettings().setJavaScriptEnabled(true);//อณุญาตให้ใช้ javascript ได้
@@ -68,5 +76,11 @@ public class DetailMovieActivity extends AppCompatActivity{
         txt_actor.setText(movie.getActors());
         txt_story.setText(movie.getSynopsis());
         txt_movie_name.setText(movie.getMovieNameTH());
+
+        Drawable drawable = getResources().getDrawable(R.drawable.wp6);
+        Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+        Bitmap blurredBitmap = BlurBuilder.blur( this, bitmap );
+
+        linearLayout.setBackgroundDrawable( new BitmapDrawable( getResources(), blurredBitmap ) );
     }
 }

@@ -15,6 +15,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.util.LruCache;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v4.content.ContextCompat;
@@ -106,7 +107,7 @@ public class MainFragment2 extends Fragment {
             }
         });
 
-        Drawable drawable = getResources().getDrawable(R.drawable.wp2);
+        Drawable drawable = getResources().getDrawable(R.drawable.wp6);
         Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
         Bitmap blurredBitmap = BlurBuilder.blur( getActivity(), bitmap );
 
@@ -218,6 +219,7 @@ public class MainFragment2 extends Fragment {
         ImageView movieImg;
         TextView movie_name_in_list_th;
         TextView movie_name_in_list_en;
+        CardView cardView;
 
         public MovieHolder(View itemView) {
             super(itemView);
@@ -226,6 +228,8 @@ public class MainFragment2 extends Fragment {
 
             movie_name_in_list_th = (TextView) itemView.findViewById(R.id.movie_name_in_list_th);
             movie_name_in_list_en = (TextView) itemView.findViewById(R.id.movie_name_in_list_en);
+
+            cardView = (CardView) itemView.findViewById(R.id.card_view);
         }
 
         @Override
@@ -242,16 +246,16 @@ public class MainFragment2 extends Fragment {
             Log.d(TAG, "LIST : " + _movie.getMovieNameEN());
 //            Log.d(TAG, "LIST SIZE : " + MovieLab.getInstance(getActivity()).getMovieList().size());
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(movieImg);
-//            movie_recycler_view.setBackgroundColor(getRandomColor());
+            cardView.setBackgroundColor(getRandomColor());
             movie_name_in_list_th.setText(_movie.getMovieNameTH());
             movie_name_in_list_en.setText(_movie.getMovieNameEN());
         }
     }
 
-//    public int getRandomColor(){
-//        Random rnd = new Random();
-//        return Color.argb(10, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
-//    }
+    public int getRandomColor(){
+        Random rnd = new Random();
+        return Color.argb(100, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+    }
 
     public class MovieAdapter extends RecyclerView.Adapter<MovieHolder> {
         private List<Movie> _movies;
