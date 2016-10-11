@@ -13,6 +13,7 @@ public class MyLocations {
     private String tel;
     private double latitude;
     private double longitude;
+    private double distance;
 
     public int getCinemaId() {
         return cinemaId;
@@ -60,6 +61,14 @@ public class MyLocations {
 
     public void setLongitude(double longitude) {
         this.longitude = longitude;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(double distance) {
+        this.distance = distance;
     }
 
 }

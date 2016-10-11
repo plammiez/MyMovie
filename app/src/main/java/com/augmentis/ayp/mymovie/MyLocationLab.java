@@ -43,6 +43,15 @@ public class MyLocationLab {
         return null;
     }
 
+    public MyLocations getLocationByDistance(double distance) {
+        for (MyLocations location : myLocationsList) {
+            if (location.getDistance() == distance) {
+                return location;
+            }
+        }
+        return null;
+    }
+
     public void addLocation(MyLocations locations) {
         myLocationsList.add(locations);
     }

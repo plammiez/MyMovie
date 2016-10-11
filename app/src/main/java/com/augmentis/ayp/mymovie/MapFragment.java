@@ -22,6 +22,8 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by Waraporn on 9/29/2016.
@@ -33,6 +35,7 @@ public class MapFragment extends SupportMapFragment {
 
     private GoogleMap mGoogleMap;
     private Location mLocation;
+    private double nearyTheater;
 
     public static MapFragment newInstance() {
         Bundle args = new Bundle();
@@ -123,6 +126,8 @@ public class MapFragment extends SupportMapFragment {
                 MyLocations location = new MyLocations();
                 location.setCinemaId(jsonObject.getInt("vista_id"));
                 location.setNameENOfLocation(jsonObject.getString("short_name_en"));
+                location.setNameTHOfLocation(jsonObject.getString("short_name_th"));
+                location.setTel(jsonObject.getString("tel"));
 
                 String aLocate = jsonObject.getString("location");
                 Log.d("TAG", "AT LOCATION : " + aLocate);
@@ -141,19 +146,54 @@ public class MapFragment extends SupportMapFragment {
                 LatLngBounds.Builder builder = new LatLngBounds.Builder();
 
                 double distance = calculateDistance(location.getLatitude(), location.getLongitude());
+
+                location.setDistance(distance);
                 plotMarker(mLocate, location.getNameENOfLocation(), distance, builder);
 
                 //Add your values in your `ArrayList` as below:
                 locList.add(location);
-
                 MyLocationLab.getInstance(getActivity()).addLocation(location);
-
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
         return locList;
+    }
+
+    private List<Double> orderDistance() {
+        List<MyLocations> myLocationsList = MyLocationLab.getInstance(getActivity()).getMyLocationsList();
+
+        List<Double> distance = new ArrayList<>();
+
+        for (int i=0 ; i < myLocationsList.size() ; i++) {
+            distance.add(myLocationsList.get(i).getDistance());
+        }
+
+        Collections.sort(distance);
+
+//        for (int j=0 ; j < 1 ; j++) {
+//            location = queryDistance(distance.get(0));
+//        }
+//        Log.d("DISTANCE", "ATTT " + location.getNameENOfLocation());
+        return distance;
+    }
+
+    private MyLocations queryDistance(double distance) {
+        MyLocations location = MyLocationLab.getInstance(getActivity()).getLocationByDistance(distance);
+        return location;
+    }
+
+    private void printDistance() {
+        List<Double> distance = orderDistance();
+
+        for (int i=0 ; i < 5 ; i++) {
+            MyLocations myPlace = queryDistance(distance.get(i));
+
+            Log.d("TAG", "distance near at " + i + " : " + myPlace.getNameENOfLocation()
+                    + " km : " + myPlace.getDistance());
+        }
     }
 
     private void updateMapUI() {
@@ -164,6 +204,7 @@ public class MapFragment extends SupportMapFragment {
         if (mLocation != null) {
             plotMyMarker(mLocation, builder);
             loadCinemaFromJSON();
+            printDistance();
         }
 
 //        int margin = getResources().getDimensionPixelSize(R.dimen.map_inset_margin);
