@@ -101,12 +101,12 @@
             android:layout_marginRight="20dp"
             android:text="Cinema"/>
 
-        <Button
-            android:id="@+id/button_showTime"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:text="Show Time"/>
+        <!--<Button-->
+            <!--android:id="@+id/button_showTime"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="Show Time"/>-->
 
     </LinearLayout>
 
