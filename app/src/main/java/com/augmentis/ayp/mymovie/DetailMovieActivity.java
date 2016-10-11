@@ -6,7 +6,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.location.Location;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,6 +17,7 @@ import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,66 +25,32 @@ import android.widget.TextView;
 /**
  * Created by Waraporn on 9/22/2016.
  */
-public class DetailMovieActivity extends AppCompatActivity{
+public class DetailMovieActivity extends SingleFragmentActivity{
 
     private static final String MOVIE_ID = "MOVIE_ID";
+    private static final String KEY_LOCATION = "LOCATION";
+
     private static final String TAG = "DetailMovieActivity";
 
-    String id;
-
-    TextView txt_director;
-    TextView txt_actor;
-    TextView txt_story;
-    TextView txt_movie_name;
-
-    Movie movie;
-
-    private WebView mVideo;
-
-    public static Intent newIntent(Context context, String movieId) {
+    public static Intent newIntent(Context context, String movieId, Location location) {
         Intent intent = new Intent(context, DetailMovieActivity.class);
         intent.putExtra(MOVIE_ID, movieId);
+        intent.putExtra(KEY_LOCATION, location);
         return intent;
     }
 
-    @SuppressLint("NewApi")
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.detail_movie);
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linear_movie_detail);
+    }
 
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            id = bundle.getString(MOVIE_ID);
-
-            movie = MovieLab.getInstance(this).getMovieById(id);
-
-            Log.d(TAG, "id : " + id);
-            Log.d(TAG, "name : " + movie.getMovieNameEN());
+    @Override
+    protected Fragment onCreateFragment() {
+        if (getIntent() != null) {
+            String movieID = getIntent().getStringExtra(MOVIE_ID);
+            Location location = getIntent().getParcelableExtra(KEY_LOCATION);
+            return DetailMovieFragment.newInstance(movieID, location);
         }
-
-
-        mVideo = (WebView) findViewById(R.id.movie_teaser);
-        mVideo.getSettings().setJavaScriptEnabled(true);//อณุญาตให้ใช้ javascript ได้
-        mVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
-        mVideo.loadUrl(movie.getUrlTrailer());
-        mVideo.setWebChromeClient(new WebChromeClient());
-
-        txt_director = (TextView) findViewById(R.id.director);
-        txt_actor = (TextView) findViewById(R.id.actor);
-        txt_story = (TextView) findViewById(R.id.story);
-        txt_movie_name = (TextView) findViewById(R.id.movie_name);
-
-        txt_director.setText(movie.getDirectors());
-        txt_actor.setText(movie.getActors());
-        txt_story.setText(movie.getSynopsis());
-        txt_movie_name.setText(movie.getMovieNameTH());
-
-        Drawable drawable = getResources().getDrawable(R.drawable.wp6);
-        Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
-        Bitmap blurredBitmap = BlurBuilder.blur( this, bitmap );
-
-        linearLayout.setBackgroundDrawable( new BitmapDrawable( getResources(), blurredBitmap ) );
+        return DetailMovieFragment.newInstance();
     }
 }

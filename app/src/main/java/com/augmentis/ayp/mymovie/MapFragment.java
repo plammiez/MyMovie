@@ -35,7 +35,6 @@ public class MapFragment extends SupportMapFragment {
 
     private GoogleMap mGoogleMap;
     private Location mLocation;
-    private double nearyTheater;
 
     public static MapFragment newInstance() {
         Bundle args = new Bundle();
@@ -158,7 +157,6 @@ public class MapFragment extends SupportMapFragment {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         return locList;
     }
 

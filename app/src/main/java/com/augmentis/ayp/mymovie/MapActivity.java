@@ -3,16 +3,13 @@ package com.augmentis.ayp.mymovie;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 
 
 public class MapActivity extends SingleFragmentActivity{
 
-    private static final int REQUEST_PERMISSION_LOCATION = 231;
     private static final String KEY_LOCATION = "LOCATION";
-    private static final String KEY_LAT = "LAT";
-    private static final String KEY_LONG = "LONG";
 
     public static Intent newIntent(Context activity, Location location) {
         Intent intent = new Intent(activity, MapActivity.class);

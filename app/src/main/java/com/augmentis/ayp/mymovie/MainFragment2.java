@@ -14,7 +14,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v4.util.LruCache;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -26,19 +25,12 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
-
-
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -47,7 +39,6 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -61,7 +52,6 @@ public class MainFragment2 extends Fragment {
 
     public FloatingActionButton fabBtn;
     public List<Object> posterList = new ArrayList<>();
-//    public List<Drawable> poster = new ArrayList<>();
 
     private RecyclerView movie_recycler_view;
     private GoogleApiClient mGoogleApiClient;
@@ -76,7 +66,6 @@ public class MainFragment2 extends Fragment {
 
     private MyMovieFetcher mFetchTask;
     private MyShowTimeFetcher showTimeFetcher;
-
 
     @Nullable
     @Override
@@ -237,7 +226,8 @@ public class MainFragment2 extends Fragment {
             Log.d(TAG, "THIS Movie ID : " + _movie.getMovieId());
             Log.d(TAG, "THIS Movie NAME : " + _movie.getMovieNameEN());
             getShowTime(_movie.getMovieId());
-            Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId());
+
+            Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId(), mLocation);
             startActivity(intent);
         }
 
