@@ -90,7 +90,7 @@ public class MainFragment2 extends Fragment {
         fabBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = MapActivity.newIntent(getActivity(),
+                Intent intent = MapAndListActivity.newIntent(getActivity(),
                         mLocation);
                 startActivity(intent);
             }
@@ -122,6 +122,7 @@ public class MainFragment2 extends Fragment {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu_search, menu);
     }
+
 
     @SuppressWarnings("all")
     private GoogleApiClient.ConnectionCallbacks mCallbacks =

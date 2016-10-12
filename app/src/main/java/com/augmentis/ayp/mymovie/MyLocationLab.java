@@ -65,4 +65,10 @@ public class MyLocationLab {
     public void clearNearyLocation() {
         myNearyList.clear();
     }
+
+    public List<MyLocations> getNearyLocation() {
+        return myNearyList;
+    }
+
+
 }

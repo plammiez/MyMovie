@@ -36,6 +36,8 @@ public class MapFragment extends SupportMapFragment {
     private GoogleMap mGoogleMap;
     private Location mLocation;
 
+    private CallBack callBack;
+
     public static MapFragment newInstance() {
         Bundle args = new Bundle();
         MapFragment fragment = new MapFragment();
@@ -50,11 +52,15 @@ public class MapFragment extends SupportMapFragment {
         fragment.setArguments(args);
         return fragment;
     }
+    interface CallBack{
+        void refreshList();
+    }
 
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setHasOptionsMenu(true);
+        callBack = (CallBack)getActivity();
 
         if (getArguments() != null) {
             mLocation = getArguments().getParcelable(KEY_LOCATION);
@@ -72,6 +78,8 @@ public class MapFragment extends SupportMapFragment {
     @Override
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         return super.onCreateView(layoutInflater, viewGroup, bundle);
+
+
     }
 
     public static double toRadian(double degrees){
@@ -190,6 +198,8 @@ public class MapFragment extends SupportMapFragment {
             Log.d("TAG", "distance near at " + i + " : " + myPlace.getNameENOfLocation()
                     + " km : " + myPlace.getDistance());
         }
+
+        callBack.refreshList();
     }
 
     private void updateMapUI() {
