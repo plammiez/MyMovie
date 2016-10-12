@@ -14,6 +14,7 @@ public class MyLocationLab {
 
     private static MyLocationLab instance;
     private List<MyLocations> myLocationsList;
+    private List<MyLocations> myNearyList;
 
     public static MyLocationLab getInstance(Context context) {
 
@@ -28,15 +29,16 @@ public class MyLocationLab {
     public MyLocationLab(Context context) {
         this.context = context;
         myLocationsList = new ArrayList<>();
+        myNearyList = new ArrayList<>();
     }
 
     public List<MyLocations> getMyLocationsList() {
         return myLocationsList;
     }
 
-    public MyLocations getLocationById(int id) {
+    public MyLocations getLocationById(String id) {
         for (MyLocations location : myLocationsList) {
-            if (location.getCinemaId() == id) {
+            if (location.getCinemaId().equals(id)) {
                 return location;
             }
         }
@@ -54,5 +56,13 @@ public class MyLocationLab {
 
     public void addLocation(MyLocations locations) {
         myLocationsList.add(locations);
+    }
+
+    public void addNearyLocation(MyLocations locations) {
+        myNearyList.add(locations);
+    }
+
+    public void clearNearyLocation() {
+        myNearyList.clear();
     }
 }

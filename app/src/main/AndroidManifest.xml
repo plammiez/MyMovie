@@ -33,6 +33,10 @@
         <activity android:name=".MapActivity"
             android:parentActivityName=".MainActivity"></activity>
 
+        <activity
+            android:name=".ShowtimeActivity"
+            android:parentActivityName=".ShowtimeActivity"></activity>
+
 
 
         <activity android:name=".SplashScreen">

@@ -14,10 +14,10 @@ public class ShowtimeActivity extends SingleFragmentActivity {
     private static final String MOVIE_ID = "MOVIE_ID";
     private static final String CINEMA_ID = "CINEMA_ID";
 
-    public static Intent newIntent(Context activity, String movieID, String cinemaID) {
+    public static Intent newIntent(Context activity, String movieID) {
         Intent intent = new Intent(activity, ShowtimeActivity.class);
         intent.putExtra(MOVIE_ID, movieID);
-        intent.putExtra(CINEMA_ID, cinemaID);
+//        intent.putExtra(CINEMA_ID, cinemaID);
         return intent;
     }
 
@@ -30,8 +30,8 @@ public class ShowtimeActivity extends SingleFragmentActivity {
     protected Fragment onCreateFragment() {
         if (getIntent() != null) {
             String movieID = getIntent().getStringExtra(MOVIE_ID);
-            String cinemaID = getIntent().getStringExtra(CINEMA_ID);
-            return ShowtimeFragment.newInstance(movieID, cinemaID);
+//            String cinemaID = getIntent().getStringExtra(CINEMA_ID);
+            return ShowtimeFragment.newInstance(movieID);
         }
         return ShowtimeFragment.newInstance();
     }

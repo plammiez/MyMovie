@@ -123,7 +123,7 @@ public class MapFragment extends SupportMapFragment {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
                 MyLocations location = new MyLocations();
-                location.setCinemaId(jsonObject.getInt("vista_id"));
+                location.setCinemaId(jsonObject.getString("id"));
                 location.setNameENOfLocation(jsonObject.getString("short_name_en"));
                 location.setNameTHOfLocation(jsonObject.getString("short_name_th"));
                 location.setTel(jsonObject.getString("tel"));
@@ -181,9 +181,12 @@ public class MapFragment extends SupportMapFragment {
     private void printDistance() {
         List<Double> distance = orderDistance();
 
+        MyLocationLab mLab = MyLocationLab.getInstance(getActivity());
+        mLab.clearNearyLocation();
+
         for (int i=0 ; i < 5 ; i++) {
             MyLocations myPlace = queryDistance(distance.get(i));
-
+            mLab.addNearyLocation(queryDistance(distance.get(i)));
             Log.d("TAG", "distance near at " + i + " : " + myPlace.getNameENOfLocation()
                     + " km : " + myPlace.getDistance());
         }

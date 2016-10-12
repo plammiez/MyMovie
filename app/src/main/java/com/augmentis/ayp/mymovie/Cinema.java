@@ -1,19 +1,18 @@
 package com.augmentis.ayp.mymovie;
 
-import java.util.ArrayList;
-
 /**
- * Created by Waraporn on 10/3/2016.
+ * Created by Waraporn on 10/12/2016.
  */
-public class MyLocations {
+
+public class Cinema {
 
     private String cinemaId;
     private String nameTHOfLocation;
     private String nameENOfLocation;
     private String tel;
+    private String location;
     private double latitude;
     private double longitude;
-    private double distance;
 
     public String getCinemaId() {
         return cinemaId;
@@ -47,6 +46,14 @@ public class MyLocations {
         this.tel = tel;
     }
 
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     public double getLatitude() {
         return latitude;
     }
@@ -63,12 +70,7 @@ public class MyLocations {
         this.longitude = longitude;
     }
 
-    public double getDistance() {
-        return distance;
-    }
+    public void addTimeOfCinema(String cinemaName,String time) {
 
-    public void setDistance(double distance) {
-        this.distance = distance;
     }
-
 }

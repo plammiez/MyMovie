@@ -121,9 +121,8 @@ public class DetailMovieFragment extends Fragment {
         button_cinema.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = ShowtimeActivity.newIntent(getActivity(), movie.getMovieId(),
-//                        mLocation);
-//                startActivity(intent);
+                Intent intent = ShowtimeActivity.newIntent(getActivity(), movie.getMovieId());
+                startActivity(intent);
             }
         });
 
@@ -133,61 +132,5 @@ public class DetailMovieFragment extends Fragment {
 
         view.setBackgroundDrawable(new BitmapDrawable(getResources(), blurredBitmap));
         return view;
-    }
-
-    public static double toRadian(double degrees){
-        return (degrees * Math.PI) / 180.0d;
-    }
-
-    public double calculateDistance(double lat, double lon) {
-
-        // KM: use mile here if you want mile result
-        double earthRadius = 6371.0d;
-
-        // Latitude and Longitude of here
-        double myLat = mLocation.getLatitude();
-        double myLon = mLocation.getLongitude();
-
-        // Calculate
-        double dLat = toRadian(lat - myLat);
-        double dLng = toRadian(lon - myLon);
-
-        double a = Math.pow(Math.sin(dLat/2), 2)  +
-                Math.cos(toRadian(myLat)) * Math.cos(toRadian(lat)) *
-                        Math.pow(Math.sin(dLng/2), 2);
-
-        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-
-        // returns result kilometers
-        return earthRadius * c;
-    }
-
-    private List<Double> orderDistance() {
-        List<MyLocations> myLocationsList = MyLocationLab.getInstance(getActivity()).getMyLocationsList();
-
-        List<Double> distance = new ArrayList<>();
-
-        for (int i=0 ; i < myLocationsList.size() ; i++) {
-            distance.add(myLocationsList.get(i).getDistance());
-        }
-
-        Collections.sort(distance);
-        return distance;
-    }
-
-    private MyLocations queryDistance(double distance) {
-        MyLocations location = MyLocationLab.getInstance(getActivity()).getLocationByDistance(distance);
-        return location;
-    }
-
-    private void printDistance() {
-        List<Double> distance = orderDistance();
-
-        for (int i=0 ; i < 5 ; i++) {
-            MyLocations myPlace = queryDistance(distance.get(i));
-
-            Log.d("TAG", "distance near at " + i + " : " + myPlace.getNameENOfLocation()
-                    + " km : " + myPlace.getDistance());
-        }
     }
 }

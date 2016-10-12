@@ -65,7 +65,7 @@ public class MainFragment2 extends Fragment {
     private double longitude;
 
     private MyMovieFetcher mFetchTask;
-    private MyShowTimeFetcher showTimeFetcher;
+
 
     @Nullable
     @Override
@@ -198,11 +198,6 @@ public class MainFragment2 extends Fragment {
 
     }
 
-    public void getShowTime(String id) {
-        showTimeFetcher = new MyShowTimeFetcher();
-        showTimeFetcher.execute(id);
-    }
-
     public class MovieHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         Movie _movie;
         ImageView movieImg;
@@ -225,7 +220,6 @@ public class MainFragment2 extends Fragment {
         public void onClick(View v) {
             Log.d(TAG, "THIS Movie ID : " + _movie.getMovieId());
             Log.d(TAG, "THIS Movie NAME : " + _movie.getMovieNameEN());
-            getShowTime(_movie.getMovieId());
 
             Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId(), mLocation);
             startActivity(intent);
@@ -347,30 +341,5 @@ public class MainFragment2 extends Fragment {
         }
     }
 
-    private class MyShowTimeFetcher extends AsyncTask<String, Void, Bitmap> {
 
-        String url = "http://movieplus.majorcineplex.com/api/movie";
-
-        @Override
-        protected Bitmap doInBackground(String... params) {
-
-            String showTimeURL = url + "/" + params[0].toString() + "/showtime";
-            Log.d("SHOWTIME", "URL : " + showTimeURL);
-
-            ShowTimeFetcher showTimeFetcher = new ShowTimeFetcher();
-            try {
-                byte[] jsonStr = showTimeFetcher.getUrlBytes(showTimeURL);
-                String str = new String(jsonStr);
-                Log.d("SHOWTIME", "ST : " + str);
-//                loadMoviesFromJSON(str);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-//            } catch (JSONException e) {
-//                e.printStackTrace();
-//            }
-
-            return null;
-        }
-    }
 }
