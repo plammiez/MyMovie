@@ -14,7 +14,7 @@
         android:layout_marginTop="10dp">
 
         <ImageView
-            android:id="@+id/crime_photo"
+            android:id="@+id/poster"
             android:layout_width="80dp"
             android:layout_height="100dp"
             android:scaleType="centerInside"
@@ -22,8 +22,6 @@
             android:cropToPadding="true"
 
             />
-
-
     </LinearLayout>
 
     <LinearLayout

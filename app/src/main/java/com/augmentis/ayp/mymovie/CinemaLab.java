@@ -1,6 +1,7 @@
 package com.augmentis.ayp.mymovie;
 
 import android.content.Context;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 
 public class CinemaLab {
 
+    private static final String TAG = "CinemaLab";
     private static CinemaLab instance;
     private List<Cinema> myCinemaList;
 
@@ -39,6 +41,7 @@ public class CinemaLab {
                 return cinema;
             }
         }
+        Log.d(TAG,id);
         return null;
     }
 

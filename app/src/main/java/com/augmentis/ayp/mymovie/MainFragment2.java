@@ -319,7 +319,7 @@ public class MainFragment2 extends Fragment {
 
     private class MyMovieFetcher extends AsyncTask<Void, Void, Bitmap> {
 
-        String url = "http://movieplus.majorcineplex.com/api/movie";
+        String url = "http://movieplus.majorcineplex.com/api/movie/";
 
         @Override
         protected Bitmap doInBackground(Void... params) {
@@ -328,6 +328,7 @@ public class MainFragment2 extends Fragment {
                 byte[] jsonStr = movieFetcher.getUrlBytes(url);
                 String str = new String(jsonStr);
                 loadMoviesFromJSON(str);
+//                Log.d("URL", "MOVIE URL : " + url);
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (JSONException e) {

@@ -95,7 +95,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -137,7 +137,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -179,7 +179,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -221,7 +221,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -263,7 +263,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -305,7 +305,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -314,48 +314,6 @@
       "id": "576ccf688d526115004eb18b",
       "name": "Major Cineplex Big C Ayutthaya",
       "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี อยุธยา"
-    },
-    {
-      "short_name_en": "Pinklao",
-      "short_name_th": "เมเจอร์ ปิ่นเกล้า",
-      "cinema_id": "9",
-      "vista_id": "0000001003",
-      "brand_id": "1",
-      "is_showtime_only": 0,
-      "is_sell_3d_glasses": 1,
-      "kbank": {
-        "username": "078MAJORCNP",
-        "merchant_id": "401002308852001",
-        "terminal_id": "74408124",
-        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
-      },
-      "location": "13.7784,100.478",
-      "tel": "0-2435-3750",
-      "zones": [],
-      "systems": [
-        {
-          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
-          "order": 5,
-          "id": "576ccf688d526115004eb179",
-          "name": "Digital 3D",
-          "name_alt": "Digital 3D"
-        }
-      ],
-      "brands": [
-        {
-          "cinema_brand_id": 1,
-          "code_name": "MJC",
-          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
-          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
-          "id": "576ccf688d526115004eb167",
-          "name": "Major Cineplex",
-          "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
-        }
-      ],
-      "id": "576ccf688d526115004eb18c",
-      "name": "Major Cineplex Pinklao",
-      "name_alt": "เมเจอร์ ซีนีเพล็กซ์ ปิ่นเกล้า"
     },
     {
       "short_name_en": "Sukhumvit",
@@ -396,7 +354,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -438,7 +396,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -501,7 +459,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -543,7 +501,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -586,7 +544,7 @@
           "code_name": "IMAX",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-imax.png",
-          "order": 12,
+          "order": 15,
           "id": "576ccf688d526115004eb16b",
           "name": "Krungsri IMAX",
           "name_alt": "กรุงศรี ไอแมกซ์"
@@ -628,7 +586,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -670,7 +628,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -712,7 +670,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -761,7 +719,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -803,7 +761,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -845,7 +803,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -887,7 +845,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -929,7 +887,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1027,7 +985,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1069,7 +1027,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1111,7 +1069,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -1153,7 +1111,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -1195,7 +1153,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1237,7 +1195,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -1252,7 +1210,7 @@
       "short_name_th": "โคราช",
       "cinema_id": "34",
       "vista_id": "0000003011",
-      "brand_id": "2",
+      "brand_id": "17",
       "is_showtime_only": 0,
       "is_sell_3d_glasses": 1,
       "kbank": {
@@ -1275,19 +1233,19 @@
       ],
       "brands": [
         {
-          "cinema_brand_id": 2,
-          "code_name": "EGV",
-          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
-          "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
-          "id": "576ccf688d526115004eb168",
-          "name": "EGV",
-          "name_alt": "อีจีวี"
+          "cinema_brand_id": 17,
+          "code_name": "CNP",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-cineplex.png",
+          "ticket_image": null,
+          "order": 12,
+          "id": "57f72add89b77481b764d163",
+          "name": "Cineplex",
+          "name_alt": "ซีนีเพล็กซ์"
         }
       ],
       "id": "576ccf688d526115004eb1a2",
-      "name": "EGV Korat",
-      "name_alt": "อีจีวี โคราช"
+      "name": "Korat Cineplex",
+      "name_alt": "โคราช ซีนีเพล็กซ์"
     },
     {
       "short_name_en": "Lotus Phitsanulok",
@@ -1321,7 +1279,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1363,7 +1321,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -1412,7 +1370,7 @@
           "code_name": "IMAX",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-imax.png",
-          "order": 12,
+          "order": 15,
           "id": "576ccf688d526115004eb16b",
           "name": "Krungsri IMAX",
           "name_alt": "กรุงศรี ไอแมกซ์"
@@ -1454,7 +1412,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1496,7 +1454,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1538,7 +1496,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1580,7 +1538,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1622,7 +1580,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1671,7 +1629,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1713,7 +1671,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1755,7 +1713,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1797,7 +1755,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1839,7 +1797,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1881,7 +1839,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -1923,7 +1881,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2007,7 +1965,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2049,7 +2007,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2091,7 +2049,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -2133,7 +2091,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2217,7 +2175,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2259,7 +2217,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2301,7 +2259,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2343,7 +2301,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2385,7 +2343,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -2427,7 +2385,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2469,7 +2427,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -2560,7 +2518,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2602,7 +2560,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2644,7 +2602,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2686,7 +2644,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2728,7 +2686,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2770,7 +2728,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2812,7 +2770,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2854,7 +2812,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2910,7 +2868,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -2953,7 +2911,7 @@
           "code_name": "IMAX",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-imax.png",
-          "order": 12,
+          "order": 15,
           "id": "576ccf688d526115004eb16b",
           "name": "Krungsri IMAX",
           "name_alt": "กรุงศรี ไอแมกซ์"
@@ -2995,7 +2953,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3037,7 +2995,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3079,7 +3037,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3121,7 +3079,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3163,7 +3121,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3206,7 +3164,7 @@
           "code_name": "IMAX",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-imax.png",
-          "order": 12,
+          "order": 15,
           "id": "576ccf688d526115004eb16b",
           "name": "Krungsri IMAX",
           "name_alt": "กรุงศรี ไอแมกซ์"
@@ -3304,7 +3262,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3346,7 +3304,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -3388,7 +3346,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3473,7 +3431,7 @@
           "code_name": "IMAX",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax-toyota.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-quartier.png",
-          "order": 13,
+          "order": 16,
           "id": "576ccf688d526115004eb170",
           "name": "Toyota IMAX",
           "name_alt": "โตโยต้า ไอแมกซ์"
@@ -3515,7 +3473,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3557,7 +3515,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -3599,7 +3557,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3641,7 +3599,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3683,7 +3641,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -3767,7 +3725,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3809,7 +3767,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -3851,7 +3809,7 @@
           "code_name": "EGV",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-egv.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-egv.png",
-          "order": 15,
+          "order": 14,
           "id": "576ccf688d526115004eb168",
           "name": "EGV",
           "name_alt": "อีจีวี"
@@ -3894,7 +3852,7 @@
           "code_name": "IMAX",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-imax-toyota.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-quartier.png",
-          "order": 13,
+          "order": 16,
           "id": "576ccf688d526115004eb170",
           "name": "Toyota IMAX",
           "name_alt": "โตโยต้า ไอแมกซ์"
@@ -3936,7 +3894,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4104,7 +4062,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4146,7 +4104,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4188,7 +4146,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4230,7 +4188,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4272,7 +4230,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4356,7 +4314,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4365,52 +4323,6 @@
       "id": "576ccf688d526115004eb1e8",
       "name": "Major Cineplex Big C Ranong",
       "name_alt": "เมเจอร์ ซีนีเพล็กซ์ บิ๊กซี ระนอง"
-    },
-    {
-      "tel": "",
-      "location": "0,0",
-      "kbank": {
-        "md5": "",
-        "terminal_id": "",
-        "merchant_id": "",
-        "username": ""
-      },
-      "is_sell_3d_glasses": 0,
-      "is_showtime_only": 0,
-      "brand_id": "",
-      "vista_id": "",
-      "cinema_id": "",
-      "short_name_th": "",
-      "short_name_en": "",
-      "zones": [],
-      "systems": [],
-      "brands": [],
-      "id": "57a08b574e521b150029f0ca",
-      "name": "",
-      "name_alt": ""
-    },
-    {
-      "tel": "",
-      "location": "0,0",
-      "kbank": {
-        "md5": "",
-        "terminal_id": "",
-        "merchant_id": "",
-        "username": ""
-      },
-      "is_sell_3d_glasses": 0,
-      "is_showtime_only": 0,
-      "brand_id": "",
-      "vista_id": "",
-      "cinema_id": "",
-      "short_name_th": "",
-      "short_name_en": "",
-      "zones": [],
-      "systems": [],
-      "brands": [],
-      "id": "57a08b5c4e521b150029f0cb",
-      "name": "",
-      "name_alt": ""
     },
     {
       "short_name_en": "Lotus Nakhon Pathom",
@@ -4444,7 +4356,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4486,7 +4398,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4528,7 +4440,7 @@
           "code_name": "MJC",
           "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-major.png",
           "ticket_image": "http://movieplus.majorcineplex.com/images/ticket/ticket-major.png",
-          "order": 14,
+          "order": 13,
           "id": "576ccf688d526115004eb167",
           "name": "Major Cineplex",
           "name_alt": "เมเจอร์ ซีนีเพล็กซ์"
@@ -4537,9 +4449,51 @@
       "id": "57da8dc689b77481b764d160",
       "name": "Major Cineplex Lotus Nadee Udonthani",
       "name_alt": "เมเจอร์ ซีนีเพล็กซ์ โลตัส นาดี อุดรธานี"
+    },
+    {
+      "tel": "032-523245",
+      "location": "12.547784,99.962082",
+      "kbank": {
+        "username": "078MAJORCNP",
+        "merchant_id": "401002324052001",
+        "terminal_id": "74408264",
+        "md5": "QxMjcGFzc3MOIQ=vZz0zJN5qareUTVRk"
+      },
+      "is_sell_3d_glasses": 0,
+      "is_showtime_only": 0,
+      "brand_id": "17",
+      "vista_id": "0000001083",
+      "cinema_id": "134",
+      "short_name_th": "บลูพอร์ต ซีนีเพล็กซ์",
+      "short_name_en": "Bluport Cineplex",
+      "zones": [],
+      "systems": [
+        {
+          "icon_image": "http://movieplus.majorcineplex.com/images/branch-system/type-digital3d.png",
+          "order": 5,
+          "id": "576ccf688d526115004eb179",
+          "name": "Digital 3D",
+          "name_alt": "Digital 3D"
+        }
+      ],
+      "brands": [
+        {
+          "cinema_brand_id": 17,
+          "code_name": "CNP",
+          "icon_image": "http://movieplus.majorcineplex.com/images/brand/brand-cineplex.png",
+          "ticket_image": null,
+          "order": 12,
+          "id": "57f72add89b77481b764d163",
+          "name": "Cineplex",
+          "name_alt": "ซีนีเพล็กซ์"
+        }
+      ],
+      "id": "57ee2aeb89b77481b764d162",
+      "name": "Bluport Cineplex",
+      "name_alt": "บลูพอร์ต ซีนีเพล็กซ์"
     }
   ],
-  "elements_total": 106,
+  "elements_total": 104,
   "page_index": 1,
   "page_size": 10,
   "page_total": 1
