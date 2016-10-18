@@ -105,7 +105,7 @@ public class ShowtimeFragment extends Fragment {
         showTimeFetcher.execute(id);
     }
 
-    public void loadShowtime(String json) throws JSONException{
+    public void loadShowtime(String json) throws JSONException {
 
 //        Gson gson = new Gson();
 //        MyCinema cinema = gson.fromJson(json, MyCinema.class);
@@ -264,12 +264,12 @@ public class ShowtimeFragment extends Fragment {
         }
     }
 
-    public class ShowtimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ShowtimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private ImageView imageView;
         private TextView movieName;
         private TextView cinemaName;
-//        private TextView time[] = null;
+        private TextView time;
         private LinearLayout layout;
 
         Showtime _showtime;
@@ -281,7 +281,7 @@ public class ShowtimeFragment extends Fragment {
             movieName = (TextView) itemView.findViewById(R.id.movie_name_showtime_page);
             cinemaName = (TextView) itemView.findViewById(R.id.cinema_name_showtime_page);
             layout = (LinearLayout) itemView.findViewById(R.id.list_of_time);
-//            time = (TextView) itemView.findViewById(R.id.time);
+            time = (TextView) itemView.findViewById(R.id.time);
         }
 
         @Override
@@ -294,14 +294,32 @@ public class ShowtimeFragment extends Fragment {
         public void bind(Showtime showtime) {
 
             Movie _movie = MovieLab.getInstance(getActivity()).getMovieById(showtime.getMovieID());
-           _showtime = showtime;
+            _showtime = showtime;
             Log.d(TAG, "LIST : " + _showtime.getNameMovie());
 //            Log.d(TAG, "LIST SIZE : " + MovieLab.getInstance(getActivity()).getMovieList().size());
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(imageView);
 
             movieName.setText(_movie.getMovieNameEN());
-            cinemaName.setText(_showtime.getNameCinema());
 
+//            TextView time[] = null;
+            //= new TextView[_showtime.getCinemaID().size()];
+
+            Log.d(TAG, "S H O W T I M E : " + _showtime.getTimeAudio().getTime().size());
+
+            for (int j = 0; j < _showtime.getCinemaID().size(); j++) {
+
+                cinemaName.setText(CinemaLab.getInstance(getActivity())
+                        .getCinemaById(_showtime.getCinemaID().get(j)).getNameENOfLocation());
+
+                for (int i = 0; i < _showtime.getTimeAudio().getTime().size(); i++) {
+//                    time[i] = new TextView(getActivity());
+                    time.setText(_showtime.getTimeAudio().getTime().get(i));
+//                TextView time = new TextView(getContext());
+//                time.setText(_showtime.getTimeAudio().getTime().get(i));
+                    Log.d(TAG, "S H O W T I M E : " + _showtime.getTimeAudio().getTime().get(i));
+                    layout.addView(time);
+                }
+            }
 ////            TextView time[] = null;
 //            for (int i=0; i<_showtime.getTimeAudio().getTime().size(); i++) {
 ////                time[i] = new TextView(getActivity());
@@ -320,6 +338,7 @@ public class ShowtimeFragment extends Fragment {
                 layout.addView(tv);
             }
         }
+
     }
 
     public class ShowtimeAdapter extends RecyclerView.Adapter<ShowtimeHolder> {
@@ -338,7 +357,7 @@ public class ShowtimeFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(ShowtimeHolder holder, int position) {
-            Showtime mShowtime= _Showtimes.get(position);
+            Showtime mShowtime = _Showtimes.get(position);
             holder.bind(mShowtime);
         }
 

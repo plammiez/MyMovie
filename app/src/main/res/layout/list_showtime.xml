@@ -51,6 +51,7 @@
 
         <LinearLayout
             android:id="@+id/list_of_time"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -62,6 +63,8 @@
                 android:hint="Time"
                 android:layout_marginLeft="22dp"
                 android:textColor="#FFFFFF"/>
+                android:hint="Time"
+                android:textSize="10sp"/>
 
         </LinearLayout>
 
