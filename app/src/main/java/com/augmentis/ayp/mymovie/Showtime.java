@@ -12,11 +12,10 @@ import java.util.List;
 public class Showtime {
 
     private String movieID;
-    private List<Element> cinemaID;
+    private ArrayList<String> cinemaID;
     private String nameMovie;
     private String nameCinema;
-    private String time;
-    private String audio;
+    private keepTimeForCinema timeAudio;
 
     public String getMovieID() {
         return movieID;
@@ -24,14 +23,6 @@ public class Showtime {
 
     public void setMovieID(String movieID) {
         this.movieID = movieID;
-    }
-
-    public String getAudio() {
-        return audio;
-    }
-
-    public void setAudio(String audio) {
-        this.audio = audio;
     }
 
     public String getNameCinema() {
@@ -42,11 +33,11 @@ public class Showtime {
         this.nameCinema = nameCinema;
     }
 
-    public List<Element> getCinemaID() {
+    public ArrayList<String> getCinemaID() {
         return cinemaID;
     }
 
-    public void setCinemaID(List<Element> cinemaID) {
+    public void setCinemaID(ArrayList<String> cinemaID) {
         this.cinemaID = cinemaID;
     }
 
@@ -58,11 +49,11 @@ public class Showtime {
         this.nameMovie = nameMovie;
     }
 
-    public String getTime() {
-        return time;
+    public keepTimeForCinema getTimeAudio() {
+        return timeAudio;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setTimeAudio(keepTimeForCinema timeAudio) {
+        this.timeAudio = timeAudio;
     }
 }

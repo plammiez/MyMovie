@@ -37,7 +37,7 @@ public class CinemaLab {
         return myCinemaList;
     }
 
-    public Cinema getCinemaById(Element id) {
+    public Cinema getCinemaById(String id) {
         for (Cinema cinema : myCinemaList) {
             if (cinema.getCinemaId().equals(id)) {
                 return cinema;
