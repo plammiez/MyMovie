@@ -219,7 +219,7 @@ public class ShowtimeFragment extends Fragment {
         }
     }
 
-    public class ShowtimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ShowtimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private ImageView imageView;
         private TextView movieName;
@@ -230,17 +230,16 @@ public class ShowtimeFragment extends Fragment {
         public ShowtimeHolder(View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.poster);
+            imageView.setOnClickListener(this);
             movieName = (TextView) itemView.findViewById(R.id.movie_name_showtime_page);
             time = (TextView) itemView.findViewById(R.id.time);
         }
 
         @Override
         public void onClick(View v) {
-//            Log.d(TAG, "THIS Movie ID : " + _movie.getMovieId());
-//            Log.d(TAG, "THIS Movie NAME : " + _movie.getMovieNameEN());
-//
-//            Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId(), mLocation);
-//            startActivity(intent);
+//            Intent intent = new Intent(getActivity(), WebViewActivity.class);
+            Intent intent = WebViewActivity.newIntent(getActivity());
+            startActivity(intent);
         }
 
         public void bind(Showtime showtime) {
@@ -254,6 +253,7 @@ public class ShowtimeFragment extends Fragment {
             movieName.setText(_showtime.getNameMovie());
             time.setText(_showtime.getTime().get(0));
         }
+
     }
 
     public class ShowtimeAdapter extends RecyclerView.Adapter<ShowtimeHolder> {

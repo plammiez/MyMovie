@@ -16,7 +16,7 @@ public class MovieLab {
 
     private static MovieLab instance;
     private List<Movie> movieList;
-    private List<Movie> movieListUpperCase;
+//    private List<Movie> movieListUpperCase;
 
     public static MovieLab getInstance(Context context) {
 
