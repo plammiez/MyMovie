@@ -1,14 +1,18 @@
 package com.augmentis.ayp.mymovie;
 
 import android.Manifest;
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.MatrixCursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -18,10 +22,12 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -29,6 +35,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
@@ -46,7 +54,7 @@ import org.json.JSONObject;
 /**
  * Created by Waraporn on 9/20/2016.
  */
-public class MainFragment2 extends Fragment {
+public class MainFragment2 extends Fragment{
 
     public int id = 1;
 
@@ -65,6 +73,7 @@ public class MainFragment2 extends Fragment {
     private double longitude;
 
     private MyMovieFetcher mFetchTask;
+    private String mSearchKey;
 
 
     @Nullable
@@ -96,7 +105,7 @@ public class MainFragment2 extends Fragment {
             }
         });
 
-        Drawable drawable = getResources().getDrawable(R.drawable.wp6);
+        Drawable drawable = getResources().getDrawable(R.drawable.wp8);
         Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
         Bitmap blurredBitmap = BlurBuilder.blur( getActivity(), bitmap );
 
@@ -117,10 +126,36 @@ public class MainFragment2 extends Fragment {
         mGoogleApiClient.disconnect();
     }
 
+    public void refreshPage(List<Movie> _movie) {
+        List<Movie> movies = _movie;
+        movie_recycler_view.setAdapter(new MovieAdapter(movies));
+    }
+
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu_search, menu);
+
+        MenuItem menuItem = menu.findItem(R.id.menu_search);
+        final SearchView searchView = (SearchView) menuItem.getActionView();
+        searchView.setQuery(mSearchKey, false);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                Log.d(TAG, "Query text submitted: " + query);
+                mSearchKey = query;
+                refreshPage(MovieLab.getInstance(getActivity()).search(mSearchKey));
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                Log.d(TAG, "Query text changed: " + newText);
+                return false;
+            }
+        });
     }
 
 
@@ -204,7 +239,8 @@ public class MainFragment2 extends Fragment {
         ImageView movieImg;
         TextView movie_name_in_list_th;
         TextView movie_name_in_list_en;
-        CardView cardView;
+//        CardView cardView;
+        LinearLayout linearLayout;
 
         public MovieHolder(View itemView) {
             super(itemView);
@@ -214,7 +250,8 @@ public class MainFragment2 extends Fragment {
             movie_name_in_list_th = (TextView) itemView.findViewById(R.id.movie_name_in_list_th);
             movie_name_in_list_en = (TextView) itemView.findViewById(R.id.movie_name_in_list_en);
 
-            cardView = (CardView) itemView.findViewById(R.id.card_view);
+            linearLayout = (LinearLayout) itemView.findViewById(R.id.linear);
+//            cardView = (CardView) itemView.findViewById(R.id.card_view);
         }
 
         @Override
@@ -231,7 +268,7 @@ public class MainFragment2 extends Fragment {
             Log.d(TAG, "LIST : " + _movie.getMovieNameEN());
 //            Log.d(TAG, "LIST SIZE : " + MovieLab.getInstance(getActivity()).getMovieList().size());
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(movieImg);
-            cardView.setBackgroundColor(getRandomColor());
+            linearLayout.setBackgroundColor(getRandomColor());
             movie_name_in_list_th.setText(_movie.getMovieNameTH());
             movie_name_in_list_en.setText(_movie.getMovieNameEN());
         }

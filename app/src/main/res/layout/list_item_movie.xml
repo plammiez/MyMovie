@@ -15,23 +15,29 @@
                  android:layout_height="270dp"
                  android:layout_gravity="center"
                  android:layout_alignStart="@+id/textView"
-                 android:layout_marginTop="5dp" />
+                 android:layout_marginTop="5dp"
+                 android:layout_weight="4"/>
 
-             <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/card_view"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    card_view:cardCornerRadius="5dp"
-                    card_view:contentPadding="4dp">
+             <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                    <!--android:id="@+id/card_view"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="180dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--card_view:cardCornerRadius="5dp"-->
+                    <!--card_view:contentPadding="2dp"-->
+                    <!--android:layout_weight="2">-->
 
                 <LinearLayout
+                    android:id="@+id/linear"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp">
 
                 <TextView
                     android:id="@+id/movie_name_in_list_en"
@@ -42,6 +48,7 @@
                     android:layout_centerHorizontal="true"
                     android:textSize="14dp"
                     android:textColor="#FFFFFF"
+                    android:layout_weight="1"
                     />
 
                 <TextView
@@ -53,11 +60,12 @@
                     android:layout_centerHorizontal="true"
                     android:textSize="14dp"
                     android:textColor="#FFFFFF"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"/>
 
                 </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                <!--</android.support.v7.widget.CardView>-->
 
         </LinearLayout>
 

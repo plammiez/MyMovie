@@ -75,9 +75,5 @@ public class MapAndListActivity extends AppCompatActivity implements MapFragment
                 Fragment newFragment = MapListFragment.newInstance();
 
                 fragmentManager.beginTransaction().replace(R.id.fragment_container_2, newFragment).commit();
-
-
-
-
     }
 }

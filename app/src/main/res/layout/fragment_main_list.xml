@@ -28,7 +28,6 @@
 
         android:layout_marginBottom="@dimen/fab_margin_bottom"
         android:layout_marginRight="@dimen/fab_margin_right"
-
         android:id="@+id/fabBtn"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -37,6 +36,6 @@
         app:fabSize="normal"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        app:backgroundTint="@color/colorYellow"  />
+        app:backgroundTint="@color/colorAccent" />
 
 </android.support.design.widget.CoordinatorLayout>

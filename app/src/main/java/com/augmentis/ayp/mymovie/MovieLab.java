@@ -16,6 +16,7 @@ public class MovieLab {
 
     private static MovieLab instance;
     private List<Movie> movieList;
+    private List<Movie> movieListUpperCase;
 
     public static MovieLab getInstance(Context context) {
 
@@ -90,6 +91,22 @@ public class MovieLab {
         if (externalFilesDir == null) {
             return null;
         }
-        return  new File(externalFilesDir, movie.getUrlPoster());
+        return new File(externalFilesDir, movie.getUrlPoster());
+    }
+
+    public List search(String mSearchKey) {
+        List<Movie> newList = new ArrayList<>();
+        for (Movie movie : movieList) {
+            if ((movie.getMovieNameTH()).matches(".*" + mSearchKey + ".*")) {
+                newList.add(movie);
+            } else if ((movie.getMovieNameEN().toUpperCase()).matches(".*" + mSearchKey.toUpperCase() + ".*")) {
+                newList.add(movie);
+            }
+        }
+        if (newList.size() == 0){
+            return movieList;
+        }else {
+            return newList;
+        }
     }
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NearlyMovie</string>
+    <string name="app_name">NearlyCinema</string>
     <string name="title_bar">Search</string>
     <string name="fanDay_detail">ผู้กำกับ : บรรจง ปิสัญธนะกูล
         นักแสดง : เต๋อ ฉันทวิชช์ ธนะเสวี, มิว นิษฐา จิรยั่งยืน
@@ -15,4 +15,5 @@
     <string name="actor">Actor</string>
     <string name="story">Story</string>
     <string name="movie_name">Movie mane</string>
+    <string name="search">Search</string>
 </resources>

@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -30,11 +32,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.regex.PatternSyntaxException;
+
+import static com.augmentis.ayp.mymovie.R.id.screen;
 
 /**
  * Created by Waraporn on 10/11/2016.
@@ -104,17 +110,25 @@ public class DetailMovieFragment extends Fragment {
         mVideo = (WebView) view.findViewById(R.id.movie_teaser);
         mVideo.getSettings().setJavaScriptEnabled(true);//อณุญาตให้ใช้ javascript ได้
         mVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
+//        mVideo.getSettings().setBuiltInZoomControls(true);
+//        mVideo.setHorizontalScrollBarEnabled(false);
+
         mVideo.loadUrl(movie.getUrlTrailer());
         mVideo.setWebChromeClient(new WebChromeClient());
+
+        String direc = movie.getDirectors().replace("\"","").replace("[","").replace("]","");
+        String act = movie.getActors().replace("\"","").replace("[","").replace("]","");
+        String story = movie.getSynopsis().replace("\"","");
 
         txt_director = (TextView) view.findViewById(R.id.director);
         txt_actor = (TextView) view.findViewById(R.id.actor);
         txt_story = (TextView) view.findViewById(R.id.story);
         txt_movie_name = (TextView) view.findViewById(R.id.movie_name);
 
-        txt_director.setText(movie.getDirectors());
-        txt_actor.setText(movie.getActors());
-        txt_story.setText(movie.getSynopsis());
+        //txt_director.setText("Director : " + movie.getDirectors());
+        txt_director.setText("Director : " + direc);
+        txt_actor.setText("Actor : " + act);
+        txt_story.setText(story);
         txt_movie_name.setText(movie.getMovieNameTH());
 
         button_cinema = (Button) view.findViewById(R.id.button_cinema);
@@ -126,7 +140,7 @@ public class DetailMovieFragment extends Fragment {
             }
         });
 
-        Drawable drawable = getResources().getDrawable(R.drawable.wp6);
+        Drawable drawable = getResources().getDrawable(R.drawable.wp8);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
         Bitmap blurredBitmap = BlurBuilder.blur(getActivity(), bitmap);
 
