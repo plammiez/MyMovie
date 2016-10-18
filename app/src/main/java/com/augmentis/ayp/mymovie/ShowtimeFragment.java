@@ -253,7 +253,6 @@ public class ShowtimeFragment extends Fragment {
             movieName.setText(_showtime.getNameMovie());
             time.setText(_showtime.getTime().get(0));
         }
-
     }
 
     public class ShowtimeAdapter extends RecyclerView.Adapter<ShowtimeHolder> {
