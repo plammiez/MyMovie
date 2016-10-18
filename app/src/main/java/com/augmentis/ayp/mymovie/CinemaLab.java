@@ -3,6 +3,8 @@ package com.augmentis.ayp.mymovie;
 import android.content.Context;
 import android.util.Log;
 
+import com.augmentis.ayp.mymovie.model.Element;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,13 +37,23 @@ public class CinemaLab {
         return myCinemaList;
     }
 
-    public Cinema getCinemaById(String id) {
+    public Cinema getCinemaById(Element id) {
         for (Cinema cinema : myCinemaList) {
             if (cinema.getCinemaId().equals(id)) {
                 return cinema;
             }
         }
         Log.d(TAG,id);
+        return null;
+    }
+
+    public Cinema getCinemaByName(String name) {
+        for (Cinema cinema : myCinemaList) {
+            if (cinema.getNameTHOfLocation().equals(name)) {
+                return cinema;
+            }
+        }
+        Log.d(TAG,name);
         return null;
     }
 

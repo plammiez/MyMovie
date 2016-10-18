@@ -1,6 +1,9 @@
 package com.augmentis.ayp.mymovie;
 
+import com.augmentis.ayp.mymovie.model.Element;
+
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Waraporn on 10/12/2016.
@@ -9,11 +12,11 @@ import java.util.ArrayList;
 public class Showtime {
 
     private String movieID;
-    private String cinemaID;
+    private List<Element> cinemaID;
     private String nameMovie;
     private String nameCinema;
-    private ArrayList<String> time;
-    private ArrayList<String> audio;
+    private String time;
+    private String audio;
 
     public String getMovieID() {
         return movieID;
@@ -23,11 +26,11 @@ public class Showtime {
         this.movieID = movieID;
     }
 
-    public ArrayList<String> getAudio() {
+    public String getAudio() {
         return audio;
     }
 
-    public void setAudio(ArrayList<String> audio) {
+    public void setAudio(String audio) {
         this.audio = audio;
     }
 
@@ -39,11 +42,11 @@ public class Showtime {
         this.nameCinema = nameCinema;
     }
 
-    public String getCinemaID() {
+    public List<Element> getCinemaID() {
         return cinemaID;
     }
 
-    public void setCinemaID(String cinemaID) {
+    public void setCinemaID(List<Element> cinemaID) {
         this.cinemaID = cinemaID;
     }
 
@@ -55,11 +58,11 @@ public class Showtime {
         this.nameMovie = nameMovie;
     }
 
-    public ArrayList<String> getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(ArrayList<String> time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }

@@ -17,7 +17,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.augmentis.ayp.mymovie.model.Element;
+import com.augmentis.ayp.mymovie.model.MyCinema;
+import com.augmentis.ayp.mymovie.model.MyShowtime;
 import com.bumptech.glide.Glide;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -96,53 +100,69 @@ public class ShowtimeFragment extends Fragment {
 
     public void loadShowtime(String json) throws JSONException{
 
+        Gson gson = new Gson();
+        MyCinema cinema = gson.fromJson(json, MyCinema.class);
+
         Showtime showtime = new Showtime();
+        Movie movie = MovieLab.getInstance(getActivity()).getMovieById(MOVIE_ID);
+        showtime.setMovieID(MOVIE_ID);
+        showtime.setNameMovie(movie.getMovieNameEN());
 
-        try {
-            JSONObject obj = new JSONObject(json);
-            JSONArray jsonArray = obj.getJSONArray("elements");
+        showtime.setCinemaID(cinema.getElements());
+//        for (int i=0; i<cinema.getElements().size(); i++) {
+//            Cinema mCinema = CinemaLab.getInstance(getActivity()).getCinemaById(cinema.getElements().get(i));
+//            showtime.setNameCinema(mCinema.getNameENOfLocation());
+//        }
+        MyShowtime tShowtime = new MyShowtime();
+        showtime.setTime(tShowtime.getTime());
+        showtime.setAudio(tShowtime.getAudio());
 
-            showtime.setMovieID(movieID);
-            showtime.setNameMovie(MovieLab.getInstance(getActivity())
-                    .getMovieById(movieID)
-                    .getMovieNameEN());
-
-            for (int i = 0; i < jsonArray.length(); i++) {
-
-                JSONObject jsonObject = jsonArray.getJSONObject(i);
-                showtime.setCinemaID(jsonObject.getString("cinema_id"));
-                Log.d(TAG, "CINEMA ID : " + showtime.getCinemaID());
-                showtime.setNameCinema(matchCinema(showtime.getCinemaID()));
-                Log.d(TAG, "CINEMA IS : " + matchCinema(showtime.getCinemaID()));
-
-                if (!matchCinema(showtime.getCinemaID()).equals(null)) {
-                    JSONArray screenArray = jsonObject.getJSONArray("screens");
-                    JSONObject screenObject = screenArray.getJSONObject(0);
-
-                    JSONArray showtimeArray = screenObject.getJSONArray("showtimes");
-
-                    ArrayList<String> time = new ArrayList<>();
-                    ArrayList<String> audio = new ArrayList<>();
-
-                    for (int j = 0; j < showtimeArray.length(); j++) {
-
-                        JSONObject showtimeObject = showtimeArray.getJSONObject(j);
-                        time.add(showtimeObject.getString("time"));
-                        audio.add(showtimeObject.getString("audio"));
-
-                        for (int k = 0; k < time.size(); k++) {
-                            Log.d(TAG, "size" + time.size() + "TIME IS : " + time.get(j));
-                            Log.d(TAG, "size" + audio.size() + "AUDIO IS : " + audio.get(j));
-                        }
-                    }
-                    showtime.setTime(time);
-                    showtime.setAudio(audio);
-                }
-                showtimeLab.addShowtime(showtime);
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+//
+//        try {
+//            JSONObject obj = new JSONObject(json);
+//            JSONArray jsonArray = obj.getJSONArray("elements");
+//
+//            showtime.setMovieID(movieID);
+//            showtime.setNameMovie(MovieLab.getInstance(getActivity())
+//                    .getMovieById(movieID)
+//                    .getMovieNameEN());
+//
+//            for (int i = 0; i < jsonArray.length(); i++) {
+//
+//                JSONObject jsonObject = jsonArray.getJSONObject(i);
+//                showtime.setCinemaID(jsonObject.getString("cinema_id"));
+//                Log.d(TAG, "CINEMA ID : " + showtime.getCinemaID());
+//                showtime.setNameCinema(matchCinema(showtime.getCinemaID()));
+//                Log.d(TAG, "CINEMA IS : " + matchCinema(showtime.getCinemaID()));
+//
+//                if (!matchCinema(showtime.getCinemaID()).equals(null)) {
+//                    JSONArray screenArray = jsonObject.getJSONArray("screens");
+//                    JSONObject screenObject = screenArray.getJSONObject(0);
+//
+//                    JSONArray showtimeArray = screenObject.getJSONArray("showtimes");
+//
+//                    ArrayList<String> time = new ArrayList<>();
+//                    ArrayList<String> audio = new ArrayList<>();
+//
+//                    for (int j = 0; j < showtimeArray.length(); j++) {
+//
+//                        JSONObject showtimeObject = showtimeArray.getJSONObject(j);
+//                        time.add(showtimeObject.getString("time"));
+//                        audio.add(showtimeObject.getString("audio"));
+//
+//                        for (int k = 0; k < time.size(); k++) {
+//                            Log.d(TAG, "size" + time.size() + "TIME IS : " + time.get(j));
+//                            Log.d(TAG, "size" + audio.size() + "AUDIO IS : " + audio.get(j));
+//                        }
+//                    }
+//                    showtime.setTime(time);
+//                    showtime.setAudio(audio);
+//                }
+//                showtimeLab.addShowtime(showtime);
+//            }
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public void getCinema() {
@@ -187,10 +207,10 @@ public class ShowtimeFragment extends Fragment {
         }
     }
 
-    public String matchCinema(String cinema_id) {
-        CinemaLab cinemaLab = CinemaLab.getInstance(getActivity());
-        return cinemaLab.getCinemaById(cinema_id).getNameENOfLocation();
-    }
+//    public String matchCinema(String cinema_id) {
+//        CinemaLab cinemaLab = CinemaLab.getInstance(getActivity());
+//        return cinemaLab.getCinemaById(cinema_id).getNameENOfLocation();
+//    }
 
     private class MyShowTimeFetcher extends AsyncTask<String, Void, Bitmap> {
 
@@ -219,10 +239,11 @@ public class ShowtimeFragment extends Fragment {
         }
     }
 
-    public class ShowtimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ShowtimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         private ImageView imageView;
         private TextView movieName;
+        private TextView cinemaName;
         private TextView time;
 
         Showtime _showtime;
@@ -230,16 +251,18 @@ public class ShowtimeFragment extends Fragment {
         public ShowtimeHolder(View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.poster);
-            imageView.setOnClickListener(this);
             movieName = (TextView) itemView.findViewById(R.id.movie_name_showtime_page);
+            cinemaName = (TextView) itemView.findViewById(R.id.cinema_name_showtime_page);
             time = (TextView) itemView.findViewById(R.id.time);
         }
 
         @Override
         public void onClick(View v) {
-//            Intent intent = new Intent(getActivity(), WebViewActivity.class);
-            Intent intent = WebViewActivity.newIntent(getActivity());
-            startActivity(intent);
+//            Log.d(TAG, "THIS Movie ID : " + _movie.getMovieId());
+//            Log.d(TAG, "THIS Movie NAME : " + _movie.getMovieNameEN());
+//
+//            Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId(), mLocation);
+//            startActivity(intent);
         }
 
         public void bind(Showtime showtime) {
@@ -251,9 +274,9 @@ public class ShowtimeFragment extends Fragment {
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(imageView);
 
             movieName.setText(_showtime.getNameMovie());
-            time.setText(_showtime.getTime().get(0));
+            cinemaName.setText(_showtime.getNameCinema());
+            time.setText(_showtime.getTime());
         }
-
     }
 
     public class ShowtimeAdapter extends RecyclerView.Adapter<ShowtimeHolder> {
