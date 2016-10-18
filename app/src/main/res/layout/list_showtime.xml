@@ -36,14 +36,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Movie name"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:layout_marginLeft="12dp"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/cinema_name_showtime_page"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Cinema name"
-            android:textSize="15sp"/>
+            android:textSize="15sp"
+            android:layout_marginLeft="22dp"
+            android:textColor="#FFFFFF"/>
 
         <LinearLayout
             android:id="@+id/list_of_time"
@@ -55,7 +59,9 @@
                 android:id="@+id/time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Time" />
+                android:hint="Time"
+                android:layout_marginLeft="22dp"
+                android:textColor="#FFFFFF"/>
 
         </LinearLayout>
 

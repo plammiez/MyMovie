@@ -1,6 +1,10 @@
 package com.augmentis.ayp.mymovie;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -86,6 +90,12 @@ public class ShowtimeFragment extends Fragment {
 //        Log.d(TAG, "LisT SHOWTIME : " + mShowtimeLab.getMyShowtimeList().size());
         List<Showtime> mShowtimes = mShowtimeLab.getMyShowtimeList();
         showtime_recycler.setAdapter(new ShowtimeAdapter(mShowtimes));
+
+        Drawable drawable = getResources().getDrawable(R.drawable.wp8);
+        Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+        Bitmap blurredBitmap = BlurBuilder.blur( getActivity(), bitmap );
+
+        view.setBackgroundDrawable( new BitmapDrawable( getResources(), blurredBitmap ) );
 
         return view;
     }
@@ -267,6 +277,7 @@ public class ShowtimeFragment extends Fragment {
         public ShowtimeHolder(View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.poster);
+            imageView.setOnClickListener(this);
             movieName = (TextView) itemView.findViewById(R.id.movie_name_showtime_page);
             cinemaName = (TextView) itemView.findViewById(R.id.cinema_name_showtime_page);
             layout = (LinearLayout) itemView.findViewById(R.id.list_of_time);
@@ -275,11 +286,9 @@ public class ShowtimeFragment extends Fragment {
 
         @Override
         public void onClick(View v) {
-//            Log.d(TAG, "THIS Movie ID : " + _movie.getMovieId());
-//            Log.d(TAG, "THIS Movie NAME : " + _movie.getMovieNameEN());
-//
-//            Intent intent = DetailMovieActivity.newIntent(getActivity(), _movie.getMovieId(), mLocation);
-//            startActivity(intent);
+//            Intent intent = new Intent(getActivity(), WebViewActivity.class);
+            Intent intent = WebViewActivity.newIntent(getActivity());
+            startActivity(intent);
         }
 
         public void bind(Showtime showtime) {
@@ -293,16 +302,23 @@ public class ShowtimeFragment extends Fragment {
             movieName.setText(_movie.getMovieNameEN());
             cinemaName.setText(_showtime.getNameCinema());
 
-//            TextView time[] = null;
-            for (int i=0; i<_showtime.getTimeAudio().getTime().size(); i++) {
-//                time[i] = new TextView(getActivity());
-//                time[i].setText(_showtime.getTimeAudio().getTime().get(i));
-                TextView time = new TextView(getContext());
-                time.setText(_showtime.getTimeAudio().getTime().get(i));
-                layout.addView(time);
+////            TextView time[] = null;
+//            for (int i=0; i<_showtime.getTimeAudio().getTime().size(); i++) {
+////                time[i] = new TextView(getActivity());
+////                time[i].setText(_showtime.getTimeAudio().getTime().get(i));
+//                TextView time = new TextView(getContext());
+//                time.setText(_showtime.getTimeAudio().getTime().get(i));
+//                layout.addView(time);
+//            }
+
+            ArrayList<TextView> mTextViewList = new ArrayList<>();
+            for (int i = 0; i<_showtime.getTimeAudio().getTime().size(); i++)
+            {
+                TextView tv = new TextView(getActivity());
+                mTextViewList.add(tv);
+                tv.setText(_showtime.getTimeAudio().getTime().get(i));
+                layout.addView(tv);
             }
-
-
         }
     }
 
