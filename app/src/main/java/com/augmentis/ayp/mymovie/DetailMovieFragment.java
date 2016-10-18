@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,30 +16,19 @@ import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.gms.maps.CameraUpdate;
-import com.google.android.gms.maps.CameraUpdateFactory;
+import com.augmentis.ayp.mymovie.Cinema.MyLocationLab;
+import com.augmentis.ayp.mymovie.Cinema.MyLocations;
+import com.augmentis.ayp.mymovie.Decoration.BlurBuilder;
+import com.augmentis.ayp.mymovie.Movie.Movie;
+import com.augmentis.ayp.mymovie.Movie.MovieLab;
+import com.augmentis.ayp.mymovie.Showtime.ShowtimeActivity;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.regex.PatternSyntaxException;
-
-import static com.augmentis.ayp.mymovie.R.id.screen;
 
 /**
  * Created by Waraporn on 10/11/2016.

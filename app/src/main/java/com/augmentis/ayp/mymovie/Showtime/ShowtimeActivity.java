@@ -1,9 +1,11 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Showtime;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+
+import com.augmentis.ayp.mymovie.SingleFragmentActivity;
 
 /**
  * Created by Waraporn on 10/11/2016.

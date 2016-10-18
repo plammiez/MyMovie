@@ -1,8 +1,7 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Showtime;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
@@ -19,11 +18,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.augmentis.ayp.mymovie.model.Element;
-import com.augmentis.ayp.mymovie.model.MyCinema;
-import com.augmentis.ayp.mymovie.model.MyShowtime;
+import com.augmentis.ayp.mymovie.Decoration.BlurBuilder;
+import com.augmentis.ayp.mymovie.Cinema.Cinema;
+import com.augmentis.ayp.mymovie.Cinema.CinemaLab;
+import com.augmentis.ayp.mymovie.Movie.Movie;
+import com.augmentis.ayp.mymovie.Movie.MovieLab;
+import com.augmentis.ayp.mymovie.R;
+import com.augmentis.ayp.mymovie.WebViewActivity;
 import com.bumptech.glide.Glide;
-import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -130,7 +132,7 @@ public class ShowtimeFragment extends Fragment {
 //        MyShowtime tShowtime = new MyShowtime();
 //        showtime.setTime(tShowtime.getTime());
 //        showtime.setAudio(tShowtime.getAudio());
-        keepTimeForCinema forCinema = new keepTimeForCinema();
+        KeepTimeForCinema forCinema = new KeepTimeForCinema();
         try {
             JSONObject obj = new JSONObject(json);
             JSONArray jsonArray = obj.getJSONArray("elements");

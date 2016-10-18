@@ -33,21 +33,21 @@
             android:name=".DetailMovieActivity"
             android:parentActivityName=".MainActivity"></activity>
 
-        <activity android:name=".MapActivity"
+        <activity android:name=".Map.MapActivity"
             android:parentActivityName=".MainActivity"></activity>
 
         <activity
-            android:name=".ShowtimeActivity"
-            android:parentActivityName=".ShowtimeActivity"></activity>
+            android:name=".Showtime.ShowtimeActivity"
+            android:parentActivityName=".Showtime.ShowtimeActivity"></activity>
 
 
-        <activity android:name=".MapAndListActivity"
+        <activity android:name=".Map.MapAndListActivity"
             android:parentActivityName=".MainActivity"></activity>
 
         <activity android:name=".WebViewActivity"
-            android:parentActivityName=".ShowtimeActivity"></activity>
+            android:parentActivityName=".Showtime.ShowtimeActivity"></activity>
 
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Decoration.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

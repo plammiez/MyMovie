@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Map;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,8 +6,10 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
+import com.augmentis.ayp.mymovie.SingleFragmentActivity;
 
-public class MapActivity extends SingleFragmentActivity{
+
+public class MapActivity extends SingleFragmentActivity {
 
     private static final String KEY_LOCATION = "LOCATION";
 

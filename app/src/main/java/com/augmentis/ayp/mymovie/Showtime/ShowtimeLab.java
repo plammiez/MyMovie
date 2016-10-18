@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Showtime;
 
 import android.content.Context;
 import android.util.Log;

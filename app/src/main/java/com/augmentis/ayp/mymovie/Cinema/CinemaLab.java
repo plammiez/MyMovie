@@ -1,9 +1,7 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Cinema;
 
 import android.content.Context;
 import android.util.Log;
-
-import com.augmentis.ayp.mymovie.model.Element;
 
 import java.util.ArrayList;
 import java.util.List;

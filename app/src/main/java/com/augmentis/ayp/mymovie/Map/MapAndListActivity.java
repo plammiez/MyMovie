@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Map;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import com.augmentis.ayp.mymovie.Decoration.BlurBuilder;
+import com.augmentis.ayp.mymovie.R;
 
 /**
  * Created by Wilailux on 10/12/2016.

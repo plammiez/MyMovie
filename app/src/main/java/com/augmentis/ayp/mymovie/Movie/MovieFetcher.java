@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Movie;
 
 import android.util.Log;
 import java.io.ByteArrayOutputStream;

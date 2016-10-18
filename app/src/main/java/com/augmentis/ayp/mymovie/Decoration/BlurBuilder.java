@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Decoration;
 
 import android.annotation.TargetApi;
 import android.content.Context;

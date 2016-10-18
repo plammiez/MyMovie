@@ -1,8 +1,11 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Decoration;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.augmentis.ayp.mymovie.MainActivity;
+import com.augmentis.ayp.mymovie.R;
 
 /**
  * Created by Wilailux on 10/4/2016.

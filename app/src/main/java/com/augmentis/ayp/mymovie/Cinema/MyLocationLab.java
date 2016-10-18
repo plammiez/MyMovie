@@ -1,10 +1,9 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Cinema;
 
 import android.content.Context;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 /**
  * Created by Waraporn on 10/3/2016.

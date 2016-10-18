@@ -1,24 +1,19 @@
 package com.augmentis.ayp.mymovie;
 
 import android.Manifest;
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.MatrixCursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v4.content.ContextCompat;
@@ -39,6 +34,12 @@ import java.util.Random;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.augmentis.ayp.mymovie.Decoration.BlurBuilder;
+import com.augmentis.ayp.mymovie.Map.MapAndListActivity;
+import com.augmentis.ayp.mymovie.Movie.Movie;
+import com.augmentis.ayp.mymovie.Movie.MovieFetcher;
+import com.augmentis.ayp.mymovie.Movie.MovieLab;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -47,7 +48,6 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;

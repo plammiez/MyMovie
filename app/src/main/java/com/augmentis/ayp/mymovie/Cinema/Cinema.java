@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Cinema;
 
 /**
  * Created by Waraporn on 10/12/2016.

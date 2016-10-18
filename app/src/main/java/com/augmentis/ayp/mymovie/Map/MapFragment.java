@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Map;
 
 import android.location.Location;
 import android.os.Bundle;
@@ -6,6 +6,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.augmentis.ayp.mymovie.Cinema.MyLocationLab;
+import com.augmentis.ayp.mymovie.Cinema.MyLocations;
+import com.augmentis.ayp.mymovie.R;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;

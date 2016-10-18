@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie;
+package com.augmentis.ayp.mymovie.Showtime;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  * Created by Waraporn on 10/18/2016.
  */
 
-public class keepTimeForCinema {
+public class KeepTimeForCinema {
 
     private ArrayList<String> time;
     private ArrayList<String> audio;

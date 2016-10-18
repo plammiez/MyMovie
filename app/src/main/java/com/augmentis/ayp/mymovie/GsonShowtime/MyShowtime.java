@@ -1,4 +1,4 @@
-package com.augmentis.ayp.mymovie.model;
+package com.augmentis.ayp.mymovie.GsonShowtime;
 
 import com.google.gson.annotations.SerializedName;
 
