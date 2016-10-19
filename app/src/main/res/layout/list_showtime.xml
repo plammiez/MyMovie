@@ -51,7 +51,7 @@
 
         <LinearLayout
             android:id="@+id/list_of_time"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -63,8 +63,23 @@
                 android:hint="Time"
                 android:layout_marginLeft="22dp"
                 android:textColor="#FFFFFF"/>
-                android:hint="Time"
-                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_of_audio"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/audio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Audio"
+                android:textColor="#FFFFFF"/>
 
         </LinearLayout>
 

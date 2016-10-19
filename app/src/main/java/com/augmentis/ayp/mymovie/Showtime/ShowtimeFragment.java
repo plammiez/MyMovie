@@ -286,6 +286,7 @@ public class ShowtimeFragment extends Fragment {
         private TextView movieName;
         private TextView cinemaName;
         private TextView time;
+        private TextView audio;
 //        private LinearLayout layout;
 
         Showtime _showtime;
@@ -298,6 +299,7 @@ public class ShowtimeFragment extends Fragment {
             cinemaName = (TextView) itemView.findViewById(R.id.cinema_name_showtime_page);
 //            layout = (LinearLayout) itemView.findViewById(R.id.list_of_time);
             time = (TextView) itemView.findViewById(R.id.time);
+            audio = (TextView) itemView.findViewById(R.id.audio);
         }
 
         @Override
@@ -325,11 +327,23 @@ public class ShowtimeFragment extends Fragment {
                 Log.d(TAG, "I D NAME : " + matchCinema(showtime.getCinemaID().get(j)));
 
                 time.setText("");
+                audio.setText("  ");
                 for (int i = 0; i < showtime.getTimeAudio().getTime().size(); i++) {
                     Log.d(TAG, "TIME RECORD : " + showtime.getTimeAudio().getTime().size());
                     Log.d(TAG, "TIME  : " + showtime.getTimeAudio().getTime());
                     time.append(showtime.getTimeAudio().getTime().get(i));
                     time.append("   ");
+
+                    if (showtime.getTimeAudio().getAudio().get(i).equals("ENGLISH")) {
+                        audio.append("ENG");
+                        audio.append("     ");
+                    }else if (showtime.getTimeAudio().getAudio().get(i).equals("THAI")) {
+                        audio.append("TH");
+                        audio.append("       ");
+                    }else if (showtime.getTimeAudio().getAudio().get(i).equals("SOUNDTRACK")) {
+                        audio.append("ST");
+                        audio.append("       ");
+                    }
                 }
             }
         }
