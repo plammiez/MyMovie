@@ -9,8 +9,18 @@ import java.util.List;
 
 public class KeepTimeForCinema {
 
+    private String cinemaID;
+
     private ArrayList<String> time;
     private ArrayList<String> audio;
+
+    public String getCinemaID() {
+        return cinemaID;
+    }
+
+    public void setCinemaID(String cinemaID) {
+        this.cinemaID = cinemaID;
+    }
 
     public ArrayList<String> getAudio() {
         return audio;
