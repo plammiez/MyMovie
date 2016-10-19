@@ -49,7 +49,7 @@ public class ShowtimeFragment extends Fragment {
     private String movieID;
 
     private MyShowTimeFetcher showTimeFetcher;
-    private ShowtimeLab showtimeLab = ShowtimeLab.getInstance(getActivity());
+//    private ShowtimeLab showtimeLab = ShowtimeLab.getInstance(getActivity());
 
     private RecyclerView showtime_recycler;
 
@@ -94,10 +94,10 @@ public class ShowtimeFragment extends Fragment {
         showtime_recycler.setAdapter(new ShowtimeAdapter(mShowtimes));
 
         Drawable drawable = getResources().getDrawable(R.drawable.wp8);
-        Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
-        Bitmap blurredBitmap = BlurBuilder.blur( getActivity(), bitmap );
+        Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
+        Bitmap blurredBitmap = BlurBuilder.blur(getActivity(), bitmap);
 
-        view.setBackgroundDrawable( new BitmapDrawable( getResources(), blurredBitmap ) );
+        view.setBackgroundDrawable(new BitmapDrawable(getResources(), blurredBitmap));
 
         return view;
     }
@@ -112,30 +112,18 @@ public class ShowtimeFragment extends Fragment {
 //        Gson gson = new Gson();
 //        MyCinema cinema = gson.fromJson(json, MyCinema.class);
 //        List<Element> element = cinema.getElements();
-        Showtime showtime = new Showtime();
-//        showtime.setMovieID(MOVIE_ID);
-//
-//        for (int i=0; i<element.size(); i++) {
-//            showtime.setCinemaID(element.get(i).getCinema_Id());
-//        }
 
-//        Movie movie = MovieLab.getInstance(getActivity()).getMovieById(MOVIE_ID);
-//        showtime.setNameMovie(movie.getMovieNameEN());
+        ShowtimeLab showtimeLab = ShowtimeLab.getInstance(getActivity());
+        showtimeLab.clearShowTime();
 
-//        List<String> cID = new ArrayList<>();
-//        for (int i=0; i<cinema.getElements().size(); i++) {
-//            Cinema mCinema = CinemaLab.getInstance(getActivity()).getCinemaById(cinema.getElements().get(i));
-//            cID.add(mCinema.getCinemaId());
-//        }
-//        showtime.setCinemaID(cID);
-//
-//        MyShowtime tShowtime = new MyShowtime();
-//        showtime.setTime(tShowtime.getTime());
-//        showtime.setAudio(tShowtime.getAudio());
-        KeepTimeForCinema forCinema = new KeepTimeForCinema();
+//        KeepTimeForCinemaLab forCinema = KeepTimeForCinemaLab.getInstance(getActivity());
+//        forCinema.clearKeepTime();
+
         try {
             JSONObject obj = new JSONObject(json);
             JSONArray jsonArray = obj.getJSONArray("elements");
+
+            Showtime showtime = new Showtime();
 
             showtime.setMovieID(movieID);
             showtime.setNameMovie(MovieLab.getInstance(getActivity())
@@ -143,6 +131,7 @@ public class ShowtimeFragment extends Fragment {
                     .getMovieNameEN());
 
             ArrayList<String> cID = new ArrayList<>();
+            KeepTimeForCinema mKeepTime = new KeepTimeForCinema();
 
             for (int i = 0; i < jsonArray.length(); i++) {
 
@@ -176,17 +165,36 @@ public class ShowtimeFragment extends Fragment {
                             Log.d(TAG, "size" + audio.size() + "AUDIO IS : " + audio.get(j));
                         }
                     }
-                    forCinema.setTime(time);
-                    forCinema.setAudio(audio);
-                }
-                showtime.setCinemaID(cID);
-                Log.d(TAG, "CINEMA ID : " + showtime.getCinemaID());
-                showtime.setNameCinema(matchCinema(showtime.getCinemaID().get(i)));
-                Log.d(TAG, "CINEMA IS : " + matchCinema(showtime.getCinemaID().get(i)));
-                showtime.setTimeAudio(forCinema);
 
-                showtimeLab.addShowtime(showtime);
+                    mKeepTime.setCinemaID(cID.get(i));
+                    mKeepTime.setTime(time);
+                    mKeepTime.setAudio(audio);
+                    showtime.setTimeAudio(mKeepTime);
+
+                    Log.d(TAG, "M ID : " + mKeepTime.getCinemaID());
+                    Log.d(TAG, "M TIME : " + mKeepTime.getTime());
+                    Log.d(TAG, "M AUDIO : " + mKeepTime.getAudio());
+
+                }
+
+//                showtime.setNameCinema(matchCinema(showtime.getCinemaID().get(i)));
+//                Log.d(TAG, "CINEMA IS : " + matchCinema(showtime.getCinemaID().get(i)));
+
+
+//                forCinema.addKeeptime(mKeepTime);
+//                Log.d(TAG, "M ADD ID : " + forCinema.getKeeptimeById(cID.get(i)).getCinemaID());
+//                Log.d(TAG, "M ADD TIME : " + forCinema.getKeeptimeById(cID.get(i)).getTime());
+//                Log.d(TAG, "M ADD AUDIO : " + forCinema.getKeeptimeById(cID.get(i)).getAudio());
             }
+            showtime.setCinemaID(cID);
+//                showtime.setTimeAudio(mKeepTime);
+//            Log.d(TAG, "CINEMA ID : " + showtime.getCinemaID());
+            showtimeLab.addShowtime(showtime);
+
+            Log.d(TAG, "MY ID : " + showtime.getCinemaID());
+            Log.d(TAG, "MY TIME : " + showtime.getTimeAudio().getTime());
+            Log.d(TAG, "MY AUDIO : " + showtime.getTimeAudio().getAudio());
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -245,7 +253,7 @@ public class ShowtimeFragment extends Fragment {
 
         @Override
         protected Bitmap doInBackground(String... params) {
-            showtimeLab.clearShowTime();
+//            showtimeLab.clearShowTime();
 
             String showTimeURL = url + "/" + params[0].toString() + "/showtime";
             Log.d("SHOWTIME", "URL : " + showTimeURL);
@@ -272,7 +280,7 @@ public class ShowtimeFragment extends Fragment {
         private TextView movieName;
         private TextView cinemaName;
         private TextView time;
-        private LinearLayout layout;
+//        private LinearLayout layout;
 
         Showtime _showtime;
 
@@ -282,7 +290,7 @@ public class ShowtimeFragment extends Fragment {
             imageView.setOnClickListener(this);
             movieName = (TextView) itemView.findViewById(R.id.movie_name_showtime_page);
             cinemaName = (TextView) itemView.findViewById(R.id.cinema_name_showtime_page);
-            layout = (LinearLayout) itemView.findViewById(R.id.list_of_time);
+//            layout = (LinearLayout) itemView.findViewById(R.id.list_of_time);
             time = (TextView) itemView.findViewById(R.id.time);
         }
 
@@ -293,54 +301,33 @@ public class ShowtimeFragment extends Fragment {
             startActivity(intent);
         }
 
+
         public void bind(Showtime showtime) {
 
-            Movie _movie = MovieLab.getInstance(getActivity()).getMovieById(showtime.getMovieID());
-            _showtime = showtime;
-            Log.d(TAG, "LIST : " + _showtime.getNameMovie());
+            for (int j = 0; j < showtime.getCinemaID().size(); j++) {
+
+                Movie _movie = MovieLab.getInstance(getActivity()).getMovieById(showtime.getMovieID());
+
+                _showtime = showtime;
+                Log.d(TAG, "LIST : " + _showtime.getNameMovie());
 //            Log.d(TAG, "LIST SIZE : " + MovieLab.getInstance(getActivity()).getMovieList().size());
-            Glide.with(getActivity()).load(_movie.getUrlPoster()).into(imageView);
+                Glide.with(getActivity()).load(_movie.getUrlPoster()).into(imageView);
 
-            movieName.setText(_movie.getMovieNameEN());
+                movieName.setText(_movie.getMovieNameEN());
 
-//            TextView time[] = null;
-            //= new TextView[_showtime.getCinemaID().size()];
+                Log.d(TAG, "S H O W T I M E : " + _showtime.getTimeAudio().getTime().size());
+                cinemaName.setText(matchCinema(showtime.getCinemaID().get(j)));
 
-            Log.d(TAG, "S H O W T I M E : " + _showtime.getTimeAudio().getTime().size());
+                Log.d(TAG, "I D : " + showtime.getCinemaID().get(j));
 
-            for (int j = 0; j < _showtime.getCinemaID().size(); j++) {
+                time.setText("");
+                for (int i = 0; i < showtime.getTimeAudio().getTime().size(); i++) {
+                    Log.d(TAG, "TIME RECORD : " + showtime.getTimeAudio().getTime().size());
+                    time.append(showtime.getTimeAudio().getTime().get(i));
 
-                cinemaName.setText(CinemaLab.getInstance(getActivity())
-                        .getCinemaById(_showtime.getCinemaID().get(j)).getNameENOfLocation());
-
-                for (int i = 0; i < _showtime.getTimeAudio().getTime().size(); i++) {
-//                    time[i] = new TextView(getActivity());
-                    time.setText(_showtime.getTimeAudio().getTime().get(i));
-//                TextView time = new TextView(getContext());
-//                time.setText(_showtime.getTimeAudio().getTime().get(i));
-                    Log.d(TAG, "S H O W T I M E : " + _showtime.getTimeAudio().getTime().get(i));
-                    layout.addView(time);
                 }
             }
-////            TextView time[] = null;
-//            for (int i=0; i<_showtime.getTimeAudio().getTime().size(); i++) {
-////                time[i] = new TextView(getActivity());
-////                time[i].setText(_showtime.getTimeAudio().getTime().get(i));
-//                TextView time = new TextView(getContext());
-//                time.setText(_showtime.getTimeAudio().getTime().get(i));
-//                layout.addView(time);
-//            }
-
-            ArrayList<TextView> mTextViewList = new ArrayList<>();
-            for (int i = 0; i<_showtime.getTimeAudio().getTime().size(); i++)
-            {
-                TextView tv = new TextView(getActivity());
-                mTextViewList.add(tv);
-                tv.setText(_showtime.getTimeAudio().getTime().get(i));
-                layout.addView(tv);
-            }
         }
-
     }
 
     public class ShowtimeAdapter extends RecyclerView.Adapter<ShowtimeHolder> {
