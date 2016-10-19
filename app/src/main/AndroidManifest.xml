@@ -47,6 +47,9 @@
         <activity android:name=".WebViewActivity"
             android:parentActivityName=".Showtime.ShowtimeActivity"></activity>
 
+        <activity android:name=".ComingSoon"
+            android:parentActivityName=".DetailMovieActivity"></activity>
+
         <activity android:name=".Decoration.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
