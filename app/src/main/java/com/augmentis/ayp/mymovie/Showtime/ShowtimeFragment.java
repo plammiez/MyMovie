@@ -132,6 +132,7 @@ public class ShowtimeFragment extends Fragment {
 //        MyShowtime tShowtime = new MyShowtime();
 //        showtime.setTime(tShowtime.getTime());
 //        showtime.setAudio(tShowtime.getAudio());
+
         KeepTimeForCinema forCinema = new KeepTimeForCinema();
         try {
             JSONObject obj = new JSONObject(json);
@@ -179,10 +180,11 @@ public class ShowtimeFragment extends Fragment {
                     forCinema.setTime(time);
                     forCinema.setAudio(audio);
                 }
+
                 showtime.setCinemaID(cID);
                 Log.d(TAG, "CINEMA ID : " + showtime.getCinemaID());
-                showtime.setNameCinema(matchCinema(showtime.getCinemaID().get(i)));
-                Log.d(TAG, "CINEMA IS : " + matchCinema(showtime.getCinemaID().get(i)));
+//                showtime.setNameCinema(matchCinema(showtime.getCinemaID().get(i)));
+//                Log.d(TAG, "CINEMA IS : " + matchCinema(showtime.getCinemaID().get(i)));
                 showtime.setTimeAudio(forCinema);
 
                 showtimeLab.addShowtime(showtime);
@@ -310,8 +312,11 @@ public class ShowtimeFragment extends Fragment {
 
             for (int j = 0; j < _showtime.getCinemaID().size(); j++) {
 
-                cinemaName.setText(CinemaLab.getInstance(getActivity())
-                        .getCinemaById(_showtime.getCinemaID().get(j)).getNameENOfLocation());
+//                cinemaName.setText(CinemaLab.getInstance(getActivity())
+//                        .getCinemaById(_showtime.getCinemaID().get(j))
+//                        .getNameENOfLocation());
+
+                cinemaName.setText(matchCinema(showtime.getCinemaID().get(j)));
 
                 for (int i = 0; i < _showtime.getTimeAudio().getTime().size(); i++) {
 //                    time[i] = new TextView(getActivity());
@@ -319,7 +324,7 @@ public class ShowtimeFragment extends Fragment {
 //                TextView time = new TextView(getContext());
 //                time.setText(_showtime.getTimeAudio().getTime().get(i));
                     Log.d(TAG, "S H O W T I M E : " + _showtime.getTimeAudio().getTime().get(i));
-                    layout.addView(time);
+//                    layout.addView(time);
                 }
             }
 ////            TextView time[] = null;
