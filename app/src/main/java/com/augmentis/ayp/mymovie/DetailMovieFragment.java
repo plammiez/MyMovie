@@ -37,6 +37,7 @@ import java.util.List;
 public class DetailMovieFragment extends Fragment {
 
     private static final String MOVIE_ID = "MOVIE_ID";
+    private static final String KEY_COMINGSOON = "COMINGSOON";
     private static final String KEY_LOCATION = "LOCATION";
     private static final String TAG = "DetailMovie";
 
@@ -59,6 +60,14 @@ public class DetailMovieFragment extends Fragment {
     public static DetailMovieFragment newInstance() {
         Bundle args = new Bundle();
         DetailMovieFragment fragment = new DetailMovieFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    public static DetailMovieFragment newInstance(String movieID) {
+        Bundle args = new Bundle();
+        DetailMovieFragment fragment = new DetailMovieFragment();
+        args.putString(KEY_COMINGSOON, movieID);
         fragment.setArguments(args);
         return fragment;
     }
@@ -93,7 +102,7 @@ public class DetailMovieFragment extends Fragment {
         movie = MovieLab.getInstance(getActivity()).getMovieById(id);
 
         Log.d(TAG, "id : " + id);
-        Log.d(TAG, "name : " + movie.getMovieNameEN());
+//        Log.d(TAG, "name : " + movie.getMovieNameEN());
 
         mVideo = (WebView) view.findViewById(R.id.movie_teaser);
         mVideo.getSettings().setJavaScriptEnabled(true);//อณุญาตให้ใช้ javascript ได้

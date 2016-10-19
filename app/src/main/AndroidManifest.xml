@@ -45,10 +45,10 @@
             android:parentActivityName=".MainActivity"></activity>
 
         <activity android:name=".WebViewActivity"
-            android:parentActivityName=".Showtime.ShowtimeActivity"></activity>
+            android:parentActivityName=".MainActivity"></activity>
 
         <activity android:name=".ComingSoon"
-            android:parentActivityName=".DetailMovieActivity"></activity>
+            android:parentActivityName=".MainActivity"></activity>
 
         <activity android:name=".Decoration.SplashScreen">
             <intent-filter>
