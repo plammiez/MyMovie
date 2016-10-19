@@ -7,7 +7,7 @@ import java.util.List;
  * Created by Waraporn on 10/18/2016.
  */
 
-public class KeepTimeForCinema {
+class KeepTimeForCinema {
 
     private String cinemaID;
 

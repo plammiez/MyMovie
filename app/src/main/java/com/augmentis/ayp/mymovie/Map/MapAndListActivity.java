@@ -64,7 +64,7 @@ public class MapAndListActivity extends AppCompatActivity implements MapFragment
             }
         }
 
-        Drawable drawable = getResources().getDrawable(R.drawable.wp6);
+        Drawable drawable = getResources().getDrawable(R.drawable.wp8);
         Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
         Bitmap blurredBitmap = BlurBuilder.blur( this, bitmap );
 

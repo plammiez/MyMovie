@@ -219,7 +219,7 @@ public class MapFragment extends SupportMapFragment {
 
 //        int margin = getResources().getDimensionPixelSize(R.dimen.map_inset_margin);
         CameraUpdate cameraUpdate = CameraUpdateFactory
-                .newLatLngZoom(new LatLng(mLocation.getLatitude(), mLocation.getLongitude()), 13.2f);
+                .newLatLngZoom(new LatLng(mLocation.getLatitude(), mLocation.getLongitude()), 12.5f);
 
         mGoogleMap.animateCamera(cameraUpdate);
     }
