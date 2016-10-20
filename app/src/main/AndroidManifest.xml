@@ -45,6 +45,9 @@
             android:parentActivityName=".MainActivity"></activity>
 
         <activity android:name=".WebViewActivity"
+        android:parentActivityName=".MainActivity"></activity>
+
+        <activity android:name=".CinemaViewActivity"
             android:parentActivityName=".MainActivity"></activity>
 
         <activity android:name=".ComingSoon"

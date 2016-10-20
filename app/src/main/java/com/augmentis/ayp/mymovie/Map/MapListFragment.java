@@ -1,5 +1,6 @@
 package com.augmentis.ayp.mymovie.Map;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,7 +13,9 @@ import android.widget.TextView;
 
 import com.augmentis.ayp.mymovie.Cinema.MyLocationLab;
 import com.augmentis.ayp.mymovie.Cinema.MyLocations;
+import com.augmentis.ayp.mymovie.CinemaViewActivity;
 import com.augmentis.ayp.mymovie.R;
+import com.augmentis.ayp.mymovie.WebViewActivity;
 
 import java.util.Formatter;
 import java.util.List;
@@ -62,17 +65,22 @@ public class MapListFragment extends Fragment {
             super(itemView);
 
             nameTH = (TextView) itemView.findViewById(R.id.nameTH_Cinema);
+            nameTH.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = CinemaViewActivity.newIntent(getActivity());
+                    startActivity(intent);
+                }
+            });
             tel = (TextView) itemView.findViewById(R.id.cinema_tel);
             distance = (TextView) itemView.findViewById(R.id.distance_cinema);
         }
 
         public void bind(MyLocations myLocations) {
-
             _myLocations = myLocations;
             nameTH.setText(_myLocations.getNameTHOfLocation());
             tel.setText("Tel : " + _myLocations.getTel());
             distance.setText("Distance : " + new Formatter(Locale.US).format("%.2f", _myLocations.getDistance()).toString()+"km.");
-
         }
     }
 
