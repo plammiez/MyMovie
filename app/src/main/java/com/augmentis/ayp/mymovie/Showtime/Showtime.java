@@ -9,7 +9,8 @@ import java.util.ArrayList;
 public class Showtime {
 
     private String movieID;
-    private ArrayList<String> cinemaID;
+//    private ArrayList<String> cinemaID;
+    private String cinemaID;
     private String nameMovie;
     private String nameCinema;
     private KeepTimeForCinema timeAudio;
@@ -30,11 +31,11 @@ public class Showtime {
         this.nameCinema = nameCinema;
     }
 
-    public ArrayList<String> getCinemaID() {
+    public String getCinemaID() {
         return cinemaID;
     }
 
-    public void setCinemaID(ArrayList<String> cinemaID) {
+    public void setCinemaID(String cinemaID) {
         this.cinemaID = cinemaID;
     }
 

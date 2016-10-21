@@ -46,7 +46,20 @@ public class KeepTimeForCinemaLab {
 
 
     public void addKeeptime(KeepTimeForCinema forCinema) {
-        myKeeptimeList.add(forCinema);
+
+        if (myKeeptimeList.size() != 0) {
+            for (KeepTimeForCinema mCinema : myKeeptimeList) {
+                if (!mCinema.getCinemaID().equals(forCinema.getCinemaID())) {
+                    myKeeptimeList.add(forCinema);
+                    break;
+                }
+            }
+        } else {
+            myKeeptimeList.add(forCinema);
+        }
+
+
+//        myKeeptimeList.add(forCinema);
     }
 
     public void clearKeepTime() {

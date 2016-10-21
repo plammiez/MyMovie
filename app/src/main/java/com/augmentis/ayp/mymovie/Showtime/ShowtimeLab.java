@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -32,6 +33,7 @@ public class ShowtimeLab {
 
     public List<Showtime> getMyShowtimeList() {
         return myShowtimeList;
+//        return removeDuplicateIndex(myShowtimeList);
     }
 
     public Showtime getShowtimeByMovieId(String id) {
@@ -40,13 +42,23 @@ public class ShowtimeLab {
                 return showtime;
             }
         }
-        Log.d(TAG,id);
+        Log.d(TAG, id);
         return null;
     }
 
 
     public void addShowtime(Showtime showtime) {
-        myShowtimeList.add(showtime);
+
+        if (myShowtimeList.size() != 0) {
+            for (Showtime mShowtime : myShowtimeList) {
+                if (!mShowtime.getCinemaID().equals(showtime.getCinemaID())) {
+                    myShowtimeList.add(showtime);
+                    break;
+                }
+            }
+        } else {
+            myShowtimeList.add(showtime);
+        }
     }
 
     public void clearShowTime() {
