@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -14,10 +15,13 @@ import android.webkit.WebView;
 
 public class CinemaViewActivity extends AppCompatActivity {
 
+    private static final String KEY_CINEMA = "CINEMA";
+
     WebView webView;
 
-    public static Intent newIntent(Context context) {
+    public static Intent newIntent(Context context, String number) {
         Intent intent = new Intent(context, CinemaViewActivity.class);
+        intent.putExtra(KEY_CINEMA, number);
         return intent;
     }
 
@@ -25,12 +29,15 @@ public class CinemaViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        String s = getIntent().getStringExtra(KEY_CINEMA);
         setContentView(R.layout.cinema_view_activity);
 
             webView = (WebView) findViewById(R.id.cinema_view);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.getSettings().setPluginState(WebSettings.PluginState.ON);
-            webView.loadUrl("http://www.majorcineplex.com/cinema");
+//        String url = ;
+        Log.d("TAG", "onCreate: " + s);
+            webView.loadUrl("http://www.majorcineplex.com/booking2/search_showtime/cinema="+s);
             webView.setWebChromeClient(new WebChromeClient());
 
     }

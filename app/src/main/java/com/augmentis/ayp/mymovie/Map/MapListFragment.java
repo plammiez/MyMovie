@@ -65,13 +65,6 @@ public class MapListFragment extends Fragment {
             super(itemView);
 
             nameTH = (TextView) itemView.findViewById(R.id.nameTH_Cinema);
-            nameTH.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = CinemaViewActivity.newIntent(getActivity());
-                    startActivity(intent);
-                }
-            });
             tel = (TextView) itemView.findViewById(R.id.cinema_tel);
             distance = (TextView) itemView.findViewById(R.id.distance_cinema);
         }
@@ -79,6 +72,13 @@ public class MapListFragment extends Fragment {
         public void bind(MyLocations myLocations) {
             _myLocations = myLocations;
             nameTH.setText(_myLocations.getNameTHOfLocation());
+            nameTH.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = CinemaViewActivity.newIntent(getActivity(), _myLocations.getCinemaNumber());
+                    startActivity(intent);
+                }
+            });
             tel.setText("Tel : " + _myLocations.getTel());
             distance.setText("Distance : " + new Formatter(Locale.US).format("%.2f", _myLocations.getDistance()).toString()+"km.");
         }

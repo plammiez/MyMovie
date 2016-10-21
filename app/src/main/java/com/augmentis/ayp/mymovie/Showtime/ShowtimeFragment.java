@@ -225,6 +225,7 @@ public class ShowtimeFragment extends Fragment {
 
                 Cinema cinema = new Cinema();
                 cinema.setCinemaId(jsonObject.getString("id"));
+                cinema.setCinemaNumber(jsonObject.getString("cinema_id"));
                 cinema.setNameENOfLocation(jsonObject.getString("short_name_en"));
                 cinema.setNameTHOfLocation(jsonObject.getString("short_name_th"));
                 cinema.setTel(jsonObject.getString("tel"));

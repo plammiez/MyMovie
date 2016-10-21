@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class MyLocations {
 
     private String cinemaId;
+    private String cinemaNumber;
     private String nameTHOfLocation;
     private String nameENOfLocation;
     private String tel;
@@ -21,6 +22,14 @@ public class MyLocations {
 
     public void setCinemaId(String cinemaId) {
         this.cinemaId = cinemaId;
+    }
+
+    public String getCinemaNumber() {
+        return cinemaNumber;
+    }
+
+    public void setCinemaNumber(String cinemaNumber) {
+        this.cinemaNumber = cinemaNumber;
     }
 
     public String getNameTHOfLocation() {

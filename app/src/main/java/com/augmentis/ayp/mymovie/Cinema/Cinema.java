@@ -7,6 +7,7 @@ package com.augmentis.ayp.mymovie.Cinema;
 public class Cinema {
 
     private String cinemaId;
+    private String cinemaNumber;
     private String nameTHOfLocation;
     private String nameENOfLocation;
     private String tel;
@@ -20,6 +21,14 @@ public class Cinema {
 
     public void setCinemaId(String cinemaId) {
         this.cinemaId = cinemaId;
+    }
+
+    public String getCinemaNumber() {
+        return cinemaNumber;
+    }
+
+    public void setCinemaNumber(String cinemaNumber) {
+        this.cinemaNumber = cinemaNumber;
     }
 
     public String getNameTHOfLocation() {

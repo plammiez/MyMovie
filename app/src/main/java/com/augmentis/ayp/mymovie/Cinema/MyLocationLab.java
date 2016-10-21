@@ -58,7 +58,16 @@ public class MyLocationLab {
     }
 
     public void addNearyLocation(MyLocations locations) {
-        myNearyList.add(locations);
+//        if (myNearyList.size() != 0) {
+//            for (MyLocations myLocations : myNearyList) {
+//                if (!myLocations.getNameENOfLocation().equals(locations.getNameENOfLocation())) {
+//                    myNearyList.add(locations);
+//                    break;
+//                }
+//            }
+//        } else {
+            myNearyList.add(locations);
+//        }
     }
 
     public void clearNearyLocation() {
