@@ -5,12 +5,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- LOCATION -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <!-- MAP -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -33,7 +33,8 @@
             android:name=".DetailMovieActivity"
             android:parentActivityName=".MainActivity"></activity>
 
-        <activity android:name=".Map.MapActivity"
+        <activity
+            android:name=".Map.MapActivity"
             android:parentActivityName=".MainActivity"></activity>
 
         <activity
@@ -41,16 +42,20 @@
             android:parentActivityName=".Showtime.ShowtimeActivity"></activity>
 
 
-        <activity android:name=".Map.MapAndListActivity"
+        <activity
+            android:name=".Map.MapAndListActivity"
             android:parentActivityName=".MainActivity"></activity>
 
-        <activity android:name=".WebViewActivity"
-        android:parentActivityName=".MainActivity"></activity>
-
-        <activity android:name=".CinemaViewActivity"
+        <activity
+            android:name=".WebViewActivity"
             android:parentActivityName=".MainActivity"></activity>
 
-        <activity android:name=".ComingSoon"
+        <activity
+            android:name=".CinemaViewActivity"
+            android:parentActivityName=".MainActivity"></activity>
+
+        <activity
+            android:name=".ComingSoon"
             android:parentActivityName=".MainActivity"></activity>
 
         <activity android:name=".Decoration.SplashScreen">
@@ -61,5 +66,4 @@
         </activity>
 
     </application>
-
 </manifest>
