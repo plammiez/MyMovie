@@ -17,8 +17,8 @@ public class ShowTimeFetcher {
     private static final String TAG = "ShowTimeFetcher";
 
     /**
-     *  Open connection.
-     *  Read and write data from stream.
+     * Open connection.
+     * Read and write data from stream.
      *
      * @param urlSpec
      * @return
@@ -29,7 +29,6 @@ public class ShowTimeFetcher {
 
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.addRequestProperty("Authorization", "Basic bWFqb3Jtb3ZpZTp3Z2w4bjhnb3lybG5wMjk0MHJqbDFxYzdjcDBsZ2dpaDg");
-//        connection.addRequestProperty("Content-Type", "application/json; charset=utf-8");
 
         try {
             ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -51,7 +50,7 @@ public class ShowTimeFetcher {
                 out.write(buffer, 0, bytesRead);
             }
             out.close();
-            Log.d(TAG, "getShowTime to string: " +  new String(out.toByteArray()));
+            Log.d(TAG, "getShowTime to string: " + new String(out.toByteArray()));
             return out.toByteArray();
 
         } finally {

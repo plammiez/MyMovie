@@ -30,9 +30,7 @@ public class MapListFragment extends Fragment {
     private RecyclerView map_list;
 
     public static MapListFragment newInstance() {
-
         Bundle args = new Bundle();
-
         MapListFragment fragment = new MapListFragment();
         fragment.setArguments(args);
         return fragment;
@@ -41,29 +39,24 @@ public class MapListFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.activity_map_list, container, false);
         map_list = (RecyclerView) view.findViewById(R.id.list_cinema);
         map_list.setLayoutManager(new LinearLayoutManager(getActivity()));
-
         MyLocationLab myLocationLab = MyLocationLab.getInstance(getActivity());
         List<MyLocations> myLocations = myLocationLab.getNearyLocation();
         map_list.setAdapter(new MapListAdapter(myLocations));
-
         return view;
     }
 
-    public class MapListHolder extends RecyclerView.ViewHolder{
+    public class MapListHolder extends RecyclerView.ViewHolder {
 
         MyLocations _myLocations;
-
         private TextView nameTH;
         private TextView tel;
         private TextView distance;
 
         public MapListHolder(View itemView) {
             super(itemView);
-
             nameTH = (TextView) itemView.findViewById(R.id.nameTH_Cinema);
             tel = (TextView) itemView.findViewById(R.id.cinema_tel);
             distance = (TextView) itemView.findViewById(R.id.distance_cinema);
@@ -80,13 +73,14 @@ public class MapListFragment extends Fragment {
                 }
             });
             tel.setText("Tel : " + _myLocations.getTel());
-            distance.setText("Distance : " + new Formatter(Locale.US).format("%.2f", _myLocations.getDistance()).toString()+"km.");
+            distance.setText("Distance : " + new Formatter(Locale.US).format("%.2f", _myLocations.getDistance()).toString() + "km.");
         }
     }
 
     public class MapListAdapter extends RecyclerView.Adapter<MapListHolder> {
 
         private List<MyLocations> _myLocations;
+
         public MapListAdapter(List<MyLocations> myLocations) {
             this._myLocations = myLocations;
         }

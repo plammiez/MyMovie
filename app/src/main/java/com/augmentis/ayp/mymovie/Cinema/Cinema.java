@@ -79,7 +79,7 @@ public class Cinema {
         this.longitude = longitude;
     }
 
-    public void addTimeOfCinema(String cinemaName,String time) {
+    public void addTimeOfCinema(String cinemaName, String time) {
 
     }
 }

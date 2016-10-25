@@ -9,7 +9,6 @@ import java.util.ArrayList;
 public class Showtime {
 
     private String movieID;
-//    private ArrayList<String> cinemaID;
     private String cinemaID;
     private String nameMovie;
     private String nameCinema;

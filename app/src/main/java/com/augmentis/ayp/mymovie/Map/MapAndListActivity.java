@@ -22,7 +22,7 @@ import com.augmentis.ayp.mymovie.R;
  * Created by Wilailux on 10/12/2016.
  */
 
-public class MapAndListActivity extends AppCompatActivity implements MapFragment.CallBack{
+public class MapAndListActivity extends AppCompatActivity implements MapFragment.CallBack {
 
     private static final String KEY_LOCATION = "LOCATION";
     LinearLayout map_and_list;
@@ -48,7 +48,6 @@ public class MapAndListActivity extends AppCompatActivity implements MapFragment
             if (fragment == null) {
                 Fragment newFragment = MapFragment.newInstance(location);
                 fragmentManager.beginTransaction().add(R.id.fragment_container_1, newFragment).commit();
-
             }
 
             View fragmentContainer2 = findViewById(R.id.fragment_container_2);
@@ -57,26 +56,23 @@ public class MapAndListActivity extends AppCompatActivity implements MapFragment
 
                 if (fragment == null) {
                     Fragment newFragment = MapListFragment.newInstance();
-
                     fragmentManager.beginTransaction().add(R.id.fragment_container_2, newFragment).commit();
-
                 }
             }
         }
 
         Drawable drawable = getResources().getDrawable(R.drawable.wp8);
-        Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
-        Bitmap blurredBitmap = BlurBuilder.blur( this, bitmap );
+        Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
+        Bitmap blurredBitmap = BlurBuilder.blur(this, bitmap);
 
-        map_and_list.setBackgroundDrawable( new BitmapDrawable( getResources(), blurredBitmap ) );
+        map_and_list.setBackgroundDrawable(new BitmapDrawable(getResources(), blurredBitmap));
     }
 
     @Override
     public void refreshList() {
-        Toast.makeText(this,"Refresh",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
         FragmentManager fragmentManager = getSupportFragmentManager();
-                Fragment newFragment = MapListFragment.newInstance();
-
-                fragmentManager.beginTransaction().replace(R.id.fragment_container_2, newFragment).commit();
+        Fragment newFragment = MapListFragment.newInstance();
+        fragmentManager.beginTransaction().replace(R.id.fragment_container_2, newFragment).commit();
     }
 }

@@ -1,7 +1,5 @@
 package com.augmentis.ayp.mymovie.Cinema;
 
-import java.util.ArrayList;
-
 /**
  * Created by Waraporn on 10/3/2016.
  */

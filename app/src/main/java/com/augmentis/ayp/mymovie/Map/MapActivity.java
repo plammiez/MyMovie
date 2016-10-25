@@ -19,7 +19,6 @@ public class MapActivity extends SingleFragmentActivity {
         return intent;
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

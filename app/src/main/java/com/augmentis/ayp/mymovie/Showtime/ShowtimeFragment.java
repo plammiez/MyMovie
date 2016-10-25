@@ -43,43 +43,33 @@ import java.util.List;
 public class ShowtimeFragment extends Fragment {
 
     private static final String MOVIE_ID = "MOVIE_ID";
-    private static final String CINEMA_ID = "CINEMA_ID";
     private static final String TAG = "ShowTime";
 
     private String movieID;
-
     private MyShowTimeFetcher showTimeFetcher;
-//    private ShowtimeLab showtimeLab = ShowtimeLab.getInstance(getActivity());
-
     private RecyclerView showtime_recycler;
-
     private ShowtimeAdapter _adapter;
 
     public static ShowtimeFragment newInstance() {
         Bundle args = new Bundle();
         ShowtimeFragment fragment = new ShowtimeFragment();
         fragment.setArguments(args);
-
         return fragment;
     }
 
     public static ShowtimeFragment newInstance(String movieID) {
         Bundle args = new Bundle();
         args.putString(MOVIE_ID, movieID);
-//        args.putString(CINEMA_ID, cinemaID);
         ShowtimeFragment fragment = new ShowtimeFragment();
         fragment.setArguments(args);
-
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         if (getArguments() != null) {
             movieID = getArguments().getString(MOVIE_ID);
-//            cinemaID = getArguments().getString(CINEMA_ID);
         }
         getCinema();
         getShowTime(movieID);
@@ -103,18 +93,10 @@ public class ShowtimeFragment extends Fragment {
         View view = inflater.inflate(R.layout.showtime, container, false);
         showtime_recycler = (RecyclerView) view.findViewById(R.id.showtime_recycler);
         showtime_recycler.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-//        ShowtimeLab mShowtimeLab = ShowtimeLab.getInstance(getActivity());
-//        Log.d(TAG, "LisT SHOWTIME : " + showtimeLab.getMyShowtimeList().size());
-//        List<Showtime> mShowtimes = showtimeLab.getMyShowtimeList();
-//        showtime_recycler.setAdapter(new ShowtimeAdapter(mShowtimes));
-
         Drawable drawable = getResources().getDrawable(R.drawable.wp8);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
         Bitmap blurredBitmap = BlurBuilder.blur(getActivity(), bitmap);
-
         view.setBackgroundDrawable(new BitmapDrawable(getResources(), blurredBitmap));
-
         return view;
     }
 
@@ -124,11 +106,9 @@ public class ShowtimeFragment extends Fragment {
     }
 
     public void loadShowtime(String json) throws JSONException {
-
 //        Gson gson = new Gson();
 //        MyCinema cinema = gson.fromJson(json, MyCinema.class);
 //        List<Element> element = cinema.getElements();
-
         try {
             JSONObject obj = new JSONObject(json);
             JSONArray jsonArray = obj.getJSONArray("elements");
@@ -162,7 +142,6 @@ public class ShowtimeFragment extends Fragment {
                         for (int j = 0; j < showtimeArray.length(); j++) {
 
                             KeepTimeForCinema mKeepTime = new KeepTimeForCinema();
-
                             mKeepTime.setCinemaID(showtime.getCinemaID());
 
                             JSONObject showtimeObject = showtimeArray.getJSONObject(j);
@@ -180,25 +159,12 @@ public class ShowtimeFragment extends Fragment {
                             showtime.setTimeAudio(mKeepTime);
                             KeepTimeForCinemaLab.getInstance(getActivity()).addKeeptime(mKeepTime);
                         }
-
-
-                        Log.d(TAG, "loadShowtime: TIMEAUDIO " + showtime.getTimeAudio().getTime().size());
                     }
-
-                    Log.d(TAG, "loadShowtime: LAB " + KeepTimeForCinemaLab.getInstance(getActivity()).getMyKeepwtimeList().size());
                     ShowtimeLab.getInstance(getActivity()).addShowtime(showtime);
-                    printLogShowTimeLab();
                 }
             }
         } catch (JSONException e) {
             e.printStackTrace();
-        }
-    }
-
-    private void printLogShowTimeLab() {
-        for (Showtime m_Showtime : ShowtimeLab.getInstance(getActivity()).getMyShowtimeList()) {
-            Log.d(TAG, "MY M SHOWTIME : " + m_Showtime.getNameCinema());
-            Log.d(TAG, "M Y I D SHOWTIME : " + m_Showtime.getCinemaID());
         }
     }
 
@@ -230,8 +196,6 @@ public class ShowtimeFragment extends Fragment {
                 cinema.setTel(jsonObject.getString("tel"));
 
                 cinema.setLocation(jsonObject.getString("location"));
-//                Log.d("TAG", "AT LOCATION : " + cinema.getLocation());
-
                 String[] latLon = cinema.getLocation().split(",");
                 cinema.setLatitude(Double.parseDouble(latLon[0]));
                 cinema.setLongitude(Double.parseDouble(latLon[1]));
@@ -239,7 +203,6 @@ public class ShowtimeFragment extends Fragment {
                 //Add your values in your `ArrayList` as below:
                 CinemaLab.getInstance(getActivity()).addCinema(cinema);
             }
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -251,8 +214,6 @@ public class ShowtimeFragment extends Fragment {
 
         @Override
         protected Bitmap doInBackground(String... params) {
-//            showtimeLab.clearShowTime();
-
             String showTimeURL = url + "/" + params[0].toString() + "/showtime";
             Log.d("SHOWTIME", "URL : " + showTimeURL);
 
@@ -267,9 +228,7 @@ public class ShowtimeFragment extends Fragment {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
             ShowtimeLab.getInstance(getActivity()).getMyShowtimeList();
-
             return null;
         }
 
@@ -281,14 +240,11 @@ public class ShowtimeFragment extends Fragment {
     }
 
     public void updateUI() {
-
-        Log.d("khem", "showtimes" + ShowtimeLab.getInstance(getActivity()).getMyShowtimeList().size());
         if (_adapter == null) {
             _adapter = new ShowtimeAdapter((ShowtimeLab.getInstance(getActivity()).getMyShowtimeList()));
             showtime_recycler.setAdapter(_adapter);
         } else {
             _adapter.setShowtime((ShowtimeLab.getInstance(getActivity()).getMyShowtimeList()));
-//            showtime_recycler.setAdapter(_adapter);
             _adapter.notifyDataSetChanged();
         }
     }
@@ -300,7 +256,6 @@ public class ShowtimeFragment extends Fragment {
         private TextView cinemaName;
         private TextView time;
         private TextView audio;
-//        private LinearLayout layout;
 
         Showtime _showtime;
 
@@ -316,7 +271,6 @@ public class ShowtimeFragment extends Fragment {
 
         @Override
         public void onClick(View v) {
-//            Intent intent = new Intent(getActivity(), WebViewActivity.class);
             Intent intent = WebViewActivity.newIntent(getActivity());
             startActivity(intent);
         }
@@ -324,17 +278,7 @@ public class ShowtimeFragment extends Fragment {
         public void bind(Showtime showtime) {
             _showtime = showtime;
             Movie _movie = MovieLab.getInstance(getActivity()).getMovieById(showtime.getMovieID());
-//            for (int j = 0; j < showtime.getCinemaID().size(); j++) {
-//
-//                Log.d(TAG, "LIST : " + _showtime.getNameMovie());
-////            Log.d(TAG, "LIST SIZE : " + MovieLab.getInstance(getActivity()).getMovieList().size());
-//                movieName.setText(_movie.getMovieNameEN());
-//                Glide.with(getActivity()).load(_movie.getUrlPoster()).into(imageView);
-//
-////                Log.d(TAG, "S H O W T I M E : " + _showtime.getTimeAudio().getTime().size());
-//                cinemaName.setText(matchCinema(showtime.getCinemaID().get(j)));
-//                Log.d(TAG, "I D : " + showtime.getCinemaID().get(j));
-//                Log.d(TAG, "I D NAME : " + matchCinema(showtime.getCinemaID().get(j)));
+
             movieName.setText(_movie.getMovieNameEN());
             Glide.with(getActivity()).load(_movie.getUrlPoster()).into(imageView);
             cinemaName.setText(showtime.getNameCinema());
@@ -345,14 +289,9 @@ public class ShowtimeFragment extends Fragment {
             KeepTimeForCinema kt = KeepTimeForCinemaLab.getInstance(getActivity())
                     .getKeeptimeById(showtime.getCinemaID());
 
-            Log.d(TAG, "bind: " + KeepTimeForCinemaLab.getInstance(getActivity()).getMyKeepwtimeList().size());
-
             for (int i = 0; i < kt.getTime().size(); i++) {
-                Log.d(TAG, "TIME RECORD : " + showtime.getTimeAudio().getTime().size());
-                Log.d(TAG, "TIME  : " + showtime.getTimeAudio().getTime());
                 time.append(kt.getTime().get(i));
                 time.append("   ");
-
                 if (kt.getAudio().get(i).equals("ENGLISH")) {
                     audio.append("ENG");
                     audio.append("     ");
@@ -371,7 +310,6 @@ public class ShowtimeFragment extends Fragment {
 
         private List<Showtime> _Showtimes = new ArrayList<>();
         private int _viewCreatingCount;
-
         private Showtime myShowtime;
 
         public ShowtimeAdapter(List<Showtime> showtimes) {
@@ -385,7 +323,6 @@ public class ShowtimeFragment extends Fragment {
         @Override
         public ShowtimeHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             _viewCreatingCount++;
-
             LayoutInflater inflater = LayoutInflater.from(getActivity());
             View v = inflater.inflate(R.layout.list_showtime, parent, false);
             return new ShowtimeHolder(v);

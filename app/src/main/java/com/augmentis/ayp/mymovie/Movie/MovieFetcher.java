@@ -1,6 +1,7 @@
 package com.augmentis.ayp.mymovie.Movie;
 
 import android.util.Log;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,8 +17,8 @@ public class MovieFetcher {
     private static final String TAG = "MovieFetcher";
 
     /**
-     *  Open connection.
-     *  Read and write data from stream.
+     * Open connection.
+     * Read and write data from stream.
      *
      * @param urlSpec
      * @return
@@ -28,7 +29,6 @@ public class MovieFetcher {
 
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.addRequestProperty("Authorization", "Basic bWFqb3Jtb3ZpZTp3Z2w4bjhnb3lybG5wMjk0MHJqbDFxYzdjcDBsZ2dpaDg");
-//        connection.addRequestProperty("Content-Type", "application/json; charset=utf-8");
 
         Log.d(TAG, "getUrlBytes: ");
         try {
@@ -51,7 +51,6 @@ public class MovieFetcher {
                 out.write(buffer, 0, bytesRead);
             }
             out.close();
-//            Log.d(TAG, "getUrlBytes to string: " +  new String(out.toByteArray()));
             return out.toByteArray();
 
         } finally {

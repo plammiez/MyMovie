@@ -25,14 +25,11 @@ public class WebViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.webview_activity);
-
-            webView = (WebView) findViewById(R.id.wev_view);
-            webView.getSettings().setJavaScriptEnabled(true);
-            webView.getSettings().setPluginState(WebSettings.PluginState.ON);
-            webView.loadUrl("http://www.majorcineplex.com/movie");
-            webView.setWebChromeClient(new WebChromeClient());
-
+        webView = (WebView) findViewById(R.id.wev_view);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setPluginState(WebSettings.PluginState.ON);
+        webView.loadUrl("http://www.majorcineplex.com/movie");
+        webView.setWebChromeClient(new WebChromeClient());
     }
 }

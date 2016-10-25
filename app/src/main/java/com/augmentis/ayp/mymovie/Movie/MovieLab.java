@@ -15,10 +15,8 @@ public class MovieLab {
 
     private static MovieLab instance;
     private List<Movie> movieList;
-//    private List<Movie> movieListUpperCase;
 
     public static MovieLab getInstance(Context context) {
-
         if (instance == null) {
             instance = new MovieLab(context);
         }
@@ -68,25 +66,11 @@ public class MovieLab {
     }
 
     public void addMovie(Movie movie) {
-
         movieList.add(movie);
-//        if (movieList.size() == 0) {
-//            movieList.add(movie);
-//        }
-//
-//        Log.d("TAG", "LIST LAB1 " + movieList.size());
-//        for (int i = 0 ; i < movieList.size() ; i ++) {
-//            Log.d("TAG", "LIST LAB2 " + movieList.size());
-//
-//            if (!movieList.get(i).getMovieId().equals(movie.getMovieId())) {
-//                movieList.add(movie);
-//            }
-//        }
     }
 
     public File getPhotoFile(Movie movie) {
         File externalFilesDir = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES);
-
         if (externalFilesDir == null) {
             return null;
         }
@@ -102,9 +86,9 @@ public class MovieLab {
                 newList.add(movie);
             }
         }
-        if (newList.size() == 0){
+        if (newList.size() == 0) {
             return movieList;
-        }else {
+        } else {
             return newList;
         }
     }

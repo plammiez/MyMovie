@@ -40,13 +40,10 @@ public class KeepTimeForCinemaLab {
                 return forCinema;
             }
         }
-        Log.d(TAG,id);
         return null;
     }
 
-
     public void addKeeptime(KeepTimeForCinema forCinema) {
-
         if (myKeeptimeList.size() != 0) {
             for (KeepTimeForCinema mCinema : myKeeptimeList) {
                 if (!mCinema.getCinemaID().equals(forCinema.getCinemaID())) {
@@ -57,9 +54,6 @@ public class KeepTimeForCinemaLab {
         } else {
             myKeeptimeList.add(forCinema);
         }
-
-
-//        myKeeptimeList.add(forCinema);
     }
 
     public void clearKeepTime() {

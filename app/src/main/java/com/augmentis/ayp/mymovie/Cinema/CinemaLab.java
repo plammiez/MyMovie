@@ -41,7 +41,7 @@ public class CinemaLab {
                 return cinema;
             }
         }
-        Log.d(TAG,id);
+        Log.d(TAG, id);
         return null;
     }
 
@@ -51,10 +51,9 @@ public class CinemaLab {
                 return cinema;
             }
         }
-        Log.d(TAG,name);
+        Log.d(TAG, name);
         return null;
     }
-
 
     public void addCinema(Cinema cinema) {
         myCinemaList.add(cinema);

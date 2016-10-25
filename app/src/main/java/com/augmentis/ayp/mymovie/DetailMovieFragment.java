@@ -45,17 +45,14 @@ public class DetailMovieFragment extends Fragment {
     private Location mLocation;
     private String id;
 
-    TextView txt_director;
-    TextView txt_actor;
-    TextView txt_story;
-    TextView txt_movie_name;
-
-    Button button_cinema;
-
+    private TextView txt_director;
+    private TextView txt_actor;
+    private TextView txt_story;
+    private TextView txt_movie_name;
+    private WebView mVideo;
+    private Button button_cinema;
     Movie movie;
     List<MyLocations> locations = new ArrayList<>();
-
-    private WebView mVideo;
 
     public static DetailMovieFragment newInstance() {
         Bundle args = new Bundle();
@@ -85,7 +82,6 @@ public class DetailMovieFragment extends Fragment {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setHasOptionsMenu(true);
-
         if (getArguments() != null) {
             id = getArguments().getString(MOVIE_ID);
             mLocation = getArguments().getParcelable(KEY_LOCATION);
@@ -96,38 +92,27 @@ public class DetailMovieFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.detail_movie, container, false);
-
         locations = MyLocationLab.getInstance(getActivity()).getMyLocationsList();
-
         movie = MovieLab.getInstance(getActivity()).getMovieById(id);
-
-        Log.d(TAG, "id : " + id);
-//        Log.d(TAG, "name : " + movie.getMovieNameEN());
 
         mVideo = (WebView) view.findViewById(R.id.movie_teaser);
         mVideo.getSettings().setJavaScriptEnabled(true);//อณุญาตให้ใช้ javascript ได้
         mVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
-//        mVideo.getSettings().setBuiltInZoomControls(true);
-//        mVideo.setHorizontalScrollBarEnabled(false);
-
         mVideo.loadUrl(movie.getUrlTrailer());
         mVideo.setWebChromeClient(new WebChromeClient());
 
-        String direc = movie.getDirectors().replace("\"","").replace("[","").replace("]","");
-        String act = movie.getActors().replace("\"","").replace("[","").replace("]","");
-        String story = movie.getSynopsis().replace("\"","");
+        String direc = movie.getDirectors().replace("\"", "").replace("[", "").replace("]", "");
+        String act = movie.getActors().replace("\"", "").replace("[", "").replace("]", "");
+        String story = movie.getSynopsis().replace("\"", "");
 
         txt_director = (TextView) view.findViewById(R.id.director);
         txt_actor = (TextView) view.findViewById(R.id.actor);
         txt_story = (TextView) view.findViewById(R.id.story);
         txt_movie_name = (TextView) view.findViewById(R.id.movie_name);
-
-        //txt_director.setText("Director : " + movie.getDirectors());
         txt_director.setText("Director : " + direc);
         txt_actor.setText("Actor : " + act);
         txt_story.setText(story);
         txt_movie_name.setText(movie.getMovieNameTH());
-
         button_cinema = (Button) view.findViewById(R.id.button_cinema);
         button_cinema.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,7 +125,6 @@ public class DetailMovieFragment extends Fragment {
         Drawable drawable = getResources().getDrawable(R.drawable.wp8);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
         Bitmap blurredBitmap = BlurBuilder.blur(getActivity(), bitmap);
-
         view.setBackgroundDrawable(new BitmapDrawable(getResources(), blurredBitmap));
         return view;
     }

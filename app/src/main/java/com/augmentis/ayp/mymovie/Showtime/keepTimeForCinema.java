@@ -10,7 +10,6 @@ import java.util.List;
 class KeepTimeForCinema {
 
     private String cinemaID;
-
     private ArrayList<String> time;
     private ArrayList<String> audio;
 

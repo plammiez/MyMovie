@@ -25,12 +25,10 @@ import android.widget.TextView;
 /**
  * Created by Waraporn on 9/22/2016.
  */
-public class DetailMovieActivity extends SingleFragmentActivity{
+public class DetailMovieActivity extends SingleFragmentActivity {
 
     private static final String MOVIE_ID = "MOVIE_ID";
     private static final String KEY_LOCATION = "LOCATION";
-
-    private static final String TAG = "DetailMovieActivity";
 
     public static Intent newIntent(Context context, String movieId, Location location) {
         Intent intent = new Intent(context, DetailMovieActivity.class);

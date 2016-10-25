@@ -20,9 +20,11 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -56,7 +58,8 @@ public class MapFragment extends SupportMapFragment {
         fragment.setArguments(args);
         return fragment;
     }
-    interface CallBack{
+
+    interface CallBack {
         void refreshList();
     }
 
@@ -64,7 +67,7 @@ public class MapFragment extends SupportMapFragment {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setHasOptionsMenu(true);
-        callBack = (CallBack)getActivity();
+        callBack = (CallBack) getActivity();
 
         if (getArguments() != null) {
             mLocation = getArguments().getParcelable(KEY_LOCATION);
@@ -82,11 +85,9 @@ public class MapFragment extends SupportMapFragment {
     @Override
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         return super.onCreateView(layoutInflater, viewGroup, bundle);
-
-
     }
 
-    public static double toRadian(double degrees){
+    public static double toRadian(double degrees) {
         return (degrees * Math.PI) / 180.0d;
     }
 
@@ -103,11 +104,11 @@ public class MapFragment extends SupportMapFragment {
         double dLat = toRadian(lat - myLat);
         double dLng = toRadian(lon - myLon);
 
-        double a = Math.pow(Math.sin(dLat/2), 2)  +
+        double a = Math.pow(Math.sin(dLat / 2), 2) +
                 Math.cos(toRadian(myLat)) * Math.cos(toRadian(lat)) *
-                        Math.pow(Math.sin(dLng/2), 2);
+                        Math.pow(Math.sin(dLng / 2), 2);
 
-        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
         // returns result kilometers
         return earthRadius * c;
@@ -166,7 +167,6 @@ public class MapFragment extends SupportMapFragment {
                 locList.add(location);
                 MyLocationLab.getInstance(getActivity()).addLocation(location);
             }
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -175,10 +175,9 @@ public class MapFragment extends SupportMapFragment {
 
     private List<Double> orderDistance() {
         List<MyLocations> myLocationsList = MyLocationLab.getInstance(getActivity()).getMyLocationsList();
-
         List<Double> distance = new ArrayList<>();
 
-        for (int i=0 ; i < myLocationsList.size() ; i++) {
+        for (int i = 0; i < myLocationsList.size(); i++) {
             distance.add(myLocationsList.get(i).getDistance());
         }
 
@@ -193,25 +192,20 @@ public class MapFragment extends SupportMapFragment {
 
     private void printDistance() {
         List<Double> distance = orderDistance();
-        Log.d("AAAA", "printDistance: " + distance.toString());
 
         MyLocationLab mLab = MyLocationLab.getInstance(getActivity());
         mLab.clearNearyLocation();
         Log.d("TAG", "printDistance: " + mLab.getNearyLocation().size());
 
-        for (int i=0 ; i < 5 ; i++) {
+        for (int i = 0; i < 5; i++) {
             MyLocations myPlace = queryDistance(distance.get(i));
             mLab.addNearyLocation(myPlace);
-            Log.d("TAG", "distance near at " + i + " : " + myPlace.getNameENOfLocation()
-                    + " km : " + myPlace.getDistance());
         }
-
         callBack.refreshList();
     }
 
     private void updateMapUI() {
         mGoogleMap.clear();
-
         LatLngBounds.Builder builder = new LatLngBounds.Builder();
 
         if (mLocation != null) {
@@ -220,10 +214,8 @@ public class MapFragment extends SupportMapFragment {
             printDistance();
         }
 
-//        int margin = getResources().getDimensionPixelSize(R.dimen.map_inset_margin);
         CameraUpdate cameraUpdate = CameraUpdateFactory
                 .newLatLngZoom(new LatLng(mLocation.getLatitude(), mLocation.getLongitude()), 12.5f);
-
         mGoogleMap.animateCamera(cameraUpdate);
     }
 
@@ -244,7 +236,6 @@ public class MapFragment extends SupportMapFragment {
                 .position(itemPoint)
                 .title(nameEN)
                 .snippet(String.format("%.2f km", distance));
-
         mGoogleMap.addMarker(itemMarkerOptions);
         builder.include(itemPoint);
     }

@@ -33,7 +33,6 @@ public class ShowtimeLab {
 
     public List<Showtime> getMyShowtimeList() {
         return myShowtimeList;
-//        return removeDuplicateIndex(myShowtimeList);
     }
 
     public Showtime getShowtimeByMovieId(String id) {
@@ -42,13 +41,11 @@ public class ShowtimeLab {
                 return showtime;
             }
         }
-        Log.d(TAG, id);
         return null;
     }
 
 
     public void addShowtime(Showtime showtime) {
-
         if (myShowtimeList.size() != 0) {
             for (Showtime mShowtime : myShowtimeList) {
                 if (!mShowtime.getCinemaID().equals(showtime.getCinemaID())) {

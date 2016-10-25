@@ -16,7 +16,6 @@ import android.webkit.WebView;
 public class CinemaViewActivity extends AppCompatActivity {
 
     private static final String KEY_CINEMA = "CINEMA";
-
     WebView webView;
 
     public static Intent newIntent(Context context, String number) {
@@ -28,17 +27,12 @@ public class CinemaViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         String s = getIntent().getStringExtra(KEY_CINEMA);
         setContentView(R.layout.cinema_view_activity);
-
-            webView = (WebView) findViewById(R.id.cinema_view);
-            webView.getSettings().setJavaScriptEnabled(true);
-            webView.getSettings().setPluginState(WebSettings.PluginState.ON);
-//        String url = ;
-        Log.d("TAG", "onCreate: " + s);
-            webView.loadUrl("http://www.majorcineplex.com/booking2/search_showtime/cinema="+s);
-            webView.setWebChromeClient(new WebChromeClient());
-
+        webView = (WebView) findViewById(R.id.cinema_view);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setPluginState(WebSettings.PluginState.ON);
+        webView.loadUrl("http://www.majorcineplex.com/booking2/search_showtime/cinema=" + s);
+        webView.setWebChromeClient(new WebChromeClient());
     }
 }
