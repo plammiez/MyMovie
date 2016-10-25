@@ -15,14 +15,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.augmentis.ayp.mymovie.ComingSoon;
-import com.augmentis.ayp.mymovie.Decoration.BlurBuilder;
 import com.augmentis.ayp.mymovie.Cinema.Cinema;
 import com.augmentis.ayp.mymovie.Cinema.CinemaLab;
-import com.augmentis.ayp.mymovie.Map.MapAndListActivity;
+import com.augmentis.ayp.mymovie.ComingSoon;
+import com.augmentis.ayp.mymovie.Decoration.BlurBuilder;
 import com.augmentis.ayp.mymovie.Movie.Movie;
 import com.augmentis.ayp.mymovie.Movie.MovieLab;
 import com.augmentis.ayp.mymovie.R;
@@ -36,7 +34,6 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -62,6 +59,7 @@ public class ShowtimeFragment extends Fragment {
         Bundle args = new Bundle();
         ShowtimeFragment fragment = new ShowtimeFragment();
         fragment.setArguments(args);
+
         return fragment;
     }
 
@@ -71,6 +69,7 @@ public class ShowtimeFragment extends Fragment {
 //        args.putString(CINEMA_ID, cinemaID);
         ShowtimeFragment fragment = new ShowtimeFragment();
         fragment.setArguments(args);
+
         return fragment;
     }
 
